@@ -4,7 +4,7 @@ description: This is a post describing a Creative Approach to Habit Tracking.
 date: 2023-04-02
 tags:
     - rituals
-    - self governance
+    - self-governance
     - tools
 ---
 

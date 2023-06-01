@@ -4,10 +4,12 @@
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 	--font-size-body: 17px;
     --font-size-mono: 15px;
+	--font-size-small: 13px;
     
     --font-weigh-bold: 600;
 
 	--radius: 0.25rem;
+	--tag-radius: 1rem;
   
     --width: 700px;
 }
@@ -21,9 +23,9 @@
 	--color-background: #fff;
 
 	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
+	/* --text-color-link: #082840;
 	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
+	--text-color-link-visited: #17050F; */
 
 	--syntax-tab-size: 2;
 }
@@ -35,9 +37,9 @@
 		--color-gray-90: #dad8d8;
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
+		/* --text-color-link: #1493fb;
 		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
+		--text-color-link-visited: #a6a6f8; */
 
 		--color-background: #141414;
 
@@ -68,6 +70,9 @@ html {
 }
 body {
 	max-width: 40em;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -92,7 +97,7 @@ li {
 	line-height: 1.5;
 }
 
-a[href] {
+/* a[href] {
 	color: var(--text-color-link);
 }
 a[href]:visited {
@@ -101,22 +106,34 @@ a[href]:visited {
 a[href]:hover,
 a[href]:active {
 	color: var(--text-color-link-active);
-}
+} */
 
 main {
 	padding: 1rem;
+	flex: 1;
 }
 main :first-child {
 	margin-top: 0;
 }
 
 header {
-	border-bottom: 1px dashed var(--color-gray-20);
+	border-bottom: 1px solid var(--color-gray-20);
 }
 header:after {
 	content: "";
 	display: table;
 	clear: both;
+}
+footer {
+	margin-top: 1em;
+	padding: 0.5em 0;
+	border-top: 1px solid var(--color-gray-20);
+	color: var(--color-gray-50);
+	text-align: center;
+	font-size: var(--font-size-small);
+}
+footer a {
+	color: var(--color-gray-50);
 }
 
 .links-nextprev {
@@ -156,6 +173,12 @@ code {
 	word-break: break-all;
 }
 
+hr {
+	border: 0;
+	border-top: 1px solid var(--color-gray-20);
+	margin: 1em 0;
+}
+
 /* Header */
 header {
 	display: flex;
@@ -168,6 +191,7 @@ header {
 	font-size: 1em; /* 16px /16 */
 	font-weight: 700;
 	margin-right: 2em;
+	color: var(--text-color) !important;
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
@@ -180,9 +204,13 @@ header {
 	margin: 0;
 	list-style: none;
 }
+
 .nav-item {
 	display: inline-block;
 	margin-right: 1em;
+}
+.nav-item a {
+	color: var(--text-color);
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
@@ -242,9 +270,22 @@ header {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	text-decoration: none;
+	background-color: var(--color-gray-20);
+	padding: .1em .5em;
+	border-radius: var(--tag-radius);
+	color: var(--color-text);
+	font-size: var(--font-size-small);
+}
+.text-tag{
+	text-decoration: underline;
 }
 .postlist-item > .post-tag {
 	align-self: center;
+}
+.tags-list > .post-tag {
+	font-size: var(--font-size-body);
+	margin: 0 .25em .25em 0;
 }
 
 /* Tags list */
