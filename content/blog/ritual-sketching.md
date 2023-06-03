@@ -34,7 +34,7 @@ For a total time of about 2 months, I've used an analogue tracker in the form of
 - analogue is not practical for travelling
 - placement on the wall is not practical for moving about
 
-**The ugly**
+### The ugly
 I'm not saying spreadsheets aren't beautiful, but the look quickly became stale and office-like. This is exactly the vibe I want to steer away from.
 
 # The Ritual Sketching method
