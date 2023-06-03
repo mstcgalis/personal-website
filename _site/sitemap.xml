@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://danielgalis.com/blog/ritual-sketching/</loc>
+		<lastmod>2023-04-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/blog/</loc>
+		<lastmod>2023-06-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/</loc>
+		<lastmod>2023-06-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/</loc>
+		<lastmod>2023-06-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/rituals/</loc>
+		<lastmod>2023-06-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/self-governance/</loc>
+		<lastmod>2023-06-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/tools/</loc>
+		<lastmod>2023-06-03</lastmod>
+	</url>
+</urlset>

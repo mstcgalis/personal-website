@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ritual Sketching - A Creative Approach to Habit Tracking</title>
+		<meta name="description" content="This is a post describing a Creative Approach to Habit Tracking.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Daniel Gális">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Daniel Gális">
+
+		<meta name="generator" content="Eleventy v2.0.1">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+* { box-sizing: border-box; }
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--font-size-body: 17px;
+    --font-size-mono: 15px;
+	--font-size-small: 13px;
+	--font-size-h1: 1.625em;
+	--font-size-h2: 1.3125em;
+	--font-size-h3: 1.125em;
+	--font-size-h4: 1em;
+    
+    --font-weigh-bold: 600;
+
+	--radius: 0.25rem;
+	--tag-radius: 1rem;
+  
+    --width: 700px;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--color-background: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #0016E4;
+	--text-color-link-active: var(--text-color-link);
+	--text-color-link-visited: #4D2186;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		--color-background: #141414;
+
+		--color-offset: #2a2a2a;
+		--color-faded: #555;
+		--color-gray: #767676;
+		--color-text: #e5e5e5;
+		--color-text-extreme: #fff;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--color-background);
+	font-size: var(--font-size-body);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover {
+	color: var(--text-color-link);
+}
+a[href]:active {
+	/* color: var(--text-color-link-active); */
+	color: red;
+}
+
+main {
+	padding: 1.5rem 0 0 0;
+	flex: 1;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+footer {
+	margin-top: 1em;
+	padding: 0.5em 0;
+	border-top: 1px solid var(--color-gray-20);
+	color: var(--color-gray-50);
+	text-align: center;
+	font-size: var(--font-size-small);
+}
+footer a[href]:visited, footer a[href]:hover, footer a[href]:active, footer a[href] {
+	color: var(--color-gray-50);
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid var(--color-gray-20);
+	margin: 1em 0;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+	margin: 1.25em 0em 0em 0em;
+}
+h1 {
+	font-size: var(--font-size-h1);
+	font-weight: var(--font-weigh-bold);
+}
+h2 {
+	font-size: var(--font-size-h2);
+	font-weight: var(--font-weigh-bold);
+}
+h3 {
+	font-size: var(--font-size-h3);
+	font-weight: var(--font-weigh-bold);
+}
+h4 {
+	font-size: var(--font-size-h4);
+	font-weight: var(--font-weigh-bold);
+}
+
+/* Header */
+header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em 0 1em 0;
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 1em;
+	color: var(--text-color) !important;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a:visited{
+	color: var(--text-color);
+}
+.nav-item a[href]:hover,
+.nav-item a[href]:active {
+	color: var(--text-color-link-active);
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-tags {
+	display: inline-flex;
+	text-align: right;
+	flex-wrap: wrap;
+	gap: .5em;
+	padding-left: 1em;
+}
+.postlist-link {
+	font-size: var(--font-size-h4);
+	font-weight: 600;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: var(--font-weight-bold);
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	background-color: var(--color-gray-20);
+	padding: .1em .5em;
+	border-radius: var(--tag-radius);
+	font-size: var(--font-size-small);
+}
+.post-tag:hover {
+	text-decoration: underline;
+}
+.text-tag{
+	text-decoration: underline;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.tags-list > .post-tag {
+	font-size: var(--font-size-body);
+	margin: 0 0.25em 0.25em 0;
+}
+.tags-list {
+	padding: 0;
+}
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+h2 + .header-anchor {
+	font-size: 1.5em;
+}
+
+/* Post */
+.post-title {
+	font-size: var(--font-size-h1);
+	margin: 1.25em 0em 0.5em 0em;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+    border-radius: var(--radius);
+  }
+
+/* Decoration */
+.broider-blue, .broider-yellow, .broider-red {
+	padding: 0.75em;
+	margin: 2em 0em 2em 0em;
+}
+.broider-blue {
+    border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAZFJREFUWEfdmN0NwjAMhNsdGIb9nxiGHUAgBSFbp+/slkLgBUrT+nI+/8Tr6Xy7LcuyXC/r+vge14/f7x91f/wf11evld3xnnV6oC7DijliqOoJyeh0QElrUTpjPUmKiIh2kdHpgZIGxwZd5pRmh502o4cDja6NACIjdB2ZJOm4WeOZ5N8/0wB1o3Yrc4oQZT8x+vNAqcbHDXQZJSaVnRejfwe0G8WKKdWlxfVlRn8GaLWr2Qrc1X5idBqgpJm9GHSZHOsO16hbCVOb59baT0nCzatYmbqJ3ZXINEApvw5Pfp3RNlDXFa5ru+vimcvuR7sGu88loHSKVIb2zgLUFKUzE2nmU1nABkoAtmqXnv8foOroUa3FFDTEmIoVWetjkJDLCCBpXh2/U63fCwh5QM2i3LnrK+opmLrM0cCiDJRmP5RPqyMe6triBmQeJW1FDxwGlFxLLqIK51YypeWk0aqLKWop7aiOP7memFQvog2RBuN9CjrZj1YNuVmjmvjTILfLkOsRGmcSw6hRNwgI8Fagd8toXhHI/QRhAAAAAElFTkSuQmCC") 14 /  14px / 0 round;
+    border-width:  14px;
+    border-style:  solid;
+	box-sizing: border-box;
+}
+
+.broider-yellow {
+    border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAYBJREFUWEfdmEsOwjAMROmOM3AR7r/kIpyBHQikVMjt6I2d0g9dtkn8PHYcp8PjdnmeZp7z9T68X9P3ubnOu7husxfntnEDgdB3B2puTBpUeUAeKsAYCVqHxo+K/i0ohTobUtoLzd5nw3w/zZAK2eagSglXoeZAr6NKiFHR3YNmFciOVwrFddS6kzrq5uTmoNFzVd/Ic6qLrsIx5+2TiQDcUJZBqdwsVb7UUdzWj6kXx0/qKIFXc/QwoCQARW41RVcHzRqsjo8plla0ajg7T4LSmV7dRNlypHoGPOt/1WyQ4xh6UjYbQnc82ZX9qCrEruHsOBs0G4osCNXJmGJRqEmOupex3YL2gvXOtxXtNdQ7f3VQ2gvKoeOAUlnItmcU4rKihwNVHXb10le9W6kIjnemvwGt5pZ7IlGXZSu6OSjt0ux31yG1idX7xTv8n4G6dZIAqMy5kVF25J+S2GbtBpTKkwvq/kHOtpOL7froiJtSbvmSoNRxuzmnQOJ7isRhQF8w8GudB4UgfgAAAABJRU5ErkJggg==") 14 /  14px / 0 round;
+    border-width:  14px;
+    border-style:  solid;
+}
+
+.broider-red {
+    border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAW9JREFUWEfVmN0NwjAMhOkQSEzKEEyKxBAgHoKQ0fHdpana8Ebj2Bf/nJ0sp/B3v56f7y2X22NxtqbySqdl7HtzajiV7wbaDFUFoz1a7VT96NHDAe0FVEM7+n+L5Mej0wFtuTGqCEiP66Afjx4eaMsFdUJV9eSxqrdWs9pfv/9U/TRAFeESz9V9qvqVfvI08qhKCSL8zYG6OeP0+X8yFKG6LnOUQrE7UJVr7TuFfO0Bhg0luwElOtoaGM0Gn14/DVA3p9wO5OpL5WIe3ToV7GLa23PKvs2jaah65W2gvQbSfWnk7BxNgZD8aqAurxGQdJ1oEnM0PXkK0B3Ydw+9O0PMAzSdC0cRfjr3LtMAdW+JdNdxi44cgy2UQjEN0N6rSXrJUywgX0rclKDiGg6UiFcBcnOTGgF1RPul5LBA1WMZnZzWlWdVr2844l5PQGh9OFC3B6c5Sp5DHlXFlFa1WzRVjuysHkp6PUrA6kGmAfoCCj8qEcsorlIAAAAASUVORK5CYII=") 14 /  14px / 0 round;
+    border-width:  14px;
+    border-style:  solid;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Daniel Gális</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+					<li class="nav-item"><a href="/tags/">Tags</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1 class="post-title">Ritual Sketching - A Creative Approach to Habit Tracking</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2023-04-02">2023-04-02</time></li>
+	<li><a href="/tags/rituals/" class="post-tag">#rituals</a></li>
+	<li><a href="/tags/self-governance/" class="post-tag">#self-governance</a></li>
+	<li><a href="/tags/tools/" class="post-tag">#tools</a></li>
+</ul>
+
+<p>Can tracking become an exciting and creative practice instead of a boring chore? As a part of my <a href="https://www.are.na/prompt-club/tool-a-week">TOOL A WEEK</a> commitment, I worked on a better habit-tracking method, that anyone could potentially modify and use on their journey. After a week of ideation, research, sketching, prototyping and a round of feedback from designer friends, I created a customisable system called <strong>Ritual Sketching</strong>.</p>
+<p>First some definitions:</p>
+<p>From <a href="https://en.wikipedia.org/wiki/Habit">Wikipedia</a>:</p>
+<blockquote>
+<p>A <strong>habit</strong>  is a routine of behaviour that is repeated regularly and tends to occur subconsciously.</p>
+</blockquote>
+<p>For the sake of this tool, I will define <strong>ritual</strong> as a positive habit being built intentionally and performed mindfully. Beyond repetition, rituals can provide a way to structure time and direct one's attention to meaningful pursuits.</p>
+<p>Like many others, I have been slowly trying to build everyday habits since reading James Clear's amazing Atomic Habits. One of the techniques he recommends is &quot;habit tracking&quot; - keeping a record of how consistently you are performing certain activities, hence turning them into habits. You can read about the benefits of tracking in this <a href="https://www.are.na/block/14441936">summary</a>.</p>
+<h1 id="my-experience-with-habit-tracking" tabindex="-1">My experience with habit tracking <a class="header-anchor" href="#my-experience-with-habit-tracking">#</a></h1>
+<p><img src="/blog/attachments/table_tracker.png" alt="table tracker"></p>
+<p>For a total time of about 2 months, I've used an analogue tracker in the form of a spreadsheet printed on an A4. Here are my thoughts:</p>
+<h3 id="the-good" tabindex="-1">The Good <a class="header-anchor" href="#the-good">#</a></h3>
+<ul>
+<li>analogue tracking is very satisfying</li>
+<li>hanging on the wall next to my table creates a physical presence in my environment, which is very powerful</li>
+</ul>
+<h3 id="the-bad" tabindex="-1">The bad <a class="header-anchor" href="#the-bad">#</a></h3>
+<ul>
+<li>tracking only a boolean value is reductive</li>
+<li>leads to performing a habit for the sake of the tracker, not for its own sake</li>
+<li>analogue is not practical for travelling</li>
+<li>placement on the wall is not practical for moving about</li>
+</ul>
+<h3 id="the-ugly" tabindex="-1">The ugly <a class="header-anchor" href="#the-ugly">#</a></h3>
+<p>I'm not saying spreadsheets aren't beautiful, but the look quickly became stale and office-like. This is exactly the vibe I want to steer away from.</p>
+<h1 id="the-ritual-sketching-method" tabindex="-1">The Ritual Sketching method <a class="header-anchor" href="#the-ritual-sketching-method">#</a></h1>
+<p>The goal of <strong>Ritual Sketching</strong> is to keep a record of your habits with compounding, generative compositions. Instead of ticking a checkbox, the person using this method will create a sketch in their <strong>log</strong> according to a predetermined <strong>key</strong>. This sketch should reflect their habits on a particular day.</p>
+<p>The <strong>key</strong> pairs each habit with a thing to draw. For example, my current key looks like this:</p>
+<pre class="language-python" tabindex="0"><code class="language-python">PERFORM   <span class="token punctuation">:</span>   DRAW<br>meditate  <span class="token punctuation">:</span>   line<br>mantra    <span class="token punctuation">:</span>   ellipse<br>excersize <span class="token punctuation">:</span>   polygon<br>read      <span class="token punctuation">:</span>   rectangle<br>write     <span class="token punctuation">:</span>   squiggle<br>design    <span class="token punctuation">:</span>   star<br>code      <span class="token punctuation">:</span>   dots</code></pre>
+<p>In the <strong>log</strong>, each day should have its section with a <strong>star(t)</strong> placed in the middle of that section. The <strong>star(t)</strong> defines the x and the y axes, providing an &quot;artificial&quot; anchor on which the &quot;natural&quot; sketching can take place. Digital example:</p>
+<p><img src="/blog/attachments/start_tracker.png" alt="star(t) of the tracker"></p>
+<p>When a person performs a certain habit, they draw the corresponding thing into today's section of the <strong>log</strong>. This continues throughout the day as the shapes slowly compound into a composition. A the end of the day a sketch containing information on today's activities emerges. Even though the <strong>key</strong> stays the same, each daily sketch will inevitably be unique. Seeing the effort already put in, the daily <strong>log</strong> should act as a source of motivation, as breaking the chain with an empty <strong>star(t)</strong> will not feel right. After some time has passed, changes, fluctuations, exceptions and maybe even trends can be observed.</p>
+<p>With sketching, there's a lot of opportunity for non-boolean reflectivity. Some simple ideas to start with:</p>
+<ul>
+<li>the size of the shape reflects the length of the ritual</li>
+<li>the placement of the shape reflects the time of day the ritual was performed</li>
+</ul>
+<h1 id="my-implementation-and-templates" tabindex="-1">My implementation and templates <a class="header-anchor" href="#my-implementation-and-templates">#</a></h1>
+<p><strong>Ritual Sketching</strong> as a system and practice can be implemented in many different forms. Here I will provide my implementation(s) along with some templates to get you started!</p>
+<p>I started using an analogue tracker printed on an A4 which I hang next to my desk. One sheet contains 5 rows of 7 <strong>start(s)</strong> for a total of 35 days, which is more than enough for a month's worth of sketching. The key is printed at the top along with a space to fill out the <strong>start</strong> and <strong>end</strong> dates.</p>
+<h3 id="pdf-templates" tabindex="-1">PDF Templates: <a class="header-anchor" href="#pdf-templates">#</a></h3>
+<ul>
+<li><a href="/blog/attachments/templates_tracker/MINE.pdf">the exact one I use</a></li>
+<li><a href="/blog/attachments/templates_tracker/BLANK_BLANK.pdf">fully blank</a></li>
+<li><a href="/blog/attachments/templates_tracker/BLANK_SHAPES.pdf">blank rituals + &quot;shapes&quot; key</a></li>
+<li><a href="/blog/attachments/templates_tracker/BLANK_ABSTRACT.pdf">blank rituals + &quot;abstract&quot; key</a></li>
+<li><a href="/blog/attachments/templates_tracker/BLANK_OBJECTS.pdf">blank rituals + &quot;objects&quot; key</a></li>
+</ul>
+<h1 id="update" tabindex="-1">Update <a class="header-anchor" href="#update">#</a></h1>
+<p>After ~2 weeks of tracking on the wall, I switched to using a notebook. Each day gets its own page split into two sections: <strong>tasks</strong> on the top and <strong>ritual sketching</strong> on the bottom. I think the portability of the notebook makes me use the tracker more, plus it just feels more cozy. I'll make sure to update this post if I try any other modifications or implementations.</p>
+<p><img src="/blog/attachments/notebook_tracker.jpeg" alt="photo of my notebook"></p>
+<h1 id="final-thoughts" tabindex="-1">Final thoughts <a class="header-anchor" href="#final-thoughts">#</a></h1>
+<p>I'm looking forward to using this technique in the coming months, as only time will tell how well it truly works. Then there's an exciting idea I got from my friends - to implement <strong>Ritual Sketching</strong> in a paper notebook or some kind of digital space, both of which will provide an affordance to &quot;animate&quot; individual sketches into a moving picture. I'll post an update once I gather more experiences, thoughts and prototypes. Thanks for reading!</p>
+
+
+		</main>
+
+		<footer>
+			<div>© Daniel Gális, 2023. Built with <a href="https://www.11ty.dev/">Eleventy</a>.</div>
+		</footer>
+
+		<!-- Current page: /blog/ritual-sketching/ -->
+	</body>
+</html>
