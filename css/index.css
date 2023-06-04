@@ -229,6 +229,9 @@ header:after {
 	display: inline-block;
 	margin-right: 1em;
 }
+.nav-item a[href] {
+	color: var(--text-color);
+}
 .nav-item a:visited{
 	color: var(--text-color);
 }

@@ -7,32 +7,47 @@
 	</url>
 	
 	<url>
-		<loc>https://danielgalis.com/blog/</loc>
+		<loc>https://danielgalis.com/blog/key-bot/</loc>
 		<lastmod>2023-06-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/blog/</loc>
+		<lastmod>2023-06-04</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://danielgalis.com/</loc>
-		<lastmod>2023-06-03</lastmod>
+		<lastmod>2023-06-04</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://danielgalis.com/tags/</loc>
-		<lastmod>2023-06-03</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/rituals/</loc>
-		<lastmod>2023-06-03</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/self-governance/</loc>
-		<lastmod>2023-06-03</lastmod>
+		<lastmod>2023-06-04</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://danielgalis.com/tags/tools/</loc>
-		<lastmod>2023-06-03</lastmod>
+		<lastmod>2023-06-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/iot/</loc>
+		<lastmod>2023-06-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/3d/</loc>
+		<lastmod>2023-06-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/rituals/</loc>
+		<lastmod>2023-06-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/self-governance/</loc>
+		<lastmod>2023-06-04</lastmod>
 	</url>
 </urlset>
