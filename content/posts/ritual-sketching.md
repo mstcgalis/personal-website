@@ -20,7 +20,7 @@ For the sake of this tool, I will define **ritual** as a positive habit being bu
 Like many others, I have been slowly trying to build everyday habits since reading James Clear's amazing Atomic Habits. One of the techniques he recommends is "habit tracking" - keeping a record of how consistently you are performing certain activities, hence turning them into habits. You can read about the benefits of tracking in this [summary](https://www.are.na/block/14441936).
 
 # My experience with habit tracking
-![table tracker](/blog/attachments/table_tracker.png)
+![table tracker](/posts/attachments/table_tracker.png)
 
 For a total time of about 2 months, I've used an analogue tracker in the form of a spreadsheet printed on an A4. Here are my thoughts:
 
@@ -54,7 +54,7 @@ code      :   dots
 
 In the **log**, each day should have its section with a **star(t)** placed in the middle of that section. The **star(t)** defines the x and the y axes, providing an "artificial" anchor on which the "natural" sketching can take place. Digital example: 
 
-![star(t) of the tracker](/blog/attachments/tracker_start.png)
+![star(t) of the tracker](/posts/attachments/tracker_start.png)
 
 When a person performs a certain habit, they draw the corresponding thing into today's section of the **log**. This continues throughout the day as the shapes slowly compound into a composition. A the end of the day a sketch containing information on today's activities emerges. Even though the **key** stays the same, each daily sketch will inevitably be unique. Seeing the effort already put in, the daily **log** should act as a source of motivation, as breaking the chain with an empty **star(t)** will not feel right. After some time has passed, changes, fluctuations, exceptions and maybe even trends can be observed.
 
@@ -68,16 +68,16 @@ With sketching, there's a lot of opportunity for non-boolean reflectivity. Some 
 I started using an analogue tracker printed on an A4 which I hang next to my desk. One sheet contains 5 rows of 7 **start(s)** for a total of 35 days, which is more than enough for a month's worth of sketching. The key is printed at the top along with a space to fill out the **start** and **end** dates.
 
 ### PDF Templates:
-- [the exact one I use](/blog/attachments/templates_tracker/MINE.pdf)
-- [fully blank](/blog/attachments/templates_tracker/BLANK_BLANK.pdf)
-- [blank rituals + "shapes" key](/blog/attachments/templates_tracker/BLANK_SHAPES.pdf)
-- [blank rituals + "abstract" key](/blog/attachments/templates_tracker/BLANK_ABSTRACT.pdf)
-- [blank rituals + "objects" key](/blog/attachments/templates_tracker/BLANK_OBJECTS.pdf)
+- [the exact one I use](/posts/attachments/templates_tracker/MINE.pdf)
+- [fully blank](/posts/attachments/templates_tracker/BLANK_BLANK.pdf)
+- [blank rituals + "shapes" key](/posts/attachments/templates_tracker/BLANK_SHAPES.pdf)
+- [blank rituals + "abstract" key](/posts/attachments/templates_tracker/BLANK_ABSTRACT.pdf)
+- [blank rituals + "objects" key](/posts/attachments/templates_tracker/BLANK_OBJECTS.pdf)
 
 # Update
 After ~2 weeks of tracking on the wall, I switched to using a notebook. Each day gets its own page split into two sections: **tasks** on the top and **ritual sketching** on the bottom. I think the portability of the notebook makes me use the tracker more, plus it just feels more cozy. I'll make sure to update this post if I try any other modifications or implementations.
 
-![photo of my notebook](/blog/attachments/notebook_tracker.jpeg)
+![photo of my notebook](/posts/attachments/notebook_tracker.jpeg)
 
 # Final thoughts
 I'm looking forward to using this technique in the coming months, as only time will tell how well it truly works. Then there's an exciting idea I got from my friends - to implement **Ritual Sketching** in a paper notebook or some kind of digital space, both of which will provide an affordance to "animate" individual sketches into a moving picture. I'll post an update once I gather more experiences, thoughts and prototypes. Thanks for reading! 

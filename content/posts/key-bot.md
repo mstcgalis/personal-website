@@ -16,7 +16,7 @@ The aim of [[key-bot]] is to replace cumbersome human interactions with a roboti
 ## Research Through Design
 In the spring/summer of 2023, I participated in the studio course titled "Research with Yo-Yo Machines – exploring context, form, and function" led by visiting educator Alma Leora Culén. This course delved into the realm of Research Through Design (RtD) and interaction design through a multifaceted approach. It was comprised of theoretical studies, hands-on workshops for ideation and creation, and practical exploration of the do-it-yourself (DIY) playful communication devices known as [Yo-Yo Machines](https://www.yoyomachines.io/). The present project serves as the outcome of this course.
 
-*fig.N: Knock Knock Yo-Yo Machine* ![[attachments/knock-knock.png]]
+*fig.N: Knock Knock Yo-Yo Machine* ![[knock-knock.png]]
 
 ## Identifying an Opportunity: Streamlining Access to Shared Workspaces 
 As a student at FaVU, a fine arts and design school with discipline-oriented studios, I observed a problem regarding access to shared workspaces. Each studio is based in a physical space where members can work, study, and socialise. However, despite the presence of up to 30 members in each studio, only a single key is available at the reception. This situation requires individuals to check out the key at the reception every time they want to enter the studio, resulting in unnecessary time and effort, particularly when someone is already present inside the studio.
@@ -45,7 +45,7 @@ Traditionally, smartphones and apps have been the go-to solution for addressing 
 
 However, I contend that *chat*, an integral part of maintaining and organising a group of humans in the digital age, can also function as a platform for prototyping technology. Instead of relying on complex coding, prototypes can be built using social conventions and simple text formatting. Personally, I have witnessed and participated in using chats as platforms for diverse purposes such as reading clubs, habit trackers, diaries, complex polls, wikis, directories, and even art projects. Over time, intentionally or organically (or a combination thereof), the chat evolves and transcends its original purpose.
 
-*fig.N: Reading club inside a chat* ![[attachments/reading_club.png]]
+*fig.N: Reading club inside a chat* ![[reading_club.png]]
 
 The key element in developing tools within a chat environment lies in establishing shared social conventions. The group of users must reach a consensus on how and when the chat transitions into a distinct tool, determining its designated functionalities and behaviours.
 
@@ -57,7 +57,7 @@ The majority of our computing activities, including chatting, occur on general-p
 
 In contrast, single-purpose or special-purpose computers occupy the other end of the computer design spectrum. These computers are purpose-built with a singular objective in mind, providing a specialised interface tailored to specific interactions. This singular focus enables simplicity, as seen in Dieter Rams's devices, and tactility, exemplified by retro gaming cabinets. The limitations imposed by their singular function allow for a greater emphasis on the quality and aesthetics of the interaction.
 
-*fig.N: Specialised computer interface for manual atmospheric reentry on the Soyuz spacecraft* ![[attachments/soyuz.png]]
+*fig.N: Specialised computer interface for manual atmospheric reentry on the Soyuz spacecraft* ![[soyuz.png]]
 
 From a physical environment design standpoint, the concept of the single-purposed [[key-bot]] computer drew inspiration from an existing feature in our studio—a simple nail positioned next to the door where the key should always hang. By leveraging this analog nail, I positioned my device in the same location, striving for near invisibility to minimise friction and facilitate a seamless transition to the new device.
 
