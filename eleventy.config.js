@@ -17,7 +17,7 @@ module.exports = function(eleventyConfig) {
 		"./public/": "/",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
 		"./content/blog/attachments": "/blog/attachments",
-		"/CNAME" : "/CNAME",
+		"./CNAME" : "/CNAME",
 	});
 
 	// Run Eleventy when these files change:
