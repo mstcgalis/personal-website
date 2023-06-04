@@ -54,7 +54,7 @@ code      :   dots
 
 In the **log**, each day should have its section with a **star(t)** placed in the middle of that section. The **star(t)** defines the x and the y axes, providing an "artificial" anchor on which the "natural" sketching can take place. Digital example: 
 
-![star(t) of the tracker](/blog/attachments/start_tracker.png)
+![star(t) of the tracker](/blog/attachments/tracker_start.png)
 
 When a person performs a certain habit, they draw the corresponding thing into today's section of the **log**. This continues throughout the day as the shapes slowly compound into a composition. A the end of the day a sketch containing information on today's activities emerges. Even though the **key** stays the same, each daily sketch will inevitably be unique. Seeing the effort already put in, the daily **log** should act as a source of motivation, as breaking the chain with an empty **star(t)** will not feel right. After some time has passed, changes, fluctuations, exceptions and maybe even trends can be observed.
 
