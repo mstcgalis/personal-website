@@ -119,7 +119,7 @@ The initial 3D print had some imperfections, as expected, prompting me to revise
 
 # Conclusion
 ## From the particular to the universal
-I believe that by focusing on immediate problems, challenges, and tensions in your surroundings, the proposed design solutions can achieve the highest quality. The outcome of designing out of one's own experience can be described as a version of the "ultimate particular"[1]. From this particular context, a more universal artefact can be derived and applied effectively in a multitude of situations.
+I believe that by focusing on immediate problems, challenges, and tensions in your surroundings, the proposed design solutions can achieve the highest quality. The outcome of designing out of one's own experience can be described as a version of the "ultimate particular"[^1]. From this particular context, a more universal artefact can be derived and applied effectively in a multitude of situations.
 
 The [[key-bot]] device emerged from a specific context within design and art studios at universities. However, with a bit of imagination, it can be adapted to a wide range of situations where signalling one's presence is crucial. For instance, instead of being triggered by hanging, the capacitive sensor could be activated by the touch of an elderly person who has just arrived to participate in a workshop.
 
@@ -134,4 +134,4 @@ I will finish this section after the final examination.
 
 ---
 ### Reference: 
-[1] Fallman, D. (2008). The Interaction Design Research Triangle of Design Practice, Design Studies, and Design Exploration. Design Issues, 24(3), 4-18.
+[^1]: Fallman, D. (2008). The Interaction Design Research Triangle of Design Practice, Design Studies, and Design Exploration. Design Issues, 24(3), 4-18.

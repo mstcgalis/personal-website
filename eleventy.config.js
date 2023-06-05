@@ -1,5 +1,9 @@
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require("markdown-it-footnote");
+const markdownItObsidianImages = require("markdown-it-obsidian-images")({baseURL: '/blog/attachments/', relativeBaseURL: '/blog/attachments/'});
+
+const embedEverything = require("eleventy-plugin-embed-everything");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -38,6 +42,11 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
+
+	// Other plugins
+	eleventyConfig.addPlugin(embedEverything, {
+		add: ['soundcloud']
+	  });
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
@@ -92,6 +101,8 @@ module.exports = function(eleventyConfig) {
 			level: [1,2,3,4],
 			slugify: eleventyConfig.getFilter("slugify")
 		});
+		mdLib.use(markdownItFootnote);
+		mdLib.use(markdownItObsidianImages);
 	});
 
 	// Features to make your build faster (when you need them)
