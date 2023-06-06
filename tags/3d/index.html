@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>#3D</title>
@@ -39,7 +46,7 @@
 
 	--color-background: #fff;
 
-	--color-offset: #f5f5f5;
+	--color-offset: #EEE;
 	--color-faded: #555;
 
 	--text-color: var(--color-gray-90);
@@ -61,9 +68,9 @@
 		--color-offset: #2a2a2a;
 		--color-faded: #555;
 		--color-gray: #767676;
-		--color-text: #e5e5e5;
 		--color-text-extreme: #fff;
-
+		
+		--text-color: #e5e5e5;
 		--text-color-link: #5d628e;
 		--text-color-link-active: var(--text-color-link);
 		--text-color-link-visited: var(--text-color-link);
@@ -134,7 +141,7 @@ a[href]:active {
 }
 
 main {
-	padding: 1.5rem 0 0 0;
+	padding: 1em 0 0 0;
 	flex: 1;
 }
 main :first-child {
@@ -317,8 +324,7 @@ header:after {
 
 /* Project list */
 .projectlist {
-	list-style: none;
-	padding: 0;
+	padding: 1em;
 	margin-bottom: 0;
 }
 .projectlist-item {
@@ -331,14 +337,6 @@ header:after {
 	border-radius: var(--radius);
 	padding: 0.2em;
 }
-.projectlist-item:before {
-	display: inline-block;
-	pointer-events: none;
-	line-height: 100%;
-	text-align: right;
-	margin-left: -1.5rem;
-	color: var(--color-gray-90);
-}
 
 /* Tags */
 .post-tag {
@@ -346,7 +344,7 @@ header:after {
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
-	background-color: var(--color-gray-20);
+	background-color: var(--color-offset);
 	padding: .1em .5em;
 	border-radius: var(--tag-radius);
 	font-size: var(--font-size-small);
@@ -437,7 +435,7 @@ img {
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/blog/">Archive</a></li>
+					<li class="nav-item"><a href="/posts/">Posts</a></li>
 					<li class="nav-item"><a href="/tags/">Tags</a></li>
 				</ul>
 			</nav>

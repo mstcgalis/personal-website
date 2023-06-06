@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>KEY-BOT - Exploring Research Through Design</title>
@@ -207,7 +214,7 @@ pre[class*="language-diff-"] {
 
 	--color-background: #fff;
 
-	--color-offset: #f5f5f5;
+	--color-offset: #EEE;
 	--color-faded: #555;
 
 	--text-color: var(--color-gray-90);
@@ -229,9 +236,9 @@ pre[class*="language-diff-"] {
 		--color-offset: #2a2a2a;
 		--color-faded: #555;
 		--color-gray: #767676;
-		--color-text: #e5e5e5;
 		--color-text-extreme: #fff;
-
+		
+		--text-color: #e5e5e5;
 		--text-color-link: #5d628e;
 		--text-color-link-active: var(--text-color-link);
 		--text-color-link-visited: var(--text-color-link);
@@ -302,7 +309,7 @@ a[href]:active {
 }
 
 main {
-	padding: 1.5rem 0 0 0;
+	padding: 1em 0 0 0;
 	flex: 1;
 }
 main :first-child {
@@ -485,8 +492,7 @@ header:after {
 
 /* Project list */
 .projectlist {
-	list-style: none;
-	padding: 0;
+	padding: 1em;
 	margin-bottom: 0;
 }
 .projectlist-item {
@@ -499,14 +505,6 @@ header:after {
 	border-radius: var(--radius);
 	padding: 0.2em;
 }
-.projectlist-item:before {
-	display: inline-block;
-	pointer-events: none;
-	line-height: 100%;
-	text-align: right;
-	margin-left: -1.5rem;
-	color: var(--color-gray-90);
-}
 
 /* Tags */
 .post-tag {
@@ -514,7 +512,7 @@ header:after {
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
-	background-color: var(--color-gray-20);
+	background-color: var(--color-offset);
 	padding: .1em .5em;
 	border-radius: var(--tag-radius);
 	font-size: var(--font-size-small);
@@ -605,7 +603,7 @@ img {
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/blog/">Archive</a></li>
+					<li class="nav-item"><a href="/posts/">Posts</a></li>
 					<li class="nav-item"><a href="/tags/">Tags</a></li>
 				</ul>
 			</nav>
@@ -627,7 +625,7 @@ img {
 <p>The aim of [[key-bot]] is to replace cumbersome human interactions with a robotic solution while maintaining a sense of communal connection. Initially, one might assume that reducing human-to-human interactions, even the annoying ones, could diminish the team's dynamics, which is not the desired outcome. Therefore, the tension lies in designing a device that automates the tedious aspects while nurturing the communal atmosphere within the shared workspace.</p>
 <h2 id="research-through-design" tabindex="-1">Research Through Design <a class="header-anchor" href="#research-through-design">#</a></h2>
 <p>In the spring/summer of 2023, I participated in the studio course titled &quot;Research with Yo-Yo Machines – exploring context, form, and function&quot; led by visiting educator Alma Leora Culén. This course delved into the realm of Research Through Design (RtD) and interaction design through a multifaceted approach. It was comprised of theoretical studies, hands-on workshops for ideation and creation, and practical exploration of the do-it-yourself (DIY) playful communication devices known as <a href="https://www.yoyomachines.io/">Yo-Yo Machines</a>. The present project serves as the outcome of this course.</p>
-<p><em>fig.N: Knock Knock Yo-Yo Machine</em> <img src="/blog/attachments/knock-knock.png" /></p>
+<p><em>fig.N: Knock Knock Yo-Yo Machine</em> <img src="/posts/attachments/knock-knock.png" /></p>
 <h2 id="identifying-an-opportunity-streamlining-access-to-shared-workspaces" tabindex="-1">Identifying an Opportunity: Streamlining Access to Shared Workspaces <a class="header-anchor" href="#identifying-an-opportunity-streamlining-access-to-shared-workspaces">#</a></h2>
 <p>As a student at FaVU, a fine arts and design school with discipline-oriented studios, I observed a problem regarding access to shared workspaces. Each studio is based in a physical space where members can work, study, and socialise. However, despite the presence of up to 30 members in each studio, only a single key is available at the reception. This situation requires individuals to check out the key at the reception every time they want to enter the studio, resulting in unnecessary time and effort, particularly when someone is already present inside the studio.</p>
 <p>In Design Studio 1, where I'm a member, frequent visits occur but not on a regular schedule that can be predicted solely by time. Moreover, our studio, along with eight others, is located in a separate building from the reception, amplifying the inconvenience of back-and-forth trips to borrow the key.</p>
@@ -644,20 +642,20 @@ img {
 <h2 id="chat-as-a-platform" tabindex="-1">Chat as a platform <a class="header-anchor" href="#chat-as-a-platform">#</a></h2>
 <p>Traditionally, smartphones and apps have been the go-to solution for addressing communication challenges. With these ubiquitous internet-connected devices at our disposal, they serve as a versatile platform for various tools. The prevailing approach in mainstream technology development revolves around creating dedicated apps due their widespread usage.</p>
 <p>However, I contend that <em>chat</em>, an integral part of maintaining and organising a group of humans in the digital age, can also function as a platform for prototyping technology. Instead of relying on complex coding, prototypes can be built using social conventions and simple text formatting. Personally, I have witnessed and participated in using chats as platforms for diverse purposes such as reading clubs, habit trackers, diaries, complex polls, wikis, directories, and even art projects. Over time, intentionally or organically (or a combination thereof), the chat evolves and transcends its original purpose.</p>
-<p><em>fig.N: Reading club inside a chat</em> <img src="/blog/attachments/reading_club.png" /></p>
+<p><em>fig.N: Reading club inside a chat</em> <img src="/posts/attachments/reading_club.png" /></p>
 <p>The key element in developing tools within a chat environment lies in establishing shared social conventions. The group of users must reach a consensus on how and when the chat transitions into a distinct tool, determining its designated functionalities and behaviours.</p>
 <h3 id="discord-bots" tabindex="-1">Discord Bots <a class="header-anchor" href="#discord-bots">#</a></h3>
 <p>Discord, a chat application, offers an exceptionally fertile environment for unconventional uses. Users can establish private or public servers, each comprising multiple chats known as channels, which are further compartmentalised into categories. This setup, coupled with the flexibility of markup text formatting, channel mentions, user mentions, and emoji reactions, provides a highly adaptable digital substrate. Moreover, an additional layer of customisation is afforded through the utilisation and sharing of <strong>bots</strong>—programmable robot users capable of performing a wide range of tasks. These tasks can span from playing music in voice-chat to autonomous server moderation or even interfacing with entirely separate digital services. In the development of [[key-bot]], I have harnessed the power of a Discord bot as the underlying communication technology, sidestepping the need to develop another app.</p>
 <h2 id="single-purpose-computers" tabindex="-1">Single-purpose Computers <a class="header-anchor" href="#single-purpose-computers">#</a></h2>
 <p>The majority of our computing activities, including chatting, occur on general-purpose devices such as desktops, laptops, tablets, and the aforementioned smartphones. These devices are capable of performing a wide range of tasks, offering hyper-generalized interfaces as a result. They have become indispensable tools for participating in society and resolving everyday challenges.</p>
 <p>In contrast, single-purpose or special-purpose computers occupy the other end of the computer design spectrum. These computers are purpose-built with a singular objective in mind, providing a specialised interface tailored to specific interactions. This singular focus enables simplicity, as seen in Dieter Rams's devices, and tactility, exemplified by retro gaming cabinets. The limitations imposed by their singular function allow for a greater emphasis on the quality and aesthetics of the interaction.</p>
-<p><em>fig.N: Specialised computer interface for manual atmospheric reentry on the Soyuz spacecraft</em> <img src="/blog/attachments/soyuz.png" /></p>
+<p><em>fig.N: Specialised computer interface for manual atmospheric reentry on the Soyuz spacecraft</em> <img src="/posts/attachments/soyuz.png" /></p>
 <p>From a physical environment design standpoint, the concept of the single-purposed [[key-bot]] computer drew inspiration from an existing feature in our studio—a simple nail positioned next to the door where the key should always hang. By leveraging this analog nail, I positioned my device in the same location, striving for near invisibility to minimise friction and facilitate a seamless transition to the new device.</p>
-<p><em>fig.N: The original nail</em> <img src="/blog/attachments/key_nail.png" /></p>
+<p><em>fig.N: The original nail</em> <img src="/posts/attachments/key_nail.png" /></p>
 <h1 id="exploring-interactions" tabindex="-1">Exploring Interactions <a class="header-anchor" href="#exploring-interactions">#</a></h1>
 <h2 id="chat-connected-key-sensor-interaction" tabindex="-1">Chat Connected Key Sensor Interaction <a class="header-anchor" href="#chat-connected-key-sensor-interaction">#</a></h2>
 <p>The core interaction of [[key-bot]] makes use of a sensor designed to detect the presence of a key. Once the sensor detects a key hanging of it, a message that is sent to a specific Discord chat channel, which serves as the platform for interacting with the device over the internet.</p>
-<p><em>fig.N: Key Sensor Interaction (on entry)</em> <img src="/blog/attachments/Pasted image 20230528183853.png" /></p>
+<p><em>fig.N: Key Sensor Interaction (on entry)</em> <img src="/posts/attachments/Pasted image 20230528183853.png" /></p>
 <p>Applying the same principle, when the sensor no longer detects a key, it assumes that everyone is leaving the studio, and that the key will be returned to the reception. Studio members are notified of this through a message in a designated chat channel, just as with the <em>on entry</em> interaction described in <em>fig.N</em>.</p>
 <h2 id="accounting-for-human-error" tabindex="-1">Accounting for Human Error <a class="header-anchor" href="#accounting-for-human-error">#</a></h2>
 <p>During discussions with my fellow studio members, valuable feedback was received regarding the potential for human error in remembering to hang the key. Right now, it is possible to unintentionally take the key home if it is left in one's pocket, which is frustrating. This could also pose challenges for the functionality of [[key-bot]].</p>
@@ -666,7 +664,7 @@ img {
 <h2 id="knock-interaction-inspired-by-yo-yo-machines" tabindex="-1">Knock Interaction Inspired by Yo-Yo Machines <a class="header-anchor" href="#knock-interaction-inspired-by-yo-yo-machines">#</a></h2>
 <p>In the final design of [[key-bot]], I drew inspiration from the Yo-Yo Machines project, specifically the &quot;Knock-knock&quot; machine. This machine utilises a piezo microphone to listen to human knocks and replicates the pattern on a paired machine using a solenoid. Both machines can function as both the input and the output.</p>
 <p>The symbolism of knocking, as a means of communication through closed doors, resonated with me, and I decided to adapt this technology for a slightly different purpose. In the [[key-bot]] device, the solenoid is also employed to produce a knocking sound, serving as a way to capture the attention of someone in the studio. If you are on your way and there is no notification of the doors being unlocked, you can send a message containing the word &quot;knock&quot; in the designated chat. In the event that someone is already in the studio but has forgotten to hang the key, the sound, accompanied by a flashing blue LED, aims to grab their attention, prompting them to hang the key.</p>
-<p><em>fig.N: Knock Interaction</em> <img src="/blog/attachments/Pasted image 20230528184020.png" /></p>
+<p><em>fig.N: Knock Interaction</em> <img src="/posts/attachments/Pasted image 20230528184020.png" /></p>
 <h1 id="putting-it-together-in-practice" tabindex="-1">Putting It Together In Practice <a class="header-anchor" href="#putting-it-together-in-practice">#</a></h1>
 <h2 id="the-brain-esp-32" tabindex="-1">The brain: ESP-32 <a class="header-anchor" href="#the-brain-esp-32">#</a></h2>
 <p>The ESP-32 serves as a compact internet-connected computer capable of powering and controlling electrical components. Technically speaking, it is a low-cost, low-power system-on-a-chip microcontroller with integrated Wi-Fi. This microcontroller was also employed in the Yo-Yo Machines project. In the making of [[key-bot]], I specifically worked with the ESP32-DevKitc-V4 development board.</p>
@@ -677,16 +675,16 @@ img {
 <p>Drawing inspiration once again from the Yo-Yo Machines project, I incorporated similar hardware components, including an addressable RGB LED and a small MOSFET module. The MOSFET module facilitates control of a small push-pull solenoid, which produces the knocking sound as it bangs against the wall of the casing.</p>
 <h2 id="wiring-it-all-up" tabindex="-1">Wiring It All Up <a class="header-anchor" href="#wiring-it-all-up">#</a></h2>
 <p>In the early prototyping stage, a breadboard and some Dupont cables were used to test the functionality of the hardware and firmware. In the final prototype, a combination of Dupont cables, and traditional soldering methods take care of the electrical connections.</p>
-<p><em>fig.N: Prototyping</em> <img src="/blog/attachments/telegram-cloud-photo-size-4-6026008398585248073-y.jpg" /></p>
+<p><em>fig.N: Prototyping</em> <img src="/posts/attachments/telegram-cloud-photo-size-4-6026008398585248073-y.jpg" /></p>
 <h2 id="coding-the-firmware" tabindex="-1">Coding The Firmware <a class="header-anchor" href="#coding-the-firmware">#</a></h2>
 <p>The microcontroller can be programmed using the C programming language. For this project, I chose to code in the ESP-IDF framework developed by Esspressif, the same company that manufactures the ESP-32 microcontroller. I made this decision because of the availability of an <a href="https://github.com/abobija/esp-discord">open-source library</a> designed for the ESP-IDF framework, which simplifies the interaction with a Discord bot. Additionally, I leveraged code snippets from various open-source example projects to control the other components, significantly streamlining the firmware development process.</p>
 <h2 id="making-the-casing" tabindex="-1">🚧 Making The Casing <a class="header-anchor" href="#making-the-casing">#</a></h2>
 <p>I opted for a 3D printed casing for the device, enabling me to quickly obtain a sturdy and precise prototype. I employed a CAD software to design the casing, and the final 3D model is publicly available on the internet. I also utilised paper and styrofoam mockups, allowing for a more hands-on approach to solving any model-related issues during the design process.</p>
-<p><em>fig.N: Paper Mockup Of The Casing</em> <img src="/blog/attachments/telegram-cloud-photo-size-4-6023756598771564506-y.jpg" />
-<em>fig.N: Bottom Half Of The Casing Model</em> <img src="/blog/attachments/Screenshot 2023-05-28 at 22.25.21.png" />
-<em>fig.N: Top Half Of The Casing Model</em> <img src="/blog/attachments/Screenshot 2023-05-28 at 22.25.35.png" /></p>
+<p><em>fig.N: Paper Mockup Of The Casing</em> <img src="/posts/attachments/telegram-cloud-photo-size-4-6023756598771564506-y.jpg" />
+<em>fig.N: Bottom Half Of The Casing Model</em> <img src="/posts/attachments/Screenshot 2023-05-28 at 22.25.21.png" />
+<em>fig.N: Top Half Of The Casing Model</em> <img src="/posts/attachments/Screenshot 2023-05-28 at 22.25.35.png" /></p>
 <p>The initial 3D print had some imperfections, as expected, prompting me to revise and refine the design accordingly. Furthermore, I conducted a poll within the studio's Discord server to gather opinions on whether to keep the &quot;KEY BOT&quot; logo. The response was overwhelmingly against it, which pleased me, as I shared the same sentiment.</p>
-<p><em>fig.N: First Printed Version Of The Casing</em> <img src="/blog/attachments/telegram-cloud-photo-size-4-6023756598771564507-y.jpg" /></p>
+<p><em>fig.N: First Printed Version Of The Casing</em> <img src="/posts/attachments/telegram-cloud-photo-size-4-6023756598771564507-y.jpg" /></p>
 <ul>
 <li>[ ] ADD: photos of the second version</li>
 </ul>
@@ -699,7 +697,7 @@ img {
 <p>I want to acknowledge my own criticism of this project, which is that it doesn't address the underlying issue of having only one key available; instead, it focuses on alleviating the symptoms. Alternative approaches could have involved attempting to change the school's system or creating unofficial copies of the key for everyone. It's possible that one of these scenarios may occur in the future, rendering [[key-bot]] obsolete. However, despite considering this perspective, I am not overly concerned. This project has provided valuable learning experiences and has been a highly enjoyable endeavour.</p>
 <h2 id="reflection-wip" tabindex="-1">🚧 Reflection (WIP) <a class="header-anchor" href="#reflection-wip">#</a></h2>
 <p>I will finish this section after the final examination.
-<img src="/blog/attachments/Screen Recording 2023-05-29 at 10.12.34.gif" /></p>
+<img src="/posts/attachments/Screen Recording 2023-05-29 at 10.12.34.gif" /></p>
 <hr>
 <h3 id="reference" tabindex="-1">Reference: <a class="header-anchor" href="#reference">#</a></h3>
 <hr class="footnotes-sep">
