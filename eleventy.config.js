@@ -1,9 +1,10 @@
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require("markdown-it-footnote");
-const markdownItObsidianImages = require("markdown-it-obsidian-images")({baseURL: '/blog/attachments/', relativeBaseURL: '/blog/attachments/'});
+const markdownItObsidianImages = require("markdown-it-obsidian-images")({baseURL: '/posts/attachments/', relativeBaseURL: '/posts/attachments/'});
 
 const embedEverything = require("eleventy-plugin-embed-everything");
+const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -47,6 +48,8 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(embedEverything, {
 		add: ['soundcloud']
 	  });
+	eleventyConfig.addPlugin(faviconsPlugin, {'manifestData': {'name': 'Daniel'}});
+
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
