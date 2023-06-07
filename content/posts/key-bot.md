@@ -67,7 +67,7 @@ From a physical environment design standpoint, the concept of the single-purpose
 ## Chat Connected Key Sensor Interaction
 The core interaction of [[key-bot]] makes use of a sensor designed to detect the presence of a key. Once the sensor detects a key hanging of it, a message that is sent to a specific Discord chat channel, which serves as the platform for interacting with the device over the internet.
 
-*fig.N: Key Sensor Interaction (on entry)* ![[Pasted image 20230528183853.png]]
+*fig.N: Interaction on entry* ![[interaction_entry.png]]
 
 Applying the same principle, when the sensor no longer detects a key, it assumes that everyone is leaving the studio, and that the key will be returned to the reception. Studio members are notified of this through a message in a designated chat channel, just as with the *on entry* interaction described in *fig.N*.
 
@@ -83,7 +83,7 @@ In the final design of [[key-bot]], I drew inspiration from the Yo-Yo Machines p
 
 The symbolism of knocking, as a means of communication through closed doors, resonated with me, and I decided to adapt this technology for a slightly different purpose. In the [[key-bot]] device, the solenoid is also employed to produce a knocking sound, serving as a way to capture the attention of someone in the studio. If you are on your way and there is no notification of the doors being unlocked, you can send a message containing the word "knock" in the designated chat. In the event that someone is already in the studio but has forgotten to hang the key, the sound, accompanied by a flashing blue LED, aims to grab their attention, prompting them to hang the key.
 
-*fig.N: Knock Interaction* ![[Pasted image 20230528184020.png]]
+*fig.N: Knock Interaction* ![[interaction_knock.png]]
 
 # Putting It Together In Practice
 ## The brain: ESP-32
@@ -100,7 +100,7 @@ Drawing inspiration once again from the Yo-Yo Machines project, I incorporated s
 ## Wiring It All Up
 In the early prototyping stage, a breadboard and some Dupont cables were used to test the functionality of the hardware and firmware. In the final prototype, a combination of Dupont cables, and traditional soldering methods take care of the electrical connections.
 
-*fig.N: Prototyping* ![[telegram-cloud-photo-size-4-6026008398585248073-y.jpg]]
+*fig.N: Prototyping* ![[breadboard.jpg]]
 
 ## Coding The Firmware
 The microcontroller can be programmed using the C programming language. For this project, I chose to code in the ESP-IDF framework developed by Esspressif, the same company that manufactures the ESP-32 microcontroller. I made this decision because of the availability of an [open-source library](https://github.com/abobija/esp-discord) designed for the ESP-IDF framework, which simplifies the interaction with a Discord bot. Additionally, I leveraged code snippets from various open-source example projects to control the other components, significantly streamlining the firmware development process.
@@ -108,13 +108,13 @@ The microcontroller can be programmed using the C programming language. For this
 ## 🚧 Making The Casing
 I opted for a 3D printed casing for the device, enabling me to quickly obtain a sturdy and precise prototype. I employed a CAD software to design the casing, and the final 3D model is publicly available on the internet. I also utilised paper and styrofoam mockups, allowing for a more hands-on approach to solving any model-related issues during the design process.
 
-*fig.N: Paper Mockup Of The Casing* ![[telegram-cloud-photo-size-4-6023756598771564506-y.jpg]]
-*fig.N: Bottom Half Of The Casing Model* ![[Screenshot 2023-05-28 at 22.25.21.png]]
-*fig.N: Top Half Of The Casing Model* ![[Screenshot 2023-05-28 at 22.25.35.png]]
+*fig.N: Paper Mockup Of The Casing* ![[paper_prototype.jpg]]
+*fig.N: Bottom Half Of The Casing Model* ![[case_bottom.png]]
+*fig.N: Top Half Of The Casing Model* ![[case_top.png]]
 
 The initial 3D print had some imperfections, as expected, prompting me to revise and refine the design accordingly. Furthermore, I conducted a poll within the studio's Discord server to gather opinions on whether to keep the "KEY BOT" logo. The response was overwhelmingly against it, which pleased me, as I shared the same sentiment.
 
-*fig.N: First Printed Version Of The Casing* ![[telegram-cloud-photo-size-4-6023756598771564507-y.jpg]]
+*fig.N: First Printed Version Of The Casing* ![[key-bot_installed.jpg]]
 - [ ] ADD: photos of the second version
 
 # Conclusion
@@ -130,7 +130,7 @@ I want to acknowledge my own criticism of this project, which is that it doesn't
 
 ## 🚧 Reflection (WIP)
 I will finish this section after the final examination.
-![[Screen Recording 2023-05-29 at 10.12.34.gif]]
+![[key-hook-cat.gif]]
 
 ---
 ### Reference: 
