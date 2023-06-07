@@ -1,6 +1,6 @@
 ---
 title: KEY-BOT - Exploring Research Through Design
-description: This is a post describing a Creative Approach to Habit Tracking.
+description: RtD project exploring the tension of automation through humanist interaction design.
 date: 2023-06-03
 tags:
     - tools
