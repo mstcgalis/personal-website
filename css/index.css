@@ -29,10 +29,12 @@
 	--color-offset: #EEE;
 	--color-faded: #555;
 
+	--blue: #1438FF;
+
 	--text-color: var(--color-gray-90);
-	--text-color-link: #0016E4;
-	--text-color-link-active: var(--text-color-link);
-	--text-color-link-visited: var(--text-color-link); /* #4D2186 */
+	--text-color-link: var(--blue);
+	--text-color-link-active: var(--blue);
+	--text-color-link-visited: var(--blue); /* #4D2186 */
 
 	--syntax-tab-size: 2;
 }
