@@ -301,6 +301,11 @@ header:after {
 	text-decoration-thickness: 1px;
 	margin-bottom: 0.4em;
 }
+.postlist-item:hover {
+	background-color: var(--color-offset);
+	border-radius: var(--radius);
+	outline: var(--color-offset) 0.4em solid;
+}
 .postlist-item-active .postlist-link {
 	font-weight: var(--font-weight-bold);
 }

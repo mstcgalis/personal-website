@@ -321,6 +321,11 @@ header:after {
 	text-decoration-thickness: 1px;
 	margin-bottom: 0.4em;
 }
+.postlist-item:hover {
+	background-color: var(--color-offset);
+	border-radius: var(--radius);
+	outline: var(--color-offset) 0.4em solid;
+}
 .postlist-item-active .postlist-link {
 	font-weight: var(--font-weight-bold);
 }
@@ -461,7 +466,7 @@ img {
 
 <ol reversed class="postlist" style="counter-reset: start-from 2">
 
-	<li class="postlist-item">
+	<li onclick="location.href = '/posts/key-bot/';" class="postlist-item">
 		<a href="/posts/key-bot/" class="postlist-link">KEY-BOT - Exploring Research Through Design</a>
 		<time class="metadata-date" datetime="2023-06-03">2023-06-03 SAT</time>
 		<div class="metadata-tags">
