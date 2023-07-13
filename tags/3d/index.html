@@ -31,9 +31,10 @@
 	--font-size-h4: 1em;
     
     --font-weigh-bold: 600;
+	--font-weigh-normal: 400;
 
 	--radius: 0.25rem;
-	--tag-radius: 1rem;
+	--radius-tag: 1rem;
   
     --width: 700px;
 }
@@ -44,12 +45,16 @@
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
 
-	--color-background: #fff;
+	--color-background: #FEFEFA;
 
 	--color-offset: #EEE;
 	--color-faded: #555;
 
-	--blue: #1438FF;
+	--color-blue: #1438ff;
+	--color-blue-light: #08AFFF;
+
+	--color-yellow: #FFC814;
+	--color-yellow-dark: #171202;
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: var(--blue);
@@ -65,7 +70,7 @@
 		--color-gray-50: #C0C0C0;
 		--color-gray-90: #dad8d8;
 
-		--color-background: #141414;
+		--color-background: var(--color-yellow-dark);
 
 		--color-offset: #2a2a2a;
 		--color-faded: #555;
@@ -73,9 +78,9 @@
 		--color-text-extreme: #fff;
 		
 		--text-color: #e5e5e5;
-		--text-color-link: #5d628e;
-		--text-color-link-active: var(--text-color-link);
-		--text-color-link-visited: var(--text-color-link);
+		--text-color-link: var(--color-blue-light);
+		--text-color-link-active: var(--color-blue-light);
+		--text-color-link-visited: var(--color-blue-light);
 	}
 }
 
@@ -87,12 +92,16 @@
 
 html,
 body {
-	padding: 0;
+	padding: 0em 0.8em;
 	margin: 0 auto;
-	font-family: var(--font-family);
+	
 	color: var(--text-color);
 	background-color: var(--color-background);
+	
+	font-family: var(--font-family);
 	font-size: var(--font-size-body);
+	font-weight: var(--font-weigh-normal);
+	line-height: 1.5;
 }
 html {
 	overflow-y: scroll;
@@ -122,10 +131,6 @@ p {
 	line-height: 1.5;
 	margin-top: 0.8em;
 	margin-bottom: 0.8em;
-}
-
-li {
-	line-height: 1.5;
 }
 
 a[href] {
@@ -225,6 +230,15 @@ h4 {
 	font-size: var(--font-size-h4);
 	font-weight: var(--font-weigh-bold);
 }
+b {
+	font-weight: var(--font-weigh-bold);
+}
+time {
+	font-family: var(--font-family-monospace);
+}
+ul {
+	margin: 0;
+}
 
 /* Header */
 header {
@@ -240,7 +254,7 @@ header:after {
 }
 .home-link {
 	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
+	font-weight: var(--font-weigh-bold);
 	margin-right: 1em;
 	color: var(--text-color) !important;
 }
@@ -280,15 +294,15 @@ header:after {
 /* Posts list */
 .postlist {
 	list-style: none;
+	margin: 0.8em 0em 0.8em 0em;
 	padding: 0;
-	margin-bottom: 0;
 }
 .postlist-item {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
 	counter-increment: start-from -1;
-	margin-bottom: 0.6em;
+	margin: 0.8em 0em 0.8em 0em;
 }
 .postlist-item:before {
 	display: inline-block;
@@ -297,23 +311,9 @@ header:after {
 	text-align: right;
 	margin-left: -1.5rem;
 }
-.postlist-date,
-.postlist-item:before {
-	color: var(--color-gray-90);
-}
-.postlist-date {
-	word-spacing: -0.5px;
-}
-.postlist-tags {
-	display: inline-flex;
-	text-align: right;
-	flex-wrap: wrap;
-	gap: .5em;
-	padding-left: 1em;
-}
 .postlist-link {
-	font-size: var(--font-size-h4);
-	font-weight: 600;
+	font-size: var(--font-size-body);
+	font-weight: var(--font-weight-normal);
 	flex-basis: calc(100% - 1.5rem);
 	padding-right: .5em;
 	text-underline-position: from-font;
@@ -323,11 +323,18 @@ header:after {
 .postlist-item-active .postlist-link {
 	font-weight: var(--font-weight-bold);
 }
+.postlist-item > .metadata-date, .metadata-tags {
+	font-size: var(--font-size-small);
+}
+.postlist-item > .metadata-tags > .tag {
+	font-size: var(--font-size-small);
+}
 
 /* Project list */
 .projectlist {
-	padding: 1em;
-	margin-bottom: 0;
+	list-style: none;
+	margin: 0.8em 0em 0.8em 0em;
+	padding: 0;
 }
 .projectlist-item {
 	display: flex;
@@ -341,44 +348,47 @@ header:after {
 }
 
 /* Tags */
-.post-tag {
+.tag {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	text-decoration: none;
 	background-color: var(--color-offset);
-	padding: .1em .5em;
-	border-radius: var(--tag-radius);
-	font-size: var(--font-size-small);
+	padding: 0em 0.6em;
+	border-radius: var(--radius-tag);
+	
+	font-size: var(--font-size-body);
+	text-decoration: none;
 }
-.post-tag:hover {
+.tag:hover {
 	text-decoration: underline;
 }
 .text-tag{
 	text-decoration: underline;
 }
-.postlist-item > .post-tag {
-	align-self: center;
-}
 
 /* Tags list */
-.tags-list > .post-tag {
-	font-size: var(--font-size-body);
-	margin: 0 0.25em 0.25em 0;
-}
 .tags-list {
 	padding: 0;
 }
-.post-metadata {
+
+/* Post metadata */
+.metadata-date {
+	font-family: var(--font-family-monospace);
+}
+.metadata-tags {
+	display: inline-flex;
+	text-align: right;
+	flex-wrap: wrap;
+	gap: .5em;
+	padding-left: 1em;
+}
+.metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: .5em;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-}
-.post-metadata time {
-	margin-right: 1em;
 }
 
 /* Direct Links / Markdown Headers */
@@ -452,11 +462,11 @@ img {
 
 	<li class="postlist-item">
 		<a href="/posts/key-bot/" class="postlist-link">KEY-BOT - Exploring Research Through Design</a>
-		<time class="postlist-date" datetime="2023-06-03">2023-06-03</time>
-		<div class="postlist-tags">
-			<a href="/tags/tools/" class="post-tag">#tools</a>
-			<a href="/tags/iot/" class="post-tag">#IoT</a>
-			<a href="/tags/3d/" class="post-tag">#3D</a>
+		<time class="metadata-date" datetime="2023-06-03">2023-06-03 SAT</time>
+		<div class="metadata-tags">
+			<a href="/tags/tools/" class="tag">#tools</a>
+			<a href="/tags/iot/" class="tag">#IoT</a>
+			<a href="/tags/3d/" class="tag">#3D</a>
 		</div>
 	</li>
 
