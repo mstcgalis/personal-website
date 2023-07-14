@@ -6,7 +6,7 @@ tags:
     - tools
     - second-brain
 ---
-# Public Digital Darden?
+# Notes And Blogs
 I think I want to keep my notes and my blog separate, but build a really easy way to turn one into the other. I have been writing in my Obsidian for a while now, but I don't think hosting all of my notes publicly can bring me or anyone sense, value or joy. Yes, kinds of digital gardens are fun to explore for a while, but I much prefer reading more traditional blogposts. I think my [are.na](https://are.na/danielgalis) is a great public #second-brain. Anyone truly interested can scower through through the large number of channels and a get a good sense what I'm thinking about and what I'm vibing with. Some notes are best kept private.
 
 The main thing to figure out then is the pipeline from note to blog. This should be controlled by text only, no buttons, no extra formatting, ideally no copy and paste. Just type something in the note's [Front Matter](https://frontmatter.codes/docs/markdown) that automatically turns it into a blogpost. Or, well, makes it public. I don't (want to) know what a blogpost is and isn't.

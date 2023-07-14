@@ -132,6 +132,5 @@ I want to acknowledge my own criticism of this project, which is that it doesn't
 I will finish this section after the final examination.
 ![[key-hook-cat.gif]]
 
----
 ### Reference: 
 [^1]: Fallman, D. (2008). The Interaction Design Research Triangle of Design Practice, Design Studies, and Design Exploration. Design Issues, 24(3), 4-18.
