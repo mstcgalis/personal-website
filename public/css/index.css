@@ -2,7 +2,7 @@
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
-	--font-size-body: 17px;
+	--font-size-body: 16px;
     --font-size-mono: 15px;
 	--font-size-small: 13px;
 	--font-size-h1: 1.625em;
@@ -12,6 +12,8 @@
     
     --font-weigh-bold: 600;
 	--font-weigh-normal: 400;
+
+	--line-height: 1.5;
 
 	--radius: 0.25rem;
 	--radius-tag: 1rem;
@@ -37,9 +39,9 @@
 	--color-yellow-dark: #0D0A01;
 
 	--text-color: var(--color-gray-90);
-	--text-color-link: var(--blue);
-	--text-color-link-active: var(--blue);
-	--text-color-link-visited: var(--blue); /* #4D2186 */
+	--text-color-link: var(--color-blue);
+	--text-color-link-active: var(--color-blue);
+	--text-color-link-visited: var(--color-blue);
 
 	--syntax-tab-size: 2;
 }
@@ -72,22 +74,23 @@
 
 html,
 body {
-	padding: 0em 0.8em;
 	margin: 0 auto;
-	
+
 	color: var(--text-color);
 	background-color: var(--color-background);
 	
 	font-family: var(--font-family);
 	font-size: var(--font-size-body);
 	font-weight: var(--font-weigh-normal);
-	line-height: 1.5;
+	line-height: var(--line-height);
 }
 html {
 	overflow-y: scroll;
 }
 body {
+	padding: 0em 0.6em;
 	max-width: 40em;
+
 	display: flex;
 	flex-direction: column;
 	min-height: 105vh;
@@ -108,7 +111,7 @@ p:last-child {
 	margin-bottom: 0;
 }
 p {
-	line-height: 1.5;
+	line-height: var(--line-height);
 	margin-top: 0.8em;
 	margin-bottom: 0.8em;
 }
@@ -303,7 +306,7 @@ header:after {
 }
 .postlist-item:hover {
 	background-color: var(--color-offset);
-	border-radius: var(--radius);
+	border-radius: 0.000001em;
 	outline: var(--color-offset) 0.4em solid;
 }
 .postlist-item-active .postlist-link {
@@ -355,6 +358,11 @@ header:after {
 /* Tags list */
 .tags-list {
 	padding: 0;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.4em;
 }
 
 /* Post metadata */
