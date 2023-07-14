@@ -10,14 +10,182 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Daniel Gális</title>
-		<meta name="description" content="Daniel Gális is a designer, researcher and developer working with web technologies.">
+		<title>Thoughts On a Public Digital Garden</title>
+		<meta name="description" content="Is my website a digital garden?">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Daniel Gális">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Daniel Gális">
 
 		<meta name="generator" content="Eleventy v2.0.1">
 		
-		<style>* { box-sizing: border-box; }
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+* { box-sizing: border-box; }
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -469,105 +637,35 @@ img {
 
 		<main id="skip">
 			
+<h1 class="post-title">Thoughts On a Public Digital Garden</h1>
 
-<div class="home-about">
-  <h1>Hi! I'm Daniel.</h1>
-  <p>
-    Thanks for stopping by! I'm an interaction designer, researcher and developer on a mission to create digital tools that empower individuals and communities.
-  </p>
-  <p>
-    Always interested in nurturing good habits <a href="tags/rituals" class="tag">#rituals</a>, keeping a second brain and building new internet(s).
-  </p>
-  <span>Currently:</span>
-  <ul>
-    <li>hanging around Banská Bystrica, Slovakia</li>
-    <li>studying design at <a href="https://paper.dropbox.com/doc/agdx.info--A8WBeN6F9mtgNIBrQy1_l26kAQ-5O5sBLYwdxcDV28os9iuM">AGDX</a></li>
-    <li>working on <a href="https://www.are.na/city-website-axdx">city-website</a></li>
-    <li>writing a <a href="https://md2dc.danielgalis.com">public diary</a></li>
-    <li>swimming in lakes whenever possible</li>
-    <li>tryharding my <a href="https://www.strava.com/athletes/51273484">fitness</a></li>
-    <li>learning to code websites in <a href="https://svelte.dev">Svelte</a> </li>
-    <li>reading <a href="https://www.are.na/block/22563060">VARA GURU</a></li>
-    <li><a href="https://drawing-club.netlify.app/">drawing</a> (thanks to <a href="https://vasilburak.com">Vasil</a>)</li>
-    <li>collecting recipes into a <a href="https://www.are.na/daniel-galis/cookbook-pcpa3s2li2i">cookbook</a></li>
-    <li>and definitely the cliché "discovering my true self" right now 🙃</li>
-  </ul>
-  <p>
-    <a href="mailto:danielgalis21@gmail.com">E-mail</a>
-    <span>|</span>
-    <a href="https://are.na/daniel-galis">Are.na</a>
-    <span>|</span>
-    <a href="https://github.com/mstcgalis">GitHub</a>
-    <span>|</span>
-    <a href="https://www.instagram.com/mstc_al/">Instagram</a>
-    <span>|</span>
-    <a href="https://discordapp.com/users/147823743882756096">Discord</a>
-  </p>
-</div>
-<div class="home-section">
-  
-  
-  
-  <h1>Writing</h1>
-  
-  
-  <ol reversed class="postlist" style="counter-reset: start-from 4">
+<ul class="metadata">
+	<li><time class="metadata" datetime="2023-07-14">2023-07-14 FRI</time></li>
+	<li><a href="/tags/tools/" class="tag">#tools</a></li>
+	<li><a href="/tags/second-brain/" class="tag">#second-brain</a></li>
+</ul>
 
-	<li onclick="location.href = '/posts/public-digital-garden/';" class="postlist-item">
-		<a href="/posts/public-digital-garden/" class="postlist-link">Thoughts On a Public Digital Garden</a>
-		<time class="metadata-date" datetime="2023-07-14">2023-07-14 FRI</time>
-		<div class="metadata-tags">
-			<a href="/tags/tools/" class="tag">#tools</a>
-			<a href="/tags/second-brain/" class="tag">#second-brain</a>
-		</div>
-	</li>
+<h1 id="public-digital-darden" tabindex="-1">Public Digital Darden? <a class="header-anchor" href="#public-digital-darden">#</a></h1>
+<p>I think I want to keep my notes and my blog separate, but build a really easy way to turn one into the other. I have been writing in my Obsidian for a while now, but I don't think hosting all of my notes publicly can bring me or anyone sense, value or joy. Yes, kinds of digital gardens are fun to explore for a while, but I much prefer reading more traditional blogposts. I think my <a href="https://are.na/danielgalis">are.na</a> is a great public #second-brain. Anyone truly interested can scower through through the large number of channels and a get a good sense what I'm thinking about and what I'm vibing with. Some notes are best kept private.</p>
+<p>The main thing to figure out then is the pipeline from note to blog. This should be controlled by text only, no buttons, no extra formatting, ideally no copy and paste. Just type something in the note's <a href="https://frontmatter.codes/docs/markdown">Front Matter</a> that automatically turns it into a blogpost. Or, well, makes it public. I don't (want to) know what a blogpost is and isn't.</p>
+<p>My main goal is to use &amp; reference my website (almost) daily. It is first and foremost mine. A tool for thought, but more generally a tool for digital being, or just for being. Just a tool. Not really a portfolio, not a SEO-maxxed blog, not something you link to in your bio just to get traction on some new product. No bullshit. Although, it can become all those things, and more, new features emerging out of my actual use. The MVP is made by me for me. Later, my website can become more inclusive and/or participatory.</p>
+<h1 id="ways-i-would-like-to-use-a-website" tabindex="-1">Ways I Would Like To Use a Website <a class="header-anchor" href="#ways-i-would-like-to-use-a-website">#</a></h1>
+<p>Posting texts, mostly reflections on things I learned, made, read and done. They should be atomic, focused on a single topic.</p>
+<p>Editing these texts continually. The posting is more a start than a finish.</p>
+<p>Opening a window into my life for anyone interested. Sharing up to date information about what I'm up to currently.</p>
+<p>Presenting my work in a way that is easy to navigate and explore.</p>
+<p>Tracking some metrics about my #rituals. Sport is good example: I want to have a place for marking PR's. Why do this in public? Idk, I think it will make me more accountable. Also it just seems like a cool thing to do.</p>
+<p>Aggregating and categorising content from different places. <a href="https://are.na/danielgalis">are.na</a> + Obsidian basically, but in a structured, nice way. Linking channels on <a href="https://are.na/danielgalis">are.na</a> to tags/notes in Obsidian.</p>
+<p>Experimenting with the interface and interactions. Hopefully building a tag based search and general keyboard interface later on.</p>
+<h1 id="principles-to-keep-in-mind" tabindex="-1">Principles To Keep In Mind <a class="header-anchor" href="#principles-to-keep-in-mind">#</a></h1>
+<ul>
+<li>A tool for me first, an interface with the public second.</li>
+<li>Less is more.</li>
+<li>Experiment.</li>
+</ul>
 
-	<li onclick="location.href = '/posts/key-bot/';" class="postlist-item">
-		<a href="/posts/key-bot/" class="postlist-link">KEY-BOT - Exploring Research Through Design</a>
-		<time class="metadata-date" datetime="2023-06-03">2023-06-03 SAT</time>
-		<div class="metadata-tags">
-			<a href="/tags/tools/" class="tag">#tools</a>
-			<a href="/tags/iot/" class="tag">#IoT</a>
-			<a href="/tags/3d/" class="tag">#3D</a>
-		</div>
-	</li>
-
-	<li onclick="location.href = '/posts/ritual-sketching/';" class="postlist-item">
-		<a href="/posts/ritual-sketching/" class="postlist-link">Ritual Sketching - A Creative Approach to Habit Tracking</a>
-		<time class="metadata-date" datetime="2023-04-02">2023-04-02 SUN</time>
-		<div class="metadata-tags">
-			<a href="/tags/rituals/" class="tag">#rituals</a>
-			<a href="/tags/self-governance/" class="tag">#self-governance</a>
-			<a href="/tags/tools/" class="tag">#tools</a>
-		</div>
-	</li>
-
-</ol>
-
-  
-  
-</div>
-<div class="home-section">
-  <h1>Projects</h1>
-  <div class="projectlist">
-    <div class="projectlist-item">
-      <img class="projectlist-image" src="posts/attachments/key-bot_installed.jpg" alt="🔑">
-      <a class="projectlist-link" href="https://github.com/mstcgalis/key-bot">key-bot</a>
-    </div>
-    <div class="projectlist-item">
-      <a class="projectlist-link" href="https://github.com/mstcgalis/tomado">🍅 Tomado</a>
-    </div>
-    <div class="projectlist-item">
-      <a class="projectlist-link" href="https://www.are.na/city-website-axdx">🏛️ CITY-WEBSITE</a>
-    </div>
-    <div class="projectlist-item">
-      <a class="projectlist-link" href="https://md2dc.danielgalis.com">md2dc</a>
-    </div>
-  </div>
-</div>
-
-
-
+<ul class="links-nextprev"><li>Previous: <a href="/posts/key-bot/">KEY-BOT - Exploring Research Through Design</a></li>
+</ul>
 
 		</main>
 
@@ -575,6 +673,6 @@ img {
 			<div>© Daniel Gális, 2023. Built with <a href="https://www.11ty.dev/">Eleventy</a>.</div>
 		</footer>
 
-		<!-- Current page: / -->
+		<!-- Current page: /posts/public-digital-garden/ -->
 	</body>
 </html>
