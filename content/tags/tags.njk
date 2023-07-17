@@ -14,9 +14,14 @@ eleventyComputed:
   title: "#{{ tag }}"
 permalink: /tags/{{ tag | slugify }}/
 ---
-<h1>#{{ tag }}</a></h1>
+<h1>#{{ tag }}</h1>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
+
+{% set urls = tagMapping[tag] %}
+{% for url in urls %}
+  <iframe src="{{ url }}/embed" width="100%" height="560px"></iframe>
+{% endfor %}
 
 <p>See <a href="/tags/">all tags</a>.</p>

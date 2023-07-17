@@ -107,6 +107,26 @@ module.exports = function(eleventyConfig) {
 		mdLib.use(markdownItFootnote);
 		mdLib.use(markdownItObsidianImages);
 	});
+  
+	// Parse tag-URL mapping from text file
+	eleventyConfig.addDataExtension("txt", (contents) => {
+	  const lines = contents.split('\n');
+	  const tagMapping = {};
+	  for (const line of lines) {
+		const [tag, url] = line.split(' ');
+		if (tagMapping[tag]) {
+		  tagMapping[tag].push(url);
+		} else {
+		  tagMapping[tag] = [url];
+		}
+	  }
+	  return tagMapping;
+	});
+  
+	// Create shortcode for embedding URLs as iFrames
+	eleventyConfig.addShortcode("iframe", (url) => {
+	  return `<iframe src="${url}" width="100%" height="500" loading="lazy"></iframe>`;
+	});
 
 	// Features to make your build faster (when you need them)
 
