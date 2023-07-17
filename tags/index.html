@@ -333,10 +333,10 @@ header:after {
 .postlist-item-active .postlist-link {
 	font-weight: var(--font-weight-bold);
 }
-.postlist-item > .metadata-date, .metadata-tags {
+.postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
 }
-.postlist-item > .metadata-tags > .tag {
+.postlist-item > .metadata > .metadata-tags > .tag {
 	font-size: var(--font-size-small);
 }
 
@@ -394,13 +394,14 @@ header:after {
 	display: inline-flex;
 	text-align: right;
 	flex-wrap: wrap;
-	gap: .5em;
-	padding-left: 0.8em;
+	gap: 0.4em;
+	list-style: none;
+	padding-left: 0;
 }
 .metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: 0.8em;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -452,6 +453,13 @@ img {
 /* Home site */
 .home-about, .home-section {
 	margin: 0 0 1.8em 0; 
+}
+
+iframe {
+	border: none;
+
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
 }</style>
 	</head>
 	<body>

@@ -501,10 +501,10 @@ header:after {
 .postlist-item-active .postlist-link {
 	font-weight: var(--font-weight-bold);
 }
-.postlist-item > .metadata-date, .metadata-tags {
+.postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
 }
-.postlist-item > .metadata-tags > .tag {
+.postlist-item > .metadata > .metadata-tags > .tag {
 	font-size: var(--font-size-small);
 }
 
@@ -562,13 +562,14 @@ header:after {
 	display: inline-flex;
 	text-align: right;
 	flex-wrap: wrap;
-	gap: .5em;
-	padding-left: 0.8em;
+	gap: 0.4em;
+	list-style: none;
+	padding-left: 0;
 }
 .metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: 0.8em;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -620,6 +621,13 @@ img {
 /* Home site */
 .home-about, .home-section {
 	margin: 0 0 1.8em 0; 
+}
+
+iframe {
+	border: none;
+
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
 }</style>
 	</head>
 	<body>
@@ -640,13 +648,15 @@ img {
 			
 <h1 class="post-title">Ritual Sketching - A Creative Approach to Habit Tracking</h1>
 
-<ul class="metadata">
-	<li><time class="metadata" datetime="2023-04-02">2023-04-02 SUN</time></li>
-	<li><a href="/tags/rituals/" class="tag">#rituals</a></li>
-	<li><a href="/tags/self-governance/" class="tag">#self-governance</a></li>
-	<li><a href="/tags/tools/" class="tag">#tools</a></li>
-</ul>
-<hr/>
+<div class="metadata">
+	<time class="metadata-date" datetime="2023-04-02">2023-04-02 SUN</time>
+	<ul class="metadata-tags">
+		<li><a href="/tags/rituals/" class="tag">#rituals</a></li>
+		<li><a href="/tags/self-governance/" class="tag">#self-governance</a></li>
+		<li><a href="/tags/tools/" class="tag">#tools</a></li>
+	</ul>
+</div>
+<hr>
 
 <p>Can tracking become an exciting and creative practice instead of a boring chore? As a part of my <a href="https://www.are.na/prompt-club/tool-a-week">TOOL A WEEK</a> commitment, I worked on a better habit-tracking method, that anyone could potentially modify and use on their journey. After a week of ideation, research, sketching, prototyping and a round of feedback from designer friends, I created a customisable system called <strong>Ritual Sketching</strong>.</p>
 <p>First some definitions:</p>

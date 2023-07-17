@@ -333,10 +333,10 @@ header:after {
 .postlist-item-active .postlist-link {
 	font-weight: var(--font-weight-bold);
 }
-.postlist-item > .metadata-date, .metadata-tags {
+.postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
 }
-.postlist-item > .metadata-tags > .tag {
+.postlist-item > .metadata > .metadata-tags > .tag {
 	font-size: var(--font-size-small);
 }
 
@@ -394,13 +394,14 @@ header:after {
 	display: inline-flex;
 	text-align: right;
 	flex-wrap: wrap;
-	gap: .5em;
-	padding-left: 0.8em;
+	gap: 0.4em;
+	list-style: none;
+	padding-left: 0;
 }
 .metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: 0.8em;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -452,6 +453,13 @@ img {
 /* Home site */
 .home-about, .home-section {
 	margin: 0 0 1.8em 0; 
+}
+
+iframe {
+	border: none;
+
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
 }</style>
 	</head>
 	<body>
@@ -470,22 +478,29 @@ img {
 
 		<main id="skip">
 			
-<h1>#rituals</a></h1>
+<h1>#rituals</h1>
 
 
 <ol reversed class="postlist" style="counter-reset: start-from 2">
 
 	<li onclick="location.href = '/posts/ritual-sketching/';" class="postlist-item">
 		<a href="/posts/ritual-sketching/" class="postlist-link">Ritual Sketching - A Creative Approach to Habit Tracking</a>
-		<time class="metadata-date" datetime="2023-04-02">2023-04-02 SUN</time>
-		<div class="metadata-tags">
-			<a href="/tags/rituals/" class="tag">#rituals</a>
-			<a href="/tags/self-governance/" class="tag">#self-governance</a>
-			<a href="/tags/tools/" class="tag">#tools</a>
+		<div class="metadata">
+			<time class="metadata-date" datetime="2023-04-02">2023-04-02 SUN</time>
+			<ul class="metadata-tags">
+				<li><a href="/tags/rituals/" class="tag">#rituals</a></li>
+				<li><a href="/tags/self-governance/" class="tag">#self-governance</a></li>
+				<li><a href="/tags/tools/" class="tag">#tools</a></li>
+			</ul>
 		</div>
 	</li>
 
 </ol>
+
+
+
+
+  <iframe src="https://www.are.na/daniel-galis/rituals-ukv98yd3ehe/embed" width="100%" height="560px"></iframe>
 
 
 <p>See <a href="/tags/">all tags</a>.</p>

@@ -501,10 +501,10 @@ header:after {
 .postlist-item-active .postlist-link {
 	font-weight: var(--font-weight-bold);
 }
-.postlist-item > .metadata-date, .metadata-tags {
+.postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
 }
-.postlist-item > .metadata-tags > .tag {
+.postlist-item > .metadata > .metadata-tags > .tag {
 	font-size: var(--font-size-small);
 }
 
@@ -562,13 +562,14 @@ header:after {
 	display: inline-flex;
 	text-align: right;
 	flex-wrap: wrap;
-	gap: .5em;
-	padding-left: 0.8em;
+	gap: 0.4em;
+	list-style: none;
+	padding-left: 0;
 }
 .metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: 0.8em;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -620,6 +621,13 @@ img {
 /* Home site */
 .home-about, .home-section {
 	margin: 0 0 1.8em 0; 
+}
+
+iframe {
+	border: none;
+
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
 }</style>
 	</head>
 	<body>
@@ -640,13 +648,15 @@ img {
 			
 <h1 class="post-title">KEY-BOT - Exploring Research Through Design</h1>
 
-<ul class="metadata">
-	<li><time class="metadata" datetime="2023-06-03">2023-06-03 SAT</time></li>
-	<li><a href="/tags/tools/" class="tag">#tools</a></li>
-	<li><a href="/tags/iot/" class="tag">#IoT</a></li>
-	<li><a href="/tags/3d/" class="tag">#3D</a></li>
-</ul>
-<hr/>
+<div class="metadata">
+	<time class="metadata-date" datetime="2023-06-03">2023-06-03 SAT</time>
+	<ul class="metadata-tags">
+		<li><a href="/tags/tools/" class="tag">#tools</a></li>
+		<li><a href="/tags/iot/" class="tag">#IoT</a></li>
+		<li><a href="/tags/3d/" class="tag">#3D</a></li>
+	</ul>
+</div>
+<hr>
 
 <h1 id="introduction" tabindex="-1">Introduction <a class="header-anchor" href="#introduction">#</a></h1>
 <p>The research interaction project, known as <strong>key-bot</strong>, addresses the challenge of limited key access in shared studio workspaces at design and art schools. Typically, only a single shared key is available, causing repetitive and frustrating interactions for individuals seeking entry. To facilitate this process, I designed and constructed a device to automatically notify colleagues of someone's presence, indicating that the doors are already unlocked. By simply placing the key in its usual location, the device handles communication automatically.</p>

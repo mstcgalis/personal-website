@@ -501,10 +501,10 @@ header:after {
 .postlist-item-active .postlist-link {
 	font-weight: var(--font-weight-bold);
 }
-.postlist-item > .metadata-date, .metadata-tags {
+.postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
 }
-.postlist-item > .metadata-tags > .tag {
+.postlist-item > .metadata > .metadata-tags > .tag {
 	font-size: var(--font-size-small);
 }
 
@@ -562,13 +562,14 @@ header:after {
 	display: inline-flex;
 	text-align: right;
 	flex-wrap: wrap;
-	gap: .5em;
-	padding-left: 0.8em;
+	gap: 0.4em;
+	list-style: none;
+	padding-left: 0;
 }
 .metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: 0.8em;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -620,6 +621,13 @@ img {
 /* Home site */
 .home-about, .home-section {
 	margin: 0 0 1.8em 0; 
+}
+
+iframe {
+	border: none;
+
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
 }</style>
 	</head>
 	<body>
@@ -640,12 +648,14 @@ img {
 			
 <h1 class="post-title">Thoughts On a Public Digital Garden</h1>
 
-<ul class="metadata">
-	<li><time class="metadata" datetime="2023-07-14">2023-07-14 FRI</time></li>
-	<li><a href="/tags/tools/" class="tag">#tools</a></li>
-	<li><a href="/tags/second-brain/" class="tag">#second-brain</a></li>
-</ul>
-<hr/>
+<div class="metadata">
+	<time class="metadata-date" datetime="2023-07-14">2023-07-14 FRI</time>
+	<ul class="metadata-tags">
+		<li><a href="/tags/tools/" class="tag">#tools</a></li>
+		<li><a href="/tags/second-brain/" class="tag">#second-brain</a></li>
+	</ul>
+</div>
+<hr>
 
 <h1 id="notes-and-blogs" tabindex="-1">Notes And Blogs <a class="header-anchor" href="#notes-and-blogs">#</a></h1>
 <p>Here are my current thoughts on this website in realtion to other tools-for-thought I enjoy using.</p>
