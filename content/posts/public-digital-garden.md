@@ -7,11 +7,11 @@ tags:
     - second-brain
 ---
 # Notes And Blogs
-Here are my current thoughts on this website in realtion to other tools-for-thought I enjoy using.
+Here are my current thoughts on this website in relation to other tools-for-thought I enjoy using.
 
-I want to keep my notes and my blog separate, but build a really easy way to turn one into the other. I have been writing in my Obsidian for a while now, but I don't think hosting all of my notes publicly can bring me or anyone sense, value or joy. Yes, kinds of digital gardens are fun to explore for a while, but I much prefer reading more traditional blogposts. I think my [are.na](https://are.na/danielgalis) is a great public #second-brain. Anyone truly interested can scower through through the large number of channels and a get a good sense what I'm thinking about and what I'm vibing with. Some notes are best kept private.
+As much I love the idea of tending to a [digital garden](), I want to keep my notes and my blog separate. I have been writing in my Obsidian for a while now, but I don't think hosting all of my notes publicly can bring me or anyone sense, value or joy. In my experience, digital gardens are fun to explore for a while, but I much prefer reading traditional blogposts. I think my [are.na](https://are.na/danielgalis) is a great public #second-brain. Anyone truly interested can scower through my channels and a get a good sense what I'm thinking about and what I'm vibing with. I'm all for [working with the garage door up](https://notes.andymatuschak.org/Work_with_the_garage_door_up), but some notes are best kept private.
 
-The main thing to figure out then is the pipeline from note to blog. This should be controlled by text only, no buttons, no extra formatting, ideally no copy and paste. Just type something in the note's [Front Matter](https://frontmatter.codes/docs/markdown) that automatically turns it into a blogpost. Or, well, makes it public. I don't (want to) know what a blogpost is and isn't.
+The main thing to figure out then is the pipeline from note to blog. Technically, this should be controlled by text only, no buttons, no extra formatting, ideally no copy and paste. Just type something in the note's [Front Matter](https://frontmatter.codes/docs/markdown) that automatically turns it into a blogpost. Or makes it public. I don't (want to) know what a blogpost is and isn't.
 
 My main goal is to use & reference my website (almost) daily. It is first and foremost mine. A tool for thought, but more generally a tool for digital being, or just for being. Just a tool. Not really a portfolio, not a SEO-maxxed blog, not something you link to in your bio just to get traction on some new product. No bullshit. Although, it can become all those things, and more, new features emerging out of my actual use. The MVP is made by me for me. Later, my website can become more inclusive and/or participatory.
 
