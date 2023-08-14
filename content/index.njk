@@ -2,73 +2,66 @@
 layout: layouts/home.njk
 numberOfLatestPostsToShow: 3
 ---
-
-<div class="home-about">
-  <h1>Hi! I'm Daniel.</h1>
+<h1>Hi! I'm Daniel.</h1>
+<p>
+  Thanks for stopping by! I'm an interaction designer, researcher and developer on a mission to create digital tools that empower individuals and communities.
+</p>
+<p>
+  Always interested in nurturing good habits <a href="tags/rituals" class="tag">#rituals</a>, keeping a second brain and building new internet(s).
+</p>
+<span>Currently:</span>
+<ul>
+  <li>hanging around Banská Bystrica, Slovakia</li>
+  <li>studying design at <a href="https://paper.dropbox.com/doc/agdx.info--A8WBeN6F9mtgNIBrQy1_l26kAQ-5O5sBLYwdxcDV28os9iuM">AGDX</a></li>
+  <li>working on <a href="https://www.are.na/city-website-axdx">city-website</a></li>
+  <li>writing a <a href="https://md2dc.danielgalis.com">public diary</a></li>
+  <li>swimming in lakes whenever possible</li>
+  <li>tryharding my fitness</li>
+  <li>learning to code websites in <a href="https://svelte.dev">Svelte</a> </li>
+  <li>reading Mrchopěvci by Jan Křesadlo</li>
+  <li><a href="https://drawing-club.netlify.app/">drawing</a> (thanks to <a href="https://vasilburak.com">Vasil</a>)</li>
+  <li>collecting recipes into a <a href="https://www.are.na/daniel-galis/cookbook-pcpa3s2li2i">cookbook</a></li>
+</ul>
+<p>
+  <a href="mailto:danielgalis21@gmail.com">E-mail</a>
+  <span>|</span>
+  <a href="https://are.na/daniel-galis">Are.na</a>
+  <span>|</span>
+  <a href="https://github.com/mstcgalis">GitHub</a>
+  <span>|</span>
+  <a href="https://www.instagram.com/mstc_al/">Instagram</a>
+  <span>|</span>
+  <a href="https://discordapp.com/users/147823743882756096">Discord</a>
+</p>
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+{# <h1>{{ latestPostsCount }} Writing{% if latestPostsCount != 1 %}s{% endif %}</h1> #}
+<h1>Writing</h1>
+{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslistCounter = postsCount %}
+{% include "postslist.njk" %}
+{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+{% if morePosts > 0 %}
   <p>
-    Thanks for stopping by! I'm an interaction designer, researcher and developer on a mission to create digital tools that empower individuals and communities.
+    {{ morePosts }} more post
+    {% if morePosts != 1 %}s{% endif %}
+    can be found in the <a href="/posts/">Archive</a>.
   </p>
-  <p>
-    Always interested in nurturing good habits <a href="tags/rituals" class="tag">#rituals</a>, keeping a second brain and building new internet(s).
-  </p>
-  <span>Currently:</span>
-  <ul>
-    <li>hanging around Banská Bystrica, Slovakia</li>
-    <li>studying design at <a href="https://paper.dropbox.com/doc/agdx.info--A8WBeN6F9mtgNIBrQy1_l26kAQ-5O5sBLYwdxcDV28os9iuM">AGDX</a></li>
-    <li>working on <a href="https://www.are.na/city-website-axdx">city-website</a></li>
-    <li>writing a <a href="https://md2dc.danielgalis.com">public diary</a></li>
-    <li>swimming in lakes whenever possible</li>
-    <li>tryharding my fitness</li>
-    <li>learning to code websites in <a href="https://svelte.dev">Svelte</a> </li>
-    <li>reading Mrchopěvci by Jan Křesadlo</li>
-    <li><a href="https://drawing-club.netlify.app/">drawing</a> (thanks to <a href="https://vasilburak.com">Vasil</a>)</li>
-    <li>collecting recipes into a <a href="https://www.are.na/daniel-galis/cookbook-pcpa3s2li2i">cookbook</a></li>
-  </ul>
-  <p>
-    <a href="mailto:danielgalis21@gmail.com">E-mail</a>
-    <span>|</span>
-    <a href="https://are.na/daniel-galis">Are.na</a>
-    <span>|</span>
-    <a href="https://github.com/mstcgalis">GitHub</a>
-    <span>|</span>
-    <a href="https://www.instagram.com/mstc_al/">Instagram</a>
-    <span>|</span>
-    <a href="https://discordapp.com/users/147823743882756096">Discord</a>
-  </p>
-</div>
-<div class="home-section">
-  {% set postsCount = collections.posts | length %}
-  {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-  {# <h1>{{ latestPostsCount }} Writing{% if latestPostsCount != 1 %}s{% endif %}</h1> #}
-  <h1>Writing</h1>
-  {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-  {% set postslistCounter = postsCount %}
-  {% include "postslist.njk" %}
-  {% set morePosts = postsCount - numberOfLatestPostsToShow %}
-  {% if morePosts > 0 %}
-    <p>
-      {{ morePosts }} more post
-      {% if morePosts != 1 %}s{% endif %}
-      can be found in the <a href="/posts/">Archive</a>.
-    </p>
-  {% endif %}
-</div>
-<div class="home-section">
-  <h1>Projects</h1>
-  <div class="projectlist">
-    <div class="projectlist-item">
-      <img class="projectlist-image" src="posts/attachments/key-bot_installed.jpg" alt="🔑">
-      <a class="projectlist-link" href="https://github.com/mstcgalis/key-bot">key-bot</a>
-    </div>
-    <div class="projectlist-item">
-      <a class="projectlist-link" href="https://github.com/mstcgalis/tomado">🍅 Tomado</a>
-    </div>
-    <div class="projectlist-item">
-      <a class="projectlist-link" href="https://www.are.na/city-website-axdx">🏛️ CITY-WEBSITE</a>
-    </div>
-    <div class="projectlist-item">
-      <a class="projectlist-link" href="https://md2dc.danielgalis.com">md2dc</a>
-    </div>
+{% endif %}
+<h1>Projects</h1>
+<div class="projectlist">
+  <div class="projectlist-item">
+    <img class="projectlist-image" src="posts/attachments/key-bot_installed.jpg" alt="🔑">
+    <a class="projectlist-link" href="https://github.com/mstcgalis/key-bot">key-bot</a>
+  </div>
+  <div class="projectlist-item">
+    <a class="projectlist-link" href="https://github.com/mstcgalis/tomado">🍅 Tomado</a>
+  </div>
+  <div class="projectlist-item">
+    <a class="projectlist-link" href="https://www.are.na/city-website-axdx">🏛️ CITY-WEBSITE</a>
+  </div>
+  <div class="projectlist-item">
+    <a class="projectlist-link" href="https://md2dc.danielgalis.com">md2dc</a>
   </div>
 </div>
 {# List every content page in the project #}
