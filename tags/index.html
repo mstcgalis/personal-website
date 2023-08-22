@@ -132,8 +132,8 @@ p:last-child {
 }
 p {
 	line-height: var(--line-height);
-	margin-top: 0.8em;
-	margin-bottom: 0.8em;
+	margin-block-end: 0.8em;
+	margin-block-start: 0;
 }
 
 a[href] {
@@ -216,7 +216,8 @@ hr {
 
 /* Typography */
 h1, h2, h3, h4 {
-	margin: 0.8em 0em 0em 0em;
+	margin-block-start: 1.2em;
+	margin-block-end: 0.4em;
 }
 h1 {
 	font-size: var(--font-size-h1);
@@ -237,11 +238,9 @@ h4 {
 b {
 	font-weight: var(--font-weigh-bold);
 }
-time {
-	font-family: var(--font-family-monospace);
-}
 ul {
-	margin: 0;
+	margin-block-end: 0.8em;
+	margin-block-start: 0;
 }
 
 /* Header */
@@ -336,7 +335,10 @@ header:after {
 .postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
 }
-.postlist-item > .metadata > .metadata-tags > .tag {
+.postlist-item > .metadata > .metadata-tags > li > .tag {
+	font-size: var(--font-size-small);
+}
+.postlist-item > .metadata > .metadata-tags {
 	font-size: var(--font-size-small);
 }
 
@@ -362,12 +364,13 @@ header:after {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--color-offset);
+	
+	/* background-color: var(--color-offset);
 	padding: 0em 0.4em;
 	border-radius: var(--radius-tag);
 	
 	font-size: var(--font-size-body);
-	text-decoration: none;
+	text-decoration: none; */
 }
 .tag:hover {
 	text-decoration: underline;
@@ -387,9 +390,6 @@ header:after {
 }
 
 /* Post metadata */
-.metadata-date {
-	font-family: var(--font-family-monospace);
-}
 .metadata-tags {
 	display: inline-flex;
 	text-align: right;
@@ -450,16 +450,27 @@ img {
     border-radius: var(--radius);
   }
 
-/* Home site */
-.home-about, .home-section {
-	margin: 0 0 1.8em 0; 
+/* iframe */
+.iframe-container {
+	position: relative;
 }
-
-iframe {
+.loading {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.my-iframe {
 	border: none;
 
 	margin-top: 0.8em;
 	margin-bottom: 0.8em;
+
+	/* opacity: 0; */
 }</style>
 	</head>
 	<body>
@@ -472,6 +483,7 @@ iframe {
 				<ul class="nav">
 					<li class="nav-item"><a href="/posts/">Posts</a></li>
 					<li class="nav-item"><a href="/tags/" aria-current="page">Tags</a></li>
+					<li class="nav-item"><a href="https://danielgalis.thoughts.page">Thoughts</a>
 				</ul>
 			</nav>
 		</header>

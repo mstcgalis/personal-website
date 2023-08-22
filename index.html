@@ -132,8 +132,8 @@ p:last-child {
 }
 p {
 	line-height: var(--line-height);
-	margin-top: 0.8em;
-	margin-bottom: 0.8em;
+	margin-block-end: 0.8em;
+	margin-block-start: 0;
 }
 
 a[href] {
@@ -216,7 +216,8 @@ hr {
 
 /* Typography */
 h1, h2, h3, h4 {
-	margin: 0.8em 0em 0em 0em;
+	margin-block-start: 1.2em;
+	margin-block-end: 0.4em;
 }
 h1 {
 	font-size: var(--font-size-h1);
@@ -237,11 +238,9 @@ h4 {
 b {
 	font-weight: var(--font-weigh-bold);
 }
-time {
-	font-family: var(--font-family-monospace);
-}
 ul {
-	margin: 0;
+	margin-block-end: 0.8em;
+	margin-block-start: 0;
 }
 
 /* Header */
@@ -336,7 +335,10 @@ header:after {
 .postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
 }
-.postlist-item > .metadata > .metadata-tags > .tag {
+.postlist-item > .metadata > .metadata-tags > li > .tag {
+	font-size: var(--font-size-small);
+}
+.postlist-item > .metadata > .metadata-tags {
 	font-size: var(--font-size-small);
 }
 
@@ -362,12 +364,13 @@ header:after {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--color-offset);
+	
+	/* background-color: var(--color-offset);
 	padding: 0em 0.4em;
 	border-radius: var(--radius-tag);
 	
 	font-size: var(--font-size-body);
-	text-decoration: none;
+	text-decoration: none; */
 }
 .tag:hover {
 	text-decoration: underline;
@@ -387,9 +390,6 @@ header:after {
 }
 
 /* Post metadata */
-.metadata-date {
-	font-family: var(--font-family-monospace);
-}
 .metadata-tags {
 	display: inline-flex;
 	text-align: right;
@@ -450,16 +450,27 @@ img {
     border-radius: var(--radius);
   }
 
-/* Home site */
-.home-about, .home-section {
-	margin: 0 0 1.8em 0; 
+/* iframe */
+.iframe-container {
+	position: relative;
 }
-
-iframe {
+.loading {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.my-iframe {
 	border: none;
 
 	margin-top: 0.8em;
 	margin-bottom: 0.8em;
+
+	/* opacity: 0; */
 }</style>
 	</head>
 	<body>
@@ -472,55 +483,51 @@ iframe {
 				<ul class="nav">
 					<li class="nav-item"><a href="/posts/">Posts</a></li>
 					<li class="nav-item"><a href="/tags/">Tags</a></li>
+					<li class="nav-item"><a href="https://danielgalis.thoughts.page">Thoughts</a>
 				</ul>
 			</nav>
 		</header>
 
 		<main id="skip">
 			
+<h1>Hi! I'm Daniel.</h1>
+<p>
+  Thanks for stopping by! I'm an interaction designer, researcher and developer on a mission to create digital tools that empower individuals and communities.
+</p>
+<p>
+  Always interested in nurturing good habits <a href="tags/rituals" class="tag">#rituals</a>, keeping a second brain and building new internet(s).
+</p>
+<span>Currently:</span>
+<ul>
+  <li>hanging around Banská Bystrica, Slovakia</li>
+  <li>studying design at <a href="https://paper.dropbox.com/doc/agdx.info--A8WBeN6F9mtgNIBrQy1_l26kAQ-5O5sBLYwdxcDV28os9iuM">AGDX</a></li>
+  <li>working on <a href="https://www.are.na/city-website-axdx">city-website</a></li>
+  <li>writing a <a href="https://md2dc.danielgalis.com">public diary</a></li>
+  <li>swimming in lakes whenever possible</li>
+  <li>tryharding my fitness</li>
+  <li>learning to code websites in <a href="https://svelte.dev">Svelte</a> </li>
+  <li>reading Mrchopěvci by Jan Křesadlo</li>
+  <li><a href="https://drawing-club.netlify.app/">drawing</a> (thanks to <a href="https://vasilburak.com">Vasil</a>)</li>
+  <li>collecting recipes into a <a href="https://www.are.na/daniel-galis/cookbook-pcpa3s2li2i">cookbook</a></li>
+</ul>
+<p>
+  <a href="mailto:danielgalis21@gmail.com">E-mail</a>
+  <span>|</span>
+  <a href="https://are.na/daniel-galis">Are.na</a>
+  <span>|</span>
+  <a href="https://github.com/mstcgalis">GitHub</a>
+  <span>|</span>
+  <a href="https://www.instagram.com/mstc_al/">Instagram</a>
+  <span>|</span>
+  <a href="https://discordapp.com/users/147823743882756096">Discord</a>
+</p>
 
-<div class="home-about">
-  <h1>Hi! I'm Daniel.</h1>
-  <p>
-    Thanks for stopping by! I'm an interaction designer, researcher and developer on a mission to create digital tools that empower individuals and communities.
-  </p>
-  <p>
-    Always interested in nurturing good habits <a href="tags/rituals" class="tag">#rituals</a>, keeping a second brain and building new internet(s).
-  </p>
-  <span>Currently:</span>
-  <ul>
-    <li>hanging around Banská Bystrica, Slovakia</li>
-    <li>studying design at <a href="https://paper.dropbox.com/doc/agdx.info--A8WBeN6F9mtgNIBrQy1_l26kAQ-5O5sBLYwdxcDV28os9iuM">AGDX</a></li>
-    <li>working on <a href="https://www.are.na/city-website-axdx">city-website</a></li>
-    <li>writing a <a href="https://md2dc.danielgalis.com">public diary</a></li>
-    <li>swimming in lakes whenever possible</li>
-    <li>tryharding my <a href="https://www.strava.com/athletes/51273484">fitness</a></li>
-    <li>learning to code websites in <a href="https://svelte.dev">Svelte</a> </li>
-    <li>reading <a href="https://www.are.na/block/22563060">VARA GURU</a></li>
-    <li><a href="https://drawing-club.netlify.app/">drawing</a> (thanks to <a href="https://vasilburak.com">Vasil</a>)</li>
-    <li>collecting recipes into a <a href="https://www.are.na/daniel-galis/cookbook-pcpa3s2li2i">cookbook</a></li>
-    <li>and definitely the cliché "discovering my true self" right now 🙃</li>
-  </ul>
-  <p>
-    <a href="mailto:danielgalis21@gmail.com">E-mail</a>
-    <span>|</span>
-    <a href="https://are.na/daniel-galis">Are.na</a>
-    <span>|</span>
-    <a href="https://github.com/mstcgalis">GitHub</a>
-    <span>|</span>
-    <a href="https://www.instagram.com/mstc_al/">Instagram</a>
-    <span>|</span>
-    <a href="https://discordapp.com/users/147823743882756096">Discord</a>
-  </p>
-</div>
-<div class="home-section">
-  
-  
-  
-  <h1>Writing</h1>
-  
-  
-  <ol reversed class="postlist" style="counter-reset: start-from 4">
+
+
+<h1>Writing</h1>
+
+
+<ol reversed class="postlist" style="counter-reset: start-from 4">
 
 	<li onclick="location.href = '/posts/public-digital-garden/';" class="postlist-item">
 		<a href="/posts/public-digital-garden/" class="postlist-link">Thoughts On a Public Digital Garden</a>
@@ -559,25 +566,22 @@ iframe {
 
 </ol>
 
-  
-  
-</div>
-<div class="home-section">
-  <h1>Projects</h1>
-  <div class="projectlist">
-    <div class="projectlist-item">
-      <img class="projectlist-image" src="posts/attachments/key-bot_installed.jpg" alt="🔑">
-      <a class="projectlist-link" href="https://github.com/mstcgalis/key-bot">key-bot</a>
-    </div>
-    <div class="projectlist-item">
-      <a class="projectlist-link" href="https://github.com/mstcgalis/tomado">🍅 Tomado</a>
-    </div>
-    <div class="projectlist-item">
-      <a class="projectlist-link" href="https://www.are.na/city-website-axdx">🏛️ CITY-WEBSITE</a>
-    </div>
-    <div class="projectlist-item">
-      <a class="projectlist-link" href="https://md2dc.danielgalis.com">md2dc</a>
-    </div>
+
+
+<h1>Projects</h1>
+<div class="projectlist">
+  <div class="projectlist-item">
+    <img class="projectlist-image" src="posts/attachments/key-bot_installed.jpg" alt="🔑">
+    <a class="projectlist-link" href="https://github.com/mstcgalis/key-bot">key-bot</a>
+  </div>
+  <div class="projectlist-item">
+    <a class="projectlist-link" href="https://github.com/mstcgalis/tomado">🍅 Tomado</a>
+  </div>
+  <div class="projectlist-item">
+    <a class="projectlist-link" href="https://www.are.na/city-website-axdx">🏛️ CITY-WEBSITE</a>
+  </div>
+  <div class="projectlist-item">
+    <a class="projectlist-link" href="https://md2dc.danielgalis.com">md2dc</a>
   </div>
 </div>
 
