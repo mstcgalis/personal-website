@@ -219,7 +219,8 @@ b {
 	font-weight: var(--font-weigh-bold);
 }
 ul {
-	margin: 0;
+	margin-block-end: 0.8em;
+	margin-block-start: 0;
 }
 
 /* Header */
