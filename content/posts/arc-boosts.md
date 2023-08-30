@@ -9,7 +9,7 @@ tags:
 ---
 I've started playing around with the Boost feature of [Arc Browser](https://arc.net/). Here's an [invite](https://arc.net/gift/55fb6b96) if you haven't tried it out yet.
 
-This post is to serve as a gallery of my favourite Boosts, including my own.
+This post is to serve as a gallery of my favourite Boosts, including my own creations.
 
 ## [green pea are.na skin](https://arc.net/boost/C05314CD-FE01-43E2-8D5C-D4B15BB4879B)
 My personal garden flavouredd skin for [are.na](https://are.na).
