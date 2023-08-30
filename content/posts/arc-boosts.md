@@ -5,6 +5,7 @@ date: 2023-06-03
 tags:
     - second-brain
     - web
+    - tools
 ---
 I've started playing around with the Boost feature of [Arc Browser](https://arc.net/). Here's an [invite](https://arc.net/gift/55fb6b96) if you haven't tried it out yet.
 
