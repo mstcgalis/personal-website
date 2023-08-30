@@ -43,9 +43,7 @@ numberOfLatestPostsToShow: 3
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
   <p>
-    {{ morePosts }} more post
-    {% if morePosts != 1 %}s{% endif %}
-    can be found in the <a href="/posts/">Archive</a>.
+    see all <a href="/posts/">Posts</a>.
   </p>
 {% endif %}
 <h1>Projects</h1>
