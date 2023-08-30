@@ -1,7 +1,7 @@
 ---
 title: I made a skin for Are.na
 description: Gallery of my favourite Arc Boosts
-date: 2023-06-03
+date: 2023-08-30
 tags:
     - second-brain
     - web
