@@ -320,7 +320,6 @@ header:after {
 }
 .postlist-item > .metadata > .metadata-tags {
 	font-size: var(--font-size-small);
-	margin-block-end: 0;
 }
 
 /* Project list */
@@ -378,6 +377,7 @@ header:after {
 	gap: 0.4em;
 	list-style: none;
 	padding-left: 0;
+	margin-block-end: 0;
 }
 .metadata {
 	display: inline-flex;
