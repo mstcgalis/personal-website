@@ -21,6 +21,8 @@ Simple as that. Improves YouTube by 100%.
 
 I also recommend using the Chromium extension [Rabbit Hole for YouTube](https://chrome.google.com/webstore/detail/rabbit-hole-for-youtube/nlddakjbmpidooplakalfoogdincflfh) for disabling algorithmic recommendations.
 
+![[youtube-rabbit-hole.png|youtube without disctractions screenshot]]
+
 ## [Simplegram + DMs](https://arc.net/boost/CE70405E-BBE8-4F7E-BA49-A9EBE134542D)
 Brings back that long-gone original Instagram vibe. I remixed the beautiful [Siplegram](https://arc.net/boost/F408757E-3894-4B68-9762-891CD59EA41C) boost by Ellis Hamburger, bringing back DMs, as this is the only feature of IG I use daily.
 
