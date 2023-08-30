@@ -12,7 +12,9 @@ I've started playing around with the Boost feature of [Arc Browser](https://arc.
 This post is to serve as a gallery of my favourite Boosts, including my own.
 
 ## [green pea are.na skin](https://arc.net/boost/C05314CD-FE01-43E2-8D5C-D4B15BB4879B)
-My personal garden flavoure![[are.na-skin.png]]d skin for [are.na](https://are.na).
+My personal garden flavouredd skin for [are.na](https://are.na).
+
+![[are.na-skin.png]]
 
 ## [No YouTube Shorts Please](https://arc.net/boost/C05314CD-FE01-43E2-8D5C-D4B15BB4879B)
 Simple as that. Improves YouTube by 100%. 
