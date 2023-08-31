@@ -378,7 +378,7 @@ code {
 
 hr {
 	border: 0;
-	border-top: 1px solid var(--color-gray-20);
+	border-top: 1px solid var(--color-offset);
 	margin: 0.8em 0;
 }
 
@@ -574,11 +574,12 @@ header:after {
 	justify-content: space-between;
 	gap: 0.8em;
 	list-style: none;
-	padding: 0 0.2em 0em 0.2em;
 	margin: 0;
-	background-color: var(--color-offset);
-	border-radius: var(--radius);
+	
+	/* padding: 0 0.2em 0em 0.2em;
 	margin-block-end: 0.8em;
+	background-color: var(--color-offset);
+	border-radius: var(--radius); */
 }
 
 /* Direct Links / Markdown Headers */
@@ -674,6 +675,7 @@ align-items: center;
 		<li><a href="/tags/3d/" class="tag">#3D</a></li>
 	</ul>
 </div>
+<hr>
 
 <h1 id="introduction" tabindex="-1">Introduction <a class="header-anchor" href="#introduction">#</a></h1>
 <p>The research interaction project, known as <strong>key-bot</strong>, addresses the challenge of limited key access in shared studio workspaces at design and art schools. Typically, only a single shared key is available, causing repetitive and frustrating interactions for individuals seeking entry. To facilitate this process, I designed and constructed a device to automatically notify colleagues of someone's presence, indicating that the doors are already unlocked. By simply placing the key in its usual location, the device handles communication automatically.</p>
