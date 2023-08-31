@@ -319,7 +319,6 @@ header:after {
 }
 .postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
-	width: 18%;
 	line-height: normal;
 }
 .postlist-item > .metadata > .metadata-tags > li > .tag {
@@ -405,6 +404,7 @@ header:after {
 
 .metadata-date {
 	color: var(--color-gray-50);
+	line-height: 1.6;
 }
 
 /* Direct Links / Markdown Headers */
