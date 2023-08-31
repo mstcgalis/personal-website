@@ -9,11 +9,11 @@ tags:
 ---
 I've started playing around with the Boost feature of [Arc Browser](https://arc.net/). Here's an [invite](https://arc.net/gift/55fb6b96) if you haven't tried Arc yet.
 
-Basically, Boosts has two features. You can use it to change the colors and fonts on a page, or you can use it to hide any given part of the page. (You can also write CSS and JavaScript, so technically the sky’s the limit, but that requires more coding knowledge.)
+Boosts offer the ability to customize a page by changing its colors, fonts, and even hiding specific sections. If you have web coding knowledge, you can go a step further and write custom CSS and JavaScript. However, Boosts containing JavaScript cannot be shared with others.
 
-This post is to serve as a gallery of my favourite Boosts, including my own creations.
+This post serves as a gallery of my favorite Boosts, including the ones I've created. To try out a Boost, simply click on its name, which will be highlighted in blue
 
-## [green pea are.na skin](https://arc.net/boost/C05314CD-FE01-43E2-8D5C-D4B15BB4879B)
+## [green pea are.na skin](https://arc.net/boost/B620C83A-53D5-486C-81D7-43D1BF6D43A0)
 My personal pea flavoured skin for [are.na](https://are.na).
 
 ![[are.na-skin.png|green pea are.na skin screenshot]]
