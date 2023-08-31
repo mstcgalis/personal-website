@@ -312,6 +312,10 @@ header:after {
 .postlist-item-active .postlist-link {
 	font-weight: var(--font-weight-bold);
 }
+.postlist-item > .metadata {
+	margin-block-end: 0;
+	background-color: transparent;
+}
 .postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
 }
@@ -369,7 +373,7 @@ header:after {
 	gap: 0.4em;
 }
 
-/* Post metadata */
+/* Metadata */
 .metadata-tags {
 	display: inline-flex;
 	text-align: right;
@@ -392,6 +396,10 @@ header:after {
 	margin-block-end: 0.8em;
 	background-color: var(--color-offset);
 	border-radius: var(--radius); */
+}
+
+.metadata-date {
+	color: var(--color-gray-50);
 }
 
 /* Direct Links / Markdown Headers */
