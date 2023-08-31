@@ -7,7 +7,9 @@ tags:
     - web
     - tools
 ---
-I've started playing around with the Boost feature of [Arc Browser](https://arc.net/). Here's an [invite](https://arc.net/gift/55fb6b96) if you haven't tried it out yet.
+I've started playing around with the Boost feature of [Arc Browser](https://arc.net/). Here's an [invite](https://arc.net/gift/55fb6b96) if you haven't tried Arc yet.
+
+Basically, Boosts has two features. You can use it to change the colors and fonts on a page, or you can use it to hide any given part of the page. (You can also write CSS and JavaScript, so technically the sky’s the limit, but that requires more coding knowledge.)
 
 This post is to serve as a gallery of my favourite Boosts, including my own creations.
 
