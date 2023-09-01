@@ -157,7 +157,8 @@ footer a[href]:visited, footer a[href]:hover, footer a[href]:active, footer a[hr
 	padding-top: 0.8em;
 }
 
-.random-post {
+.nav-under-content {
+	margin-top: 1.8em;
 	padding-top: 0.8em;
 	border-top: 2px solid var(--color-offset);
 	justify-content: center;
