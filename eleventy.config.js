@@ -72,7 +72,7 @@ module.exports = function(eleventyConfig) {
 		}
 		// Return a random post from the filtered items
 		return filteredItems[Math.floor(Math.random() * filteredItems.length)];
-	  });
+	});
 	  
 
 	// Get the first `n` elements of a collection.

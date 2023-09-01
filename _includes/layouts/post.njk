@@ -24,14 +24,12 @@ layout: layouts/base.njk
 {# random post button #}
 {%- if collections.posts %}
   {%- set randomPost = collections.posts | getRandomPost(page, categories) %}
-  <ul class="random post">
-    <li><a href="{{ randomPost.url }}">Random Post</a></li>
-  </ul>
+	<div class="random-post">🎲 <a href="{{ randomPost.url }}">Random Post</a></div>
 {%- endif %}
 
 
-{# next and previous post buttons
-{%- if collections.posts %}
+{# next and previous post buttons #}
+{# {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
