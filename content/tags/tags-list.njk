@@ -8,7 +8,7 @@ eleventyNavigation:
 <h1>Tags</h1>
 
 <ol class="tags-list">
-{% for tag in collections.all | getAllTags | filterTagList %}
+{% for tag in collections.all | getAllTags | filterTagList | sort %}
 	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<a href="{{ tagUrl }}" class="tag">#{{ tag }}</a>
 {% endfor %}
