@@ -327,9 +327,9 @@ main :first-child {
 }
 
 footer {
-	margin-top: 1.6em;
+	/* margin-top: 1.6em; */
+	/* border-top: 1px solid var(--color-offset); */
 	padding: 0.5em 0;
-	border-top: 1px solid var(--color-offset);
 	color: var(--color-offset);
 	text-align: center;
 	font-size: var(--font-size-small);
@@ -343,6 +343,13 @@ footer a[href]:visited, footer a[href]:hover, footer a[href]:active, footer a[hr
 	list-style: none;
 	border-top: 1px solid var(--color-offset);
 	padding-top: 0.8em;
+}
+
+.random-post {
+	padding-top: 0.8em;
+	border-top: 1px solid var(--color-offset);
+	justify-content: center;
+	display:flex;
 }
 
 table {
@@ -710,9 +717,8 @@ align-items: center;
 
 
 
-  <ul class="random post">
-    <li><a href="/posts/ritual-sketching/">Random Post</a></li>
-  </ul>
+	<div class="random-post">🎲 <a href="/posts/key-bot/">Random Post</a></div>
+
 
 
 
@@ -720,6 +726,7 @@ align-items: center;
 		</main>
 
 		<footer>
+			<hr>
 			<div>© Daniel Gális, 2023. Built with <a href="https://www.11ty.dev/">Eleventy</a>, love and care.</div>
 		</footer>
 
