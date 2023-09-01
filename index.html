@@ -361,16 +361,29 @@ header:after {
 	list-style: none;
 	margin: 0.8em 0em 0.8em 0em;
 	padding: 0;
+
+	row-gap: 0.8em;
+	display: grid;
+	grid-template-columns: 1fr; /* Single column on mobile */
+	justify-items: stretch; /* Stretch items to fill the width */
 }
-.projectlist-item {
-	display: flex;
+@media only screen and (min-width: 768px) {
+	.projectlist {
+	  grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+	  column-gap: 0.8em; /* Gap between columns */
+	}
+}
+
+.project-card {
+	/* display: flex;
 	flex-wrap: wrap;
-	align-items: baseline;
+	align-items: baseline; */
+
 	counter-increment: start-from -1;
-	margin-bottom: 0.6em;
-	background-color: var(--color-offset);
-	border-radius: var(--radius);
 	padding: 0.2em;
+	
+	border: 2px var(--color-offset) solid;
+	border-radius: var(--radius);
 }
 
 /* Tags */
@@ -512,6 +525,7 @@ align-items: center;
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
+					<li class="nav-item"><a href="/projects/">Projects</a></li>
 					<li class="nav-item"><a href="/posts/">Posts</a></li>
 					<li class="nav-item"><a href="/tags/">Tags</a></li>
 					<li class="nav-item"><a href="https://danielgalis.thoughts.page">Thoughts</a>
@@ -555,7 +569,7 @@ align-items: center;
 </p>
 
 
-<h1>Writing</h1>
+<h1>Thinking</h1>
 
 
 <ol reversed class="postlist" style="counter-reset: start-from 5">
@@ -603,19 +617,19 @@ align-items: center;
     See all <a href="/posts/">Posts</a>.
   </p>
 
-<h1>Projects</h1>
+<h1 id="making">Making</h1>
 <div class="projectlist">
-  <div class="projectlist-item">
+  <div class="project-card">
     <img class="projectlist-image" src="posts/attachments/key-bot_installed.jpg" alt="🔑">
     <a class="projectlist-link" href="https://github.com/mstcgalis/key-bot">key-bot</a>
   </div>
-  <div class="projectlist-item">
+  <div class="project-card">
     <a class="projectlist-link" href="https://github.com/mstcgalis/tomado">🍅 Tomado</a>
   </div>
-  <div class="projectlist-item">
+  <div class="project-card">
     <a class="projectlist-link" href="https://www.are.na/city-website-axdx">🏛️ CITY-WEBSITE</a>
   </div>
-  <div class="projectlist-item">
+  <div class="project-card">
     <a class="projectlist-link" href="https://md2dc.danielgalis.com">md2dc</a>
   </div>
 </div>

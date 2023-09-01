@@ -529,16 +529,29 @@ header:after {
 	list-style: none;
 	margin: 0.8em 0em 0.8em 0em;
 	padding: 0;
+
+	row-gap: 0.8em;
+	display: grid;
+	grid-template-columns: 1fr; /* Single column on mobile */
+	justify-items: stretch; /* Stretch items to fill the width */
 }
-.projectlist-item {
-	display: flex;
+@media only screen and (min-width: 768px) {
+	.projectlist {
+	  grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+	  column-gap: 0.8em; /* Gap between columns */
+	}
+}
+
+.project-card {
+	/* display: flex;
 	flex-wrap: wrap;
-	align-items: baseline;
+	align-items: baseline; */
+
 	counter-increment: start-from -1;
-	margin-bottom: 0.6em;
-	background-color: var(--color-offset);
-	border-radius: var(--radius);
 	padding: 0.2em;
+	
+	border: 2px var(--color-offset) solid;
+	border-radius: var(--radius);
 }
 
 /* Tags */
@@ -680,6 +693,7 @@ align-items: center;
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
+					<li class="nav-item"><a href="/projects/">Projects</a></li>
 					<li class="nav-item"><a href="/posts/">Posts</a></li>
 					<li class="nav-item"><a href="/tags/">Tags</a></li>
 					<li class="nav-item"><a href="https://danielgalis.thoughts.page">Thoughts</a>
@@ -759,7 +773,7 @@ align-items: center;
 
 	<div class="nav-under-content">
 		<p>
-			<a href="/posts/arc-boosts/">Random Post</a>. 
+			<a href="/posts/public-digital-garden/">Random Post</a>. 
 			See all <a href="/posts/">Posts</a>.
 		</p>
 	</div>
