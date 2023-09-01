@@ -24,7 +24,12 @@ layout: layouts/base.njk
 {# random post button #}
 {%- if collections.posts %}
   {%- set randomPost = collections.posts | getRandomPost(page, categories) %}
-	<div class="random-post">🎲 <a href="{{ randomPost.url }}">Random Post</a></div>
+	<div class="nav-under-content">
+		<p>
+			<a href="{{ randomPost.url }}">Random Post</a>. 
+			See all <a href="/posts/">Posts</a>.
+		</p>
+	</div>
 {%- endif %}
 
 
