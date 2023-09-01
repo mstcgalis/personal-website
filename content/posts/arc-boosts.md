@@ -9,9 +9,9 @@ tags:
 ---
 I've started playing around with the Boost feature of [Arc Browser](https://arc.net/). Here's an [invite](https://arc.net/gift/55fb6b96) if you haven't tried Arc yet.
 
-Boosts offer the ability to customize a page by changing its colors, fonts, and even hiding specific sections. If you have web coding knowledge, you can go a step further and write custom CSS and JavaScript. However, Boosts containing JavaScript cannot be shared with others.
+Boosts offer the ability to customise a page by changing its colours, fonts, and even hiding specific sections. If you have web coding knowledge, you can go a step further and write custom CSS and JavaScript. However, Boosts containing JavaScript cannot be shared with others.
 
-This post serves as a gallery of my favorite Boosts, including the ones I've created. To try out a Boost, simply click on its name, which will be highlighted in blue
+This post serves as a gallery of my favorite Boosts, including the ones I've created. To try out a Boost, simply click on its name, which will be highlighted in blue.
 
 ## [green pea are.na skin](https://arc.net/boost/B620C83A-53D5-486C-81D7-43D1BF6D43A0)
 My personal pea flavoured skin for [are.na](https://are.na).
