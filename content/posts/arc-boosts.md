@@ -25,9 +25,9 @@ I also recommend using the Chromium extension [Rabbit Hole for YouTube](https://
 
 ![[youtube-rabbit-hole.png|youtube without disctractions screenshot]]
 
-## [Simplegram + DMs](https://arc.net/boost/CE70405E-BBE8-4F7E-BA49-A9EBE134542D)
+## [Simplegram + DMs](https://arc.net/boost/CEA44E38-E8E2-4F87-BBB8-5FE32E84AC0B)
 Brings back that long-gone original Instagram vibe.
 
-I remixed the beautiful [Siplegram](https://arc.net/boost/F408757E-3894-4B68-9762-891CD59EA41C) boost by Ellis Hamburger by bringing back DMs, as this is the only feature of IG I use daily.
+I remixed the beautiful [Siplegram](https://arc.net/boost/F408757E-3894-4B68-9762-891CD59EA41C) boost by Ellis Hamburger by bringing back DMs, as this is the only feature of IG I use daily. After some actual use, I've decided to bring back the Create button aswell, to allow posting from my computer.
 
 ![[simplegram-dms.png|simplegram + dms screenshot]]
