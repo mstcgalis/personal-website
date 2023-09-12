@@ -268,8 +268,8 @@ header:after {
 	margin-right: 1em;
 	color: var(--text-color) !important;
 }
-.home-link-current {
-	text-decoration: underline;
+.home-link[aria-current="page"] {
+	margin-right: 1em; /* placeholder */
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
@@ -566,7 +566,7 @@ align-items: center;
 
 <div class="nav-under-content">
   <p>
-    <a href="/tags/3D">Random Tag</a>. 
+    <a href="/tags/IoT">Random Tag</a>. 
     See all <a href="/tags/">Tags</a>.
   </p>
 </div>

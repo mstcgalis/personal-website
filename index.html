@@ -268,8 +268,8 @@ header:after {
 	margin-right: 1em;
 	color: var(--text-color) !important;
 }
-.home-link-current {
-	text-decoration: underline;
+.home-link[aria-current="page"] {
+	margin-right: 1em; /* placeholder */
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
@@ -524,7 +524,7 @@ align-items: center;
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-linkhome-link-current">Daniel Gális</a>
+			<a href="/" class="home-link" aria-current="page">Daniel Gális</a>
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
