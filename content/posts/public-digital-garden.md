@@ -5,6 +5,7 @@ date: 2023-07-14
 tags:
     - tools
     - second-brain
+    - web
 ---
 Here are my current thoughts on this website in relation to other tools-for-thought I enjoy using.
 
