@@ -13,7 +13,7 @@ Boosts offer the ability to customise a page by changing its colours, fonts, and
 
 This post serves as a gallery of my favorite Boosts, including the ones I've created. To try out a Boost, simply click on its name, which will be highlighted in blue.
 
-## [green pea are.na skin](https://arc.net/boost/B620C83A-53D5-486C-81D7-43D1BF6D43A0)
+## [green pea are.na skin](https://arc.net/boost/773D0300-DEA6-4453-A4A0-921E9E6F857D)
 My personal pea flavoured skin for [are.na](https://are.na).
 
 ![[are.na-skin.png|green pea are.na skin screenshot]]
