@@ -1,9 +1,13 @@
 <ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
 {% for post in postslist | reverse %}
 	<li onclick="location.href = '{{ post.url }}';" class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+		<span class="project-emoji">{% if post.data.emoji %}{{ post.data.emoji }} {% endif %}</span><a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
 		<div class="metadata">
+			{% if "projects" in post.data.tags %}
+			<time class="metadata-date" datetime="{{ post.date }}">{{ post.data.year }} PROJECT</time>
+			{% else %}
 			<time class="metadata-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("yyyy-MM-dd ccc") | upper }}</time>
+			{% endif %}
 			<ul class="metadata-tags">
 				{%- for tag in post.data.tags | filterTagList | sort %}
 				{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}

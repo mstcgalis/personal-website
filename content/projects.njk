@@ -4,4 +4,19 @@ eleventyNavigation:
   key: Projects
   order: 1
 ---
-<h1><a href="/#making">🚧under construction🚧</a></h1>
+<h1>Projects</h1>
+
+{% for project in collections.projects %}
+  <article>
+    <h2>{{ project.data.title }} {{ project.data.emoji }}</h2>
+    <p>{{ project.data.description }}</p>
+    <a href="{{ project.data.github }}">GitHub</a>
+    <a href="/posts/{{ project.data.post }}">Post</a>
+    <ul class="metadata-tags">
+      {%- for tag in project.data.tags | filterTagList %}
+      {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+      <li><a href="{{ tagUrl }}" class="tag">#{{ tag }}</a></li>
+      {%- endfor %}
+    </ul>
+  </article>
+{% endfor %}

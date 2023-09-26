@@ -337,6 +337,10 @@ header:after {
 	font-size: var(--font-size-small);
 	line-height: 1.6;
 }
+.postlist-item > .metadata > .metadata-type {
+	font-size: var(--font-size-small);
+	line-height: 1.6;
+}
 .postlist-item > .metadata > .metadata-tags > li > .tag {
 	font-size: var(--font-size-small);
 }
@@ -362,6 +366,9 @@ header:after {
 	}
 } */
 
+.project-emoji {
+	white-space: pre;
+}
 
 .project-card {
 	display: flex;
@@ -434,6 +441,11 @@ header:after {
 }
 
 .metadata-date {
+	font-weight: 300;
+	line-height: 1.7;
+}
+
+.metadata-type {
 	font-weight: 300;
 	line-height: 1.7;
 }
