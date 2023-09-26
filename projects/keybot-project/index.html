@@ -10,14 +10,182 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Daniel Gális</title>
-		<meta name="description" content="Daniel Gális is a designer, researcher and developer working with web technologies.">
+		<title>Keybot</title>
+		<meta name="description" content="Discord connected IoT device, designed to be used in a shared workspace where only a single key is available.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Daniel Gális">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Daniel Gális">
 
 		<meta name="generator" content="Eleventy v2.0.1">
 		
-		<style>* { box-sizing: border-box; }
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+* { box-sizing: border-box; }
 /* Defaults */
 :root {
 	--font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -543,7 +711,7 @@ align-items: center;
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link" aria-current="page">Daniel Gális</a>
+			<a href="/" class="home-link">Daniel Gális</a>
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
@@ -557,108 +725,28 @@ align-items: center;
 
 		<main id="skip">
 			
-<h1>Hi! I'm Daniel.</h1>
-<p>
-  Thanks for stopping by! I'm an interaction designer, researcher and developer on a mission to create digital tools that empower individuals and communities.
-</p>
-<p>
-  Always interested in nurturing good habits (<a href="tags/rituals" class="tag">#rituals</a>), keeping a <a href="tags/second-brain" class="tag">#second-brain</a> and building new internet(s).
-</p>
-<span><b>Currently:</b></span>
-<ul>
-  <li>hanging around Brno, Czech Republic</li>
-  <li>studying design at <a href="https://www.favu.vut.cz/ateliery/graficky-design-1">AGD1</a> (<a href="https://paper.dropbox.com/doc/agdx.info--A8WBeN6F9mtgNIBrQy1_l26kAQ-5O5sBLYwdxcDV28os9iuM">AGDX</a>), <a href="https://www.favu.vut.cz/en/">FFA BUT</a></li>
-  <li>working on <a href="https://www.are.na/sites-axdx">sites.agdx</a></li>
-  <li>swimming in lakes whenever possible</li>
-  <li>learning to code websites in <a href="https://svelte.dev">Svelte</a> </li>
-  <li>reading Figa Trium by Jan Křesadlo</li>
-  <li><a href="https://drawing-club.netlify.app/">drawing</a> (thanks to <a href="https://vasilburak.com">Vasil</a>)</li>
-  <li>collecting recipes into a <a href="https://www.are.na/daniel-galis/cookbook-pcpa3s2li2i">cookbook</a></li>
-</ul>
-<p class="contact">
-  <a href="mailto:danielgalis21@gmail.com">E-mail</a>
-  <span>|</span>
-  <a href="https://are.na/daniel-galis">Are.na</a>
-  <span>|</span>
-  <a href="https://github.com/mstcgalis">GitHub</a>
-  <span>|</span>
-  <a href="https://www.instagram.com/mstc_al/">Instagram</a>
-  <span>|</span>
-  <a href="https://discordapp.com/users/147823743882756096">Discord</a>
-</p>
+<h1 class="post-title">Keybot</h1>
 
-
-<h1>Thinking</h1>
-
-
-<ol reversed class="postlist" style="counter-reset: start-from 5">
-
-	<li onclick="location.href = '/posts/arc-boosts/';" class="postlist-item">
-		<span class="project-emoji"></span><a href="/posts/arc-boosts/" class="postlist-link">I made a skin for Are.na</a>
-		<div class="metadata">
-			
-			<time class="metadata-date" datetime="2023-08-30">2023-08-30 WED</time>
-			
-			<ul class="metadata-tags">
-				<li><a href="/tags/second-brain/" class="tag">#second-brain</a></li>
-				<li><a href="/tags/tools/" class="tag">#tools</a></li>
-				<li><a href="/tags/web/" class="tag">#web</a></li>
-			</ul>
-		</div>
-	</li>
-
-	<li onclick="location.href = '/posts/public-digital-garden/';" class="postlist-item">
-		<span class="project-emoji"></span><a href="/posts/public-digital-garden/" class="postlist-link">Thoughts On a Public Digital Garden</a>
-		<div class="metadata">
-			
-			<time class="metadata-date" datetime="2023-07-14">2023-07-14 FRI</time>
-			
-			<ul class="metadata-tags">
-				<li><a href="/tags/second-brain/" class="tag">#second-brain</a></li>
-				<li><a href="/tags/tools/" class="tag">#tools</a></li>
-				<li><a href="/tags/web/" class="tag">#web</a></li>
-			</ul>
-		</div>
-	</li>
-
-	<li onclick="location.href = '/posts/key-bot/';" class="postlist-item">
-		<span class="project-emoji"></span><a href="/posts/key-bot/" class="postlist-link">Keybot - Exploring Research Through Design</a>
-		<div class="metadata">
-			
-			<time class="metadata-date" datetime="2023-06-03">2023-06-03 SAT</time>
-			
-			<ul class="metadata-tags">
-				<li><a href="/tags/3d/" class="tag">#3D</a></li>
-				<li><a href="/tags/iot/" class="tag">#IoT</a></li>
-				<li><a href="/tags/tools/" class="tag">#tools</a></li>
-			</ul>
-		</div>
-	</li>
-
-</ol>
-
-
-
-  <p>
-    See all <a href="/posts/">Posts</a>.
-  </p>
-
-<h1 id="making">Making</h1>
-<div class="projectlist">
-  <div class="project-card">
-    <img class="projectlist-image" src="posts/attachments/key-bot_installed.jpg" alt="🔑">
-    <a class="projectlist-link" href="https://github.com/mstcgalis/Keybot">Keybot</a>
-  </div>
-  <div class="project-card">
-    <a class="projectlist-link" href="https://github.com/mstcgalis/tomado">🍅 Tomado</a>
-  </div>
-  <div class="project-card">
-    <a class="projectlist-link" href="https://www.are.na/city-website-axdx">🏛️ CITY-WEBSITE</a>
-  </div>
-  <div class="project-card">
-    <a class="projectlist-link" href="https://md2dc.danielgalis.com">md2dc</a>
-  </div>
+<div class="metadata">
+	<time class="metadata-date" datetime="2023-07-30">2023-07-30 SUN</time>
+	<ul class="metadata-tags">
+		<li><a href="/tags/tools/" class="tag">#tools</a></li>
+		<li><a href="/tags/iot/" class="tag">#IoT</a></li>
+		<li><a href="/tags/3d/" class="tag">#3D</a></li>
+	</ul>
 </div>
+<hr>
+
+
+
+
+	<div class="nav-under-content">
+		<p>
+			<a href="/posts/public-digital-garden/">Random Post</a>. 
+			See all <a href="/posts/">Posts</a>.
+		</p>
+	</div>
+
 
 
 
@@ -670,6 +758,6 @@ align-items: center;
 			<div>© Daniel Gális, 2023. Built with <a href="https://www.11ty.dev/">Eleventy</a>, <span style="color: red">love</span> and <span style="color: green">care</span>.</div>
 		</footer>
 
-		<!-- Current page: / -->
+		<!-- Current page: /projects/keybot-project/ -->
 	</body>
 </html>

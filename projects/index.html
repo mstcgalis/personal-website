@@ -357,6 +357,10 @@ header:after {
 	font-size: var(--font-size-small);
 	line-height: 1.6;
 }
+.postlist-item > .metadata > .metadata-type {
+	font-size: var(--font-size-small);
+	line-height: 1.6;
+}
 .postlist-item > .metadata > .metadata-tags > li > .tag {
 	font-size: var(--font-size-small);
 }
@@ -375,11 +379,15 @@ header:after {
 	grid-template-columns: 1fr; /* Single column on mobile */
 	justify-items: stretch; /* Stretch items to fill the width */
 }
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
 	.projectlist {
-	  grid-template-columns: 1fr 1fr; /* Two columns on desktop */
-	  column-gap: 0.8em; /* Gap between columns */
+	  grid-template-columns: 1fr 1fr;
+	  column-gap: 0.8em;
 	}
+} */
+
+.project-emoji {
+	white-space: pre;
 }
 
 .project-card {
@@ -453,6 +461,11 @@ header:after {
 }
 
 .metadata-date {
+	font-weight: 300;
+	line-height: 1.7;
+}
+
+.metadata-type {
 	font-weight: 300;
 	line-height: 1.7;
 }
@@ -544,7 +557,32 @@ align-items: center;
 
 		<main id="skip">
 			
-<h1><a href="/#making">🚧under construction🚧</a></h1>
+<h1>Projects</h1>
+
+
+  <article>
+    <h2>Tomado 🍅</h2>
+    <p>Simple Pomodoro Timer that lives in your MacOS Menu Bar.</p>
+    <a href="https://github.com/mstcgalis/Tomado">GitHub</a>
+    <a href="/posts/">Post</a>
+    <ul class="metadata-tags">
+      <li><a href="/tags/tools/" class="tag">#tools</a></li>
+      <li><a href="/tags/self-governance/" class="tag">#self-governance</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Keybot 🔑</h2>
+    <p>Discord connected IoT device, designed to be used in a shared workspace where only a single key is available.</p>
+    <a href="https://github.com/mstcgalis/Keybot">GitHub</a>
+    <a href="/posts/key-bot">Post</a>
+    <ul class="metadata-tags">
+      <li><a href="/tags/tools/" class="tag">#tools</a></li>
+      <li><a href="/tags/iot/" class="tag">#IoT</a></li>
+      <li><a href="/tags/3d/" class="tag">#3D</a></li>
+    </ul>
+  </article>
+
 
 		</main>
 
