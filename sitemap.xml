@@ -57,22 +57,22 @@
 	</url>
 	
 	<url>
-		<loc>https://danielgalis.com/tags/rituals/</loc>
-		<lastmod>2023-09-26</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/self-governance/</loc>
-		<lastmod>2023-09-26</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://danielgalis.com/tags/iot/</loc>
 		<lastmod>2023-09-26</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://danielgalis.com/tags/3d/</loc>
+		<lastmod>2023-09-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/rituals/</loc>
+		<lastmod>2023-09-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/self-governance/</loc>
 		<lastmod>2023-09-26</lastmod>
 	</url>
 </urlset>
