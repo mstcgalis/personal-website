@@ -22,6 +22,7 @@ module.exports = function(eleventyConfig) {
 		"./public/": "/",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
 		"./content/posts/attachments": "/posts/attachments",
+		"./content/projects/attachments": "/projects/attachments",
 		"./CNAME" : "/CNAME",
 	});
 

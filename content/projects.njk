@@ -10,8 +10,10 @@ eleventyNavigation:
   <article>
     <h2>{{ project.data.title }} {{ project.data.emoji }}</h2>
     <p>{{ project.data.description }}</p>
-    <a href="{{ project.data.github }}">GitHub</a>
-    <a href="/posts/{{ project.data.post }}">Post</a>
+    {% if project.data.github %}<a href="{{ project.data.github }}">GitHub</a>{% endif %}
+    {% if project.data.post %}<a href="/posts/{{ project.data.post }}">Post</a>{% endif %}
+    {% if project.data.pdf %}<a href="/projects/attachments/{{ project.data.pdf }}">PDF (SK)</a>{% endif %}
+    {% if project.data.research %}<a href="{{ project.data.research }}">Research</a>{% endif %}
     <ul class="metadata-tags">
       {%- for tag in project.data.tags | filterTagList %}
       {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
