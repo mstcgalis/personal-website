@@ -375,13 +375,12 @@ header:after {
 	grid-template-columns: 1fr; /* Single column on mobile */
 	justify-items: stretch; /* Stretch items to fill the width */
 }
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	.projectlist {
-	  grid-template-columns: 1fr 1fr;
-	  column-gap: 0.8em;
+	  grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+	  column-gap: 0.8em; /* Gap between columns */
 	}
-} */
-
+}
 
 .project-card {
 	display: flex;
@@ -573,7 +572,7 @@ align-items: center;
 
 <div class="nav-under-content">
   <p>
-    <a href="/tags/tools">Random Tag</a>. 
+    <a href="/tags/rituals">Random Tag</a>. 
     See all <a href="/tags/">Tags</a>.
   </p>
 </div>
