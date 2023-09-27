@@ -47,7 +47,8 @@
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
 
-	--color-background: #FEFEFA;
+	--color-white: #FEFEFA;
+	--color-background: var(--color-white);
 
 	--color-offset: #EEE;
 	--color-faded: #555;
@@ -393,14 +394,45 @@ header:after {
 .project-card {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
 	align-items: baseline;
-	justify-content: center;
+	justify-content: left;
 
 	counter-increment: start-from -1;
-	padding: 0.2em;
+	padding: 0.4em;
 	
 	border: 2px var(--color-offset) solid;
 	border-radius: var(--radius);
+}
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	
+	color: var(--color-white) !important;
+	background-color: var(--color-blue);
+	padding: 0.2em 0.6em;
+	border-radius: var(--radius-tag);
+	
+	font-size: var(--font-size-body);
+	text-decoration: none;
+}
+.button:hover {
+	text-decoration: underline;
+}
+.button:active {
+	text-decoration: underline;
+	color: red !important;
+}
+
+.button-list {
+	display: inline-flex;
+	text-align: right;
+	flex-wrap: wrap;
+	gap: 0.4em;
+	list-style: none;
+	padding-left: 0;
 }
 
 /* Tags */
@@ -557,50 +589,70 @@ align-items: center;
 
 		<main id="skip">
 			
-<h1>Projects</h1>
 
 
-  <article>
-    <h2>mstc ♻️</h2>
-    <p>Upcycled clothing designed for a circular economy.</p>
+<div class="projectlist">
+
+  <article class="project-card">
+    <h2>🔑 Keybot</h2>
     
-    
-    <a href="/projects/attachments/mstc.pdf">PDF (SK)</a>
-    <a href="https://www.are.na/daniel-galis/mstc-project">Research</a>
-    <ul class="metadata-tags">
-      <li><a href="/tags/clothing/" class="tag">#clothing</a></li>
-      <li><a href="/tags/economics/" class="tag">#economics</a></li>
-      <li><a href="/tags/biodesign/" class="tag">#biodesign</a></li>
-    </ul>
-  </article>
-
-  <article>
-    <h2>Tomado 🍅</h2>
-    <p>Simple Pomodoro Timer that lives in your MacOS Menu Bar.</p>
-    <a href="https://github.com/mstcgalis/Tomado">GitHub</a>
-    
-    <a href="/projects/attachments/tomado.pdf">PDF (SK)</a>
-    <a href="https://www.are.na/daniel-galis/tomado-project">Research</a>
-    <ul class="metadata-tags">
-      <li><a href="/tags/tools/" class="tag">#tools</a></li>
-      <li><a href="/tags/self-governance/" class="tag">#self-governance</a></li>
-    </ul>
-  </article>
-
-  <article>
-    <h2>Keybot 🔑</h2>
     <p>Discord connected IoT device, designed to be used in a shared workspace where only a single key is available.</p>
-    <a href="https://github.com/mstcgalis/Keybot">GitHub</a>
-    <a href="/posts/key-bot">Post</a>
-    
-    <a href="https://www.are.na/daniel-galis/key-bot-project">Research</a>
-    <ul class="metadata-tags">
-      <li><a href="/tags/tools/" class="tag">#tools</a></li>
-      <li><a href="/tags/iot/" class="tag">#IoT</a></li>
-      <li><a href="/tags/3d/" class="tag">#3D</a></li>
+    <ul class="button-list">
+      <li><a class="button" href="https://github.com/mstcgalis/Keybot">GitHub</a></li>
+      <li><a class="button" href="/posts/key-bot">Post</a></li>
+      
+      <li><a class="button" href="https://www.are.na/daniel-galis/key-bot-project">Research</a></li>
     </ul>
+    <div class="metadata">
+      <ul class="metadata-tags">
+        <li><a href="/tags/tools/" class="tag">#tools</a></li>
+        <li><a href="/tags/iot/" class="tag">#IoT</a></li>
+        <li><a href="/tags/3d/" class="tag">#3D</a></li>
+      </ul>
+      <time class="metadata-date" datetime="Sun Jul 30 2023 00:00:00 GMT+0000 (Coordinated Universal Time)">2023</time>
+    </div>
   </article>
 
+  <article class="project-card">
+    <h2>🍅 Tomado</h2>
+    
+    <p>Simple Pomodoro Timer that lives in your MacOS Menu Bar.</p>
+    <ul class="button-list">
+      <li><a class="button" href="https://github.com/mstcgalis/Tomado">GitHub</a></li>
+      
+      <li><a class="button" href="/projects/attachments/tomado.pdf">PDF (SK)</a></li>
+      <li><a class="button" href="https://www.are.na/daniel-galis/tomado-project">Research</a></li>
+    </ul>
+    <div class="metadata">
+      <ul class="metadata-tags">
+        <li><a href="/tags/tools/" class="tag">#tools</a></li>
+        <li><a href="/tags/self-governance/" class="tag">#self-governance</a></li>
+      </ul>
+      <time class="metadata-date" datetime="Sat Jul 30 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">2022</time>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <h2>♻️ mstc</h2>
+    
+    <p>Upcycled clothing designed for a circular economy.</p>
+    <ul class="button-list">
+      
+      
+      <li><a class="button" href="/projects/attachments/mstc.pdf">PDF (SK)</a></li>
+      <li><a class="button" href="https://www.are.na/daniel-galis/mstc-project">Research</a></li>
+    </ul>
+    <div class="metadata">
+      <ul class="metadata-tags">
+        <li><a href="/tags/clothing/" class="tag">#clothing</a></li>
+        <li><a href="/tags/economics/" class="tag">#economics</a></li>
+        <li><a href="/tags/biodesign/" class="tag">#biodesign</a></li>
+      </ul>
+      <time class="metadata-date" datetime="Fri Jul 30 2021 00:00:00 GMT+0000 (Coordinated Universal Time)">2021</time>
+    </div>
+  </article>
+
+</div>
 
 		</main>
 
