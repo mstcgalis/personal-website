@@ -4,21 +4,6 @@ eleventyNavigation:
   key: Projects
   order: 1
 ---
-<h1>Projects</h1>
 
-{% for project in collections.projects %}
-  <article>
-    <h2>{{ project.data.title }} {{ project.data.emoji }}</h2>
-    <p>{{ project.data.description }}</p>
-    {% if project.data.github %}<a href="{{ project.data.github }}">GitHub</a>{% endif %}
-    {% if project.data.post %}<a href="/posts/{{ project.data.post }}">Post</a>{% endif %}
-    {% if project.data.pdf %}<a href="/projects/attachments/{{ project.data.pdf }}">PDF (SK)</a>{% endif %}
-    {% if project.data.research %}<a href="{{ project.data.research }}">Research</a>{% endif %}
-    <ul class="metadata-tags">
-      {%- for tag in project.data.tags | filterTagList %}
-      {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-      <li><a href="{{ tagUrl }}" class="tag">#{{ tag }}</a></li>
-      {%- endfor %}
-    </ul>
-  </article>
-{% endfor %}
+{% set projectlist = collections.projects %}
+{% include "projectlist.njk" %}
