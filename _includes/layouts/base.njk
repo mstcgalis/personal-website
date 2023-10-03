@@ -14,6 +14,11 @@
 
 		<meta name="generator" content="{{ eleventy.generator }}">
 
+		{#- Inter font loading #}
+		<link rel="preconnect" href="https://rsms.me/">
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+
 		{#-
 		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
 		1. You can add to them using `{% css %}`
@@ -36,6 +41,7 @@
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
+
 			<a href="/" class="home-link"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ metadata.title }}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}

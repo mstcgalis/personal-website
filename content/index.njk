@@ -2,7 +2,12 @@
 layout: layouts/home.njk
 numberOfLatestPostsToShow: 3
 ---
-<h1>Hi! I'm Daniel.</h1>
+<h1>
+  {# logo before greeting
+  <img style="display:inline-block; border-radius: 0" width="auto" height="24.5" src="/logo.svg" alt=""></img> 
+  #}
+   Hi! I'm Daniel.
+</h1>
 <p>
   Thanks for stopping by! I'm an interaction designer, researcher and developer on a mission to create digital tools that empower individuals and communities.
 </p>
@@ -31,7 +36,13 @@ numberOfLatestPostsToShow: 3
   <span>|</span>
   <a href="https://discordapp.com/users/147823743882756096">Discord</a>
 </p>
-{% set postsCount = collections.posts | length %}
+<div class="logo">
+  <img style="border-radius: 0;" width="auto" height="80" src="/favicon.svg" alt=""></img>
+</div>
+
+
+
+{# {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Thinking</h1>
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
@@ -42,23 +53,8 @@ numberOfLatestPostsToShow: 3
   <p>
     See all <a href="/posts/">Posts</a>.
   </p>
-{% endif %}
-<h1 id="making">Making</h1>
-<div class="projectlist">
-  <div class="project-card">
-    <img class="projectlist-image" src="posts/attachments/key-bot_installed.jpg" alt="🔑">
-    <a class="projectlist-link" href="https://github.com/mstcgalis/Keybot">Keybot</a>
-  </div>
-  <div class="project-card">
-    <a class="projectlist-link" href="https://github.com/mstcgalis/tomado">🍅 Tomado</a>
-  </div>
-  <div class="project-card">
-    <a class="projectlist-link" href="https://www.are.na/city-website-axdx">🏛️ CITY-WEBSITE</a>
-  </div>
-  <div class="project-card">
-    <a class="projectlist-link" href="https://md2dc.danielgalis.com">md2dc</a>
-  </div>
-</div>
+{% endif %} #}
+
 {# List every content page in the project #}
 {#
 <ul>
