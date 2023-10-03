@@ -16,6 +16,8 @@
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Daniel Gális">
 
 		<meta name="generator" content="Eleventy v2.0.1">
+		<link rel="preconnect" href="https://rsms.me/">
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 		
 		<style>/**
  * okaidia theme for JavaScript, CSS and HTML
@@ -188,7 +190,7 @@ pre[class*="language-diff-"] {
 * { box-sizing: border-box; }
 /* Defaults */
 :root {
-	--font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+	--font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 	--font-size-body: 16px;
     --font-size-mono: 15px;
@@ -198,7 +200,7 @@ pre[class*="language-diff-"] {
 	--font-size-h3: 1.125em;
 	--font-size-h4: 1em;
     
-    --font-weight-bold: 600;
+    --font-weight-bold: 500;
 	--font-weight-normal: 400;
 
 	--line-height: 1.5;
@@ -208,6 +210,13 @@ pre[class*="language-diff-"] {
   
     --width: 700px;
 }
+
+@supports (font-variation-settings: normal) {
+	:root { --font-family: 'Inter var', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+		--font-weight-bold: 480;
+		--font-weight-normal: 380;
+	}
+  }
 
 /* Theme colors */
 :root {
@@ -321,6 +330,10 @@ a[href]:active {
 main {
 	padding: 0.8em 0 0 0;
 	flex: 1;
+}
+.homepage-main {
+	display: flex;
+	flex-direction: column;
 }
 main :first-child {
 	margin-top: 0;
@@ -737,13 +750,46 @@ align-items: center;
 }
 
 .contact {
-	margin-top: 1.6em;
+	margin-top: 3.2em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 20em;
+	animation: fadeIn 60s infinite;
+}
+
+@keyframes fadeIn {
+    0%, 40% {
+        opacity: 0;
+    }
+	90% {
+		opacity: 0.2;
+	}
+    99.79% {
+        opacity: 1;
+    }
+	99.8% {
+		opacity: 0;
+	}
+	99.99% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }</style>
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
+
 			<a href="/" class="home-link">Daniel Gális</a>
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
