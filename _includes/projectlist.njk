@@ -1,7 +1,7 @@
 <div class="projectlist">
 {% for project in projectlist | reverse %}
   <article class="project-card">
-    <h2>{{ project.data.emoji }} {{ project.data.title }}</h2>
+    <h3>{{ project.data.emoji }} {{ project.data.title }}</h3>
     {# {% if project.data.image %}<img class="projectlist-image" src="{{ project.data.image }}" alt="🔑">{% endif %} #}
     <p>{{ project.data.description }}</p>
     <ul class="button-list">
