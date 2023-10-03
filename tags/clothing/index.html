@@ -345,14 +345,14 @@ header:after {
 	margin-left: -1.5rem;
 }
 .postlist-link {
-	font-size: var(--font-size-body);
+	font-size: var(--font-size-h3);
 	font-weight: var(--font-weight-normal);
 	flex-basis: calc(100% - 1.5rem);
 	padding-right: .5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.4em;
 }
 .postlist-item:hover {
 	background-color: var(--color-offset);
@@ -365,9 +365,8 @@ header:after {
 .postlist-item > .metadata {
 	margin-block-end: 0;
 	background-color: transparent;
-	justify-content: left;
 }
-.postlist-item > .metadata > .metadata-date {
+/* .postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
 	line-height: 1.6;
 }
@@ -380,7 +379,7 @@ header:after {
 }
 .postlist-item > .metadata > .metadata-tags {
 	font-size: var(--font-size-small);
-}
+} */
 
 /* Project list */
 .projectlist {
@@ -477,6 +476,9 @@ header:after {
 	flex-wrap: wrap;
 	gap: 0.8em;
 	justify-content: left;
+}
+.tags-list > .tag {
+	font-size: var(--font-size-h3);
 }
 
 /* Metadata */
@@ -644,13 +646,9 @@ align-items: center;
 	<li onclick="location.href = '/projects/mstc-project/';" class="postlist-item">
 		<span class="project-emoji">♻️ </span><a href="/projects/mstc-project/" class="postlist-link">mstc</a>
 		<div class="metadata">
-			<ul class="metadata-tags">
-				<li><a href="/tags/biodesign/" class="tag">#biodesign</a></li>
-				<li><a href="/tags/clothing/" class="tag">#clothing</a></li>
-				<li><a href="/tags/economics/" class="tag">#economics</a></li>
-			</ul>
 			
 			<time class="metadata-date" datetime="Fri Jul 30 2021 00:00:00 GMT+0000 (Coordinated Universal Time)">2021 PROJECT</time>
+			
 			
 		</div>
 	</li>
@@ -666,7 +664,7 @@ align-items: center;
 
 <div class="nav-under-content">
   <p>
-    <a href="/tags/self-governance">Random Tag</a>. 
+    <a href="/tags/rituals">Random Tag</a>. 
     See all <a href="/tags/">Tags</a>.
   </p>
 </div>

@@ -345,14 +345,14 @@ header:after {
 	margin-left: -1.5rem;
 }
 .postlist-link {
-	font-size: var(--font-size-body);
+	font-size: var(--font-size-h3);
 	font-weight: var(--font-weight-normal);
 	flex-basis: calc(100% - 1.5rem);
 	padding-right: .5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.4em;
 }
 .postlist-item:hover {
 	background-color: var(--color-offset);
@@ -365,9 +365,8 @@ header:after {
 .postlist-item > .metadata {
 	margin-block-end: 0;
 	background-color: transparent;
-	justify-content: left;
 }
-.postlist-item > .metadata > .metadata-date {
+/* .postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
 	line-height: 1.6;
 }
@@ -380,7 +379,7 @@ header:after {
 }
 .postlist-item > .metadata > .metadata-tags {
 	font-size: var(--font-size-small);
-}
+} */
 
 /* Project list */
 .projectlist {
@@ -477,6 +476,9 @@ header:after {
 	flex-wrap: wrap;
 	gap: 0.8em;
 	justify-content: left;
+}
+.tags-list > .tag {
+	font-size: var(--font-size-h3);
 }
 
 /* Metadata */
@@ -644,13 +646,9 @@ align-items: center;
 	<li onclick="location.href = '/posts/arc-boosts/';" class="postlist-item">
 		<span class="project-emoji"></span><a href="/posts/arc-boosts/" class="postlist-link">I made a skin for Are.na</a>
 		<div class="metadata">
-			<ul class="metadata-tags">
-				<li><a href="/tags/second-brain/" class="tag">#second-brain</a></li>
-				<li><a href="/tags/tools/" class="tag">#tools</a></li>
-				<li><a href="/tags/web/" class="tag">#web</a></li>
-			</ul>
 			
 			<time class="metadata-date" datetime="2023-08-30">2023-08-30 WED</time>
+			
 			
 		</div>
 	</li>
@@ -658,13 +656,9 @@ align-items: center;
 	<li onclick="location.href = '/projects/keybot-project/';" class="postlist-item">
 		<span class="project-emoji">🔑 </span><a href="/projects/keybot-project/" class="postlist-link">Keybot</a>
 		<div class="metadata">
-			<ul class="metadata-tags">
-				<li><a href="/tags/3d/" class="tag">#3D</a></li>
-				<li><a href="/tags/iot/" class="tag">#IoT</a></li>
-				<li><a href="/tags/tools/" class="tag">#tools</a></li>
-			</ul>
 			
 			<time class="metadata-date" datetime="Sun Jul 30 2023 00:00:00 GMT+0000 (Coordinated Universal Time)">2023 PROJECT</time>
+			
 			
 		</div>
 	</li>
@@ -672,13 +666,9 @@ align-items: center;
 	<li onclick="location.href = '/posts/public-digital-garden/';" class="postlist-item">
 		<span class="project-emoji"></span><a href="/posts/public-digital-garden/" class="postlist-link">Thoughts On a Public Digital Garden</a>
 		<div class="metadata">
-			<ul class="metadata-tags">
-				<li><a href="/tags/second-brain/" class="tag">#second-brain</a></li>
-				<li><a href="/tags/tools/" class="tag">#tools</a></li>
-				<li><a href="/tags/web/" class="tag">#web</a></li>
-			</ul>
 			
 			<time class="metadata-date" datetime="2023-07-14">2023-07-14 FRI</time>
+			
 			
 		</div>
 	</li>
@@ -686,13 +676,9 @@ align-items: center;
 	<li onclick="location.href = '/posts/key-bot/';" class="postlist-item">
 		<span class="project-emoji"></span><a href="/posts/key-bot/" class="postlist-link">Keybot - Exploring Research Through Design</a>
 		<div class="metadata">
-			<ul class="metadata-tags">
-				<li><a href="/tags/3d/" class="tag">#3D</a></li>
-				<li><a href="/tags/iot/" class="tag">#IoT</a></li>
-				<li><a href="/tags/tools/" class="tag">#tools</a></li>
-			</ul>
 			
 			<time class="metadata-date" datetime="2023-06-03">2023-06-03 SAT</time>
+			
 			
 		</div>
 	</li>
@@ -700,13 +686,9 @@ align-items: center;
 	<li onclick="location.href = '/posts/ritual-sketching/';" class="postlist-item">
 		<span class="project-emoji"></span><a href="/posts/ritual-sketching/" class="postlist-link">Ritual Sketching - A Creative Approach to Habit Tracking</a>
 		<div class="metadata">
-			<ul class="metadata-tags">
-				<li><a href="/tags/rituals/" class="tag">#rituals</a></li>
-				<li><a href="/tags/self-governance/" class="tag">#self-governance</a></li>
-				<li><a href="/tags/tools/" class="tag">#tools</a></li>
-			</ul>
 			
 			<time class="metadata-date" datetime="2023-04-02">2023-04-02 SUN</time>
+			
 			
 		</div>
 	</li>
@@ -714,12 +696,9 @@ align-items: center;
 	<li onclick="location.href = '/projects/tomado-project/';" class="postlist-item">
 		<span class="project-emoji">🍅 </span><a href="/projects/tomado-project/" class="postlist-link">Tomado</a>
 		<div class="metadata">
-			<ul class="metadata-tags">
-				<li><a href="/tags/self-governance/" class="tag">#self-governance</a></li>
-				<li><a href="/tags/tools/" class="tag">#tools</a></li>
-			</ul>
 			
 			<time class="metadata-date" datetime="Sat Jul 30 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">2022 PROJECT</time>
+			
 			
 		</div>
 	</li>
@@ -739,7 +718,7 @@ align-items: center;
 
 <div class="nav-under-content">
   <p>
-    <a href="/tags/economics">Random Tag</a>. 
+    <a href="/tags/IoT">Random Tag</a>. 
     See all <a href="/tags/">Tags</a>.
   </p>
 </div>
