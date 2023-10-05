@@ -74,8 +74,9 @@ module.exports = function(eleventyConfig) {
 	});
 	// map tagUrls for Random Tag
 	eleventyConfig.addFilter("mapTagUrls", function (tags) {
-		return tags.map(tag => '/tags/' + tag);
+		return tags.map(tag => '/tags/' + tag.toLowerCase());
 	});
+	  
 	  
   
 	// Get the first `n` elements of a collection.

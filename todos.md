@@ -1,9 +1,4 @@
 # Frontend
-- [x] animation of logo
-- [x] center logo in viewport space
-- [x] sticky nav
-- [ ] better random post/project/tag implementation
-
 - [ ] links only mody
 - [ ] currently animation: first only show verbs, then show rest one by one
 - [ ] tags-list needs to look better, it is akward
@@ -19,3 +14,4 @@
 
 # Design
 - [ ] index of (posts, projects, thoughts)
+- [ ] blue and link-blue doesnt work well together
