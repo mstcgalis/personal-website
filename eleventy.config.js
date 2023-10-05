@@ -72,6 +72,11 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("mapPageUrls", function (items) {
 		return items.map(item => item.url);
 	});
+	// map tagUrls for Random Tag
+	eleventyConfig.addFilter("mapTagUrls", function (tags) {
+		return tags.map(tag => '/tags/' + tag);
+	});
+	  
   
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {

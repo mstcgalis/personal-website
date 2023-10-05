@@ -30,11 +30,14 @@ permalink: /tags/{{ tag | slugify }}/
 {% endfor %}
 
 
-{%- set tagUrls = collections.all | getAllTags | filterTagList %}
+
+{# random tag button #}
+{%- set tagUrls = collections.all | getAllTags | filterTagList | mapTagUrls %}
 <div class="nav-under-content">
   <p>
-    <a href="#" id="randomButton" data-urls="{{ tagUrls }} ">Random Tag</a>. 
+    <a id="randomButton" href="#" data-urls='{{ tagUrls | toJson }}'>Random Tag</a>. 
     See all <a href="/tags/">Tags</a>.
   </p>
   <script src="/js/randomPage.js"></script>
 </div>
+
