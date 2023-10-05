@@ -18,6 +18,26 @@
 		<meta name="generator" content="Eleventy v2.0.1">
 		<link rel="preconnect" href="https://rsms.me/">
 		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+		<script>
+			let lastScroll = 0;
+
+			window.addEventListener("scroll", () => {
+			const currentScroll = window.pageYOffset;
+			
+			if (currentScroll <= 0) {
+				document.querySelector("header").classList.remove("nav-hidden");
+				return;
+			}
+			
+			if (currentScroll > lastScroll && !document.querySelector("header").classList.contains("nav-hidden")) {
+				document.querySelector("header").classList.add("nav-hidden");
+			} else if (currentScroll < lastScroll) {
+				document.querySelector("header").classList.remove("nav-hidden");
+			}
+			
+			lastScroll = currentScroll;
+			});
+		</script>
 		
 		<style>* { box-sizing: border-box; }
 /* Defaults */
@@ -113,6 +133,12 @@ body {
 	font-weight: var(--font-weight-normal);
 	line-height: var(--line-height);
 }
+.view {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
 html {
 	overflow-y: scroll;
 }
@@ -162,11 +188,11 @@ a[href]:active {
 main {
 	padding: 0.8em 0 0 0;
 	flex: 1;
-}
-.homepage-main {
+
 	display: flex;
 	flex-direction: column;
 }
+
 main :first-child {
 	margin-top: 0;
 }
@@ -266,17 +292,16 @@ ul {
 
 /* Header */
 header {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
 	padding: 0.8em 0 0.8em 0;
 	
-	/* sticky header
-	position: fixed;
+	transition: top 0.15s ease-in-out;
+	position: sticky;
 	top: 0;
 	background-color: var(--color-background);
-	width: 100%; */
 }
+.nav-hidden {
+	top: -3em;
+  }
 header:after {
 	content: "";
 	display: table;
@@ -284,12 +309,10 @@ header:after {
 }
 .home-link {
 	font-size: 1em; /* 16px /16 */
-	font-weight: var(--font-weight-bold);
-	margin-right: 1em;
 	color: var(--text-color) !important;
 }
 .home-link[aria-current="page"] {
-	margin-right: 1em; /* placeholder */
+	color: red !important;
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
@@ -301,27 +324,30 @@ header:after {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+
+	justify-content: space-between;
 }
 
 .nav-item {
 	display: inline-block;
-	margin-right: 1em;
 }
-.nav-item a[href] {
+/* .nav-item a[href] {
 	color: var(--text-color);
 }
 .nav-item a:visited{
 	color: var(--text-color);
+} 
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
 }
+*/
 .nav-item a[href]:hover,
 .nav-item a[href]:active {
 	color: var(--text-color-link-active);
 }
-.nav-item a[href]:not(:hover) {
-	text-decoration: none;
-}
 .nav a[href][aria-current="page"] {
 	text-decoration: underline;
+	color: red !important;
 }
 
 /* Posts list */
@@ -331,9 +357,9 @@ header:after {
 	padding: 0;
 }
 .postlist-item {
-	display: flex;
+	/* display: flex;
 	flex-wrap: wrap;
-	align-items: baseline;
+	align-items: baseline; */
 	counter-increment: start-from -1;
 	margin: 1em 0em 1em 0em;
 }
@@ -583,18 +609,32 @@ align-items: center;
 	/* opacity: 0; */
 }
 
+.homepage {
+	display: flex;
+	flex-direction: column;
+	height: 100;
+}
+
 .contact {
-	margin-top: 3.2em;
+	margin-top: 0.8em;
 	display: flex;
 	justify-content: space-between;
+
+	list-style: none;
+	padding: 0;
+	
+	gap: 1em;
 }
 
 .logo {
+	flex: 1;
+	height: 100%;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 20em;
+	
 	animation: fadeIn 60s infinite;
 }
 
@@ -611,10 +651,10 @@ align-items: center;
 	99.8% {
 		opacity: 0;
 	}
-	99.99% {
+	99.85% {
 		opacity: 0;
 	}
-	100% {
+	99.86%, 100% {
 		opacity: 1;
 	}
 }</style>
@@ -622,22 +662,23 @@ align-items: center;
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
-		<header>
+		<div class="view">
 
-			<a href="/" class="home-link">Daniel Gális</a>
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-					<li class="nav-item"><a href="/projects/">Projects</a></li>
-					<li class="nav-item"><a href="/posts/">Posts</a></li>
-					<li class="nav-item"><a href="/tags/">Tags</a></li>
-					<li class="nav-item"><a href="https://danielgalis.thoughts.page">Thoughts</a>
-				</ul>
-			</nav>
-		</header>
+			<header>
+				<nav style="width: 100%;">
+					<h2 class="visually-hidden">Top level navigation menu</h2>
+					<ul class="nav">
+						<li><a href="/" class="home-link">Daniel Gális</a></li>
+						<li class="nav-item"><a href="/projects/">Projects</a></li>
+						<li class="nav-item"><a href="/posts/">Posts</a></li>
+						<li class="nav-item"><a href="/tags/">Tags</a></li>
+						<li class="nav-item"><a href="https://danielgalis.thoughts.page">Thoughts</a>
+					</ul>
+				</nav>
+			</header>
 
-		<main id="skip">
-			
+			<main id="skip">
+				
 <h1>#biodesign</h1>
 
 
@@ -664,13 +705,16 @@ align-items: center;
 
 <div class="nav-under-content">
   <p>
-    <a href="/tags/clothing">Random Tag</a>. 
+    <a href="#" id="randomButton" data-urls="clothing,economics,biodesign,tools,self-governance,rituals,IoT,3D,second-brain,web ">Random Tag</a>. 
     See all <a href="/tags/">Tags</a>.
   </p>
+  <script src="/js/randomPage.js"></script>
 </div>
 
 
-		</main>
+			</main>
+
+		</div>
 
 		<footer>
 			<hr>
