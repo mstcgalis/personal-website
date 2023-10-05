@@ -29,10 +29,12 @@ permalink: /tags/{{ tag | slugify }}/
 <iframe class="my-iframe" src="{{ url }}/embed" width="100%" height="560px"></iframe>
 {% endfor %}
 
-{%- set randomTag = collections.all | getAllTags | filterTagList | getRandomPost(page, categories) %}
+
+{%- set tagUrls = collections.all | getAllTags | filterTagList %}
 <div class="nav-under-content">
   <p>
-    <a href="/tags/{{ randomTag }}">Random Tag</a>. 
+    <a href="#" id="randomButton" data-urls="{{ tagUrls }} ">Random Tag</a>. 
     See all <a href="/tags/">Tags</a>.
   </p>
+  <script src="/js/randomPage.js"></script>
 </div>

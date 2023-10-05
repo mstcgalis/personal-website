@@ -63,19 +63,16 @@ module.exports = function(eleventyConfig) {
 		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
 	});
 
-	// Get random post
-	eleventyConfig.addFilter("getRandomPost", function (items, currentPost, category) {
-		// Filter out the current post from the items
-		let filteredItems = items.filter((item) => item.url !== currentPost.url);
-		// If a category is provided, filter by category as well
-		if (category) {
-		  filteredItems = filteredItems.filter((item) => item.data.categories === category);
-		}
-		// Return a random post from the filtered items
-		return filteredItems[Math.floor(Math.random() * filteredItems.length)];
-	});
-	  
+	// JSON
+	eleventyConfig.addFilter("toJson", function(value) {
+		return JSON.stringify(value);
+	  });
 
+	// map pageUrls
+	eleventyConfig.addFilter("mapPageUrls", function (items) {
+		return items.map(item => item.url);
+	});
+  
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
 		if(!Array.isArray(array) || array.length === 0) {

@@ -18,6 +18,28 @@
 		<link rel="preconnect" href="https://rsms.me/">
 		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
+		{#- JS #}
+		<script>
+			let lastScroll = 0;
+
+			window.addEventListener("scroll", () => {
+			const currentScroll = window.pageYOffset;
+			
+			if (currentScroll <= 0) {
+				document.querySelector("header").classList.remove("nav-hidden");
+				return;
+			}
+			
+			if (currentScroll > lastScroll && !document.querySelector("header").classList.contains("nav-hidden")) {
+				document.querySelector("header").classList.add("nav-hidden");
+			} else if (currentScroll < lastScroll) {
+				document.querySelector("header").classList.remove("nav-hidden");
+			}
+			
+			lastScroll = currentScroll;
+			});
+		</script>
+
 
 		{#-
 		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
@@ -40,25 +62,27 @@
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
-		<header>
+		<div class="view">
 
-			<a href="/" class="home-link"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ metadata.title }}</a>
+			<header>
+				{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+				<nav style="width: 100%;">
+					<h2 class="visually-hidden">Top level navigation menu</h2>
+					<ul class="nav">
+						<li><a href="/" class="home-link"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ metadata.title }}</a></li>
+					{%- for entry in collections.all | eleventyNavigation %}
+						<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+					{%- endfor %}
+						<li class="nav-item"><a href="https://danielgalis.thoughts.page">Thoughts</a>
+					</ul>
+				</nav>
+			</header>
 
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-					<li class="nav-item"><a href="https://danielgalis.thoughts.page">Thoughts</a>
-				</ul>
-			</nav>
-		</header>
+			<main id="skip">
+				{{ content | safe }}
+			</main>
 
-		<main id="skip">
-			{{ content | safe }}
-		</main>
+		</div>
 
 		<footer>
 			<hr>

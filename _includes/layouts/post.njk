@@ -22,14 +22,16 @@ layout: layouts/base.njk
 {{ content | safe }}
 
 {# random post button #}
+{# random post button #}
 {%- if collections.posts %}
-  {%- set randomPost = collections.posts | getRandomPost(page, categories) %}
-	<div class="nav-under-content">
-		<p>
-			<a href="{{ randomPost.url }}">Random Post</a>. 
-			See all <a href="/posts/">Posts</a>.
-		</p>
-	</div>
+  {%- set postUrls = collections.posts | mapPageUrls %}
+  <div class="nav-under-content">
+    <p>
+      <a id="randomButton" href="#" data-urls='{{ postUrls | toJson }}'>Random Post</a>
+      See all <a href="/posts/">Posts</a>.
+    </p>
+    <script src="/js/randomPage.js"></script>
+  </div>
 {%- endif %}
 
 
