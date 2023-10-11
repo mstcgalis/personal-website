@@ -274,6 +274,17 @@ header:after {
 .home-link:link:not(:hover) {
 	text-decoration: none;
 }
+@media (max-width: 424px) {
+	.home-link::before {
+	  content: "Daniel";
+	}
+  }
+  
+  @media (min-width: 425px) {
+	.home-link::before {
+	  content: "Daniel Gális";
+	}
+  }
 
 /* Nav */
 .nav {
@@ -573,14 +584,14 @@ align-items: center;
 }
 
 .contact {
-	margin-top: 0.8em;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-
+	gap: 1em;
+	
+	margin-top: 0.8em;
 	list-style: none;
 	padding: 0;
-	
-	gap: 1em;
 }
 
 .logo {

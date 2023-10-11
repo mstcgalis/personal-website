@@ -316,6 +316,17 @@ header:after {
 .home-link:link:not(:hover) {
 	text-decoration: none;
 }
+@media (max-width: 424px) {
+	.home-link::before {
+	  content: "Daniel";
+	}
+  }
+  
+  @media (min-width: 425px) {
+	.home-link::before {
+	  content: "Daniel Gális";
+	}
+  }
 
 /* Nav */
 .nav {
@@ -615,14 +626,14 @@ align-items: center;
 }
 
 .contact {
-	margin-top: 0.8em;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-
+	gap: 1em;
+	
+	margin-top: 0.8em;
 	list-style: none;
 	padding: 0;
-	
-	gap: 1em;
 }
 
 .logo {
@@ -667,7 +678,7 @@ align-items: center;
 				<nav style="width: 100%;">
 					<h2 class="visually-hidden">Top level navigation menu</h2>
 					<ul class="nav">
-						<li><a href="/" class="home-link">Daniel Gális</a></li>
+						<li><a href="/" class="home-link"></a></li>
 						<li class="nav-item"><a href="/projects/" aria-current="page">Projects</a></li>
 						<li class="nav-item"><a href="/posts/">Posts</a></li>
 						<li class="nav-item"><a href="/tags/">Tags</a></li>
@@ -682,8 +693,8 @@ align-items: center;
 
 <div class="projectlist">
 
-  <article class="project-card">
-    <h3>🔑 Keybot</h3>
+  <article href=" https://www.are.na/daniel-galis/key-bot-project" class="project-card">
+    <a><h3>🔑 Keybot</h3></a>
     
     <p>Discord connected IoT device, designed to be used in a shared workspace where only a single key is available.</p>
     <ul class="button-list">
@@ -702,8 +713,8 @@ align-items: center;
     </div>
   </article>
 
-  <article class="project-card">
-    <h3>🍅 Tomado</h3>
+  <article href=" https://www.are.na/daniel-galis/tomado-project" class="project-card">
+    <a><h3>🍅 Tomado</h3></a>
     
     <p>Simple Pomodoro Timer that lives in your MacOS Menu Bar.</p>
     <ul class="button-list">
@@ -721,8 +732,8 @@ align-items: center;
     </div>
   </article>
 
-  <article class="project-card">
-    <h3>♻️ mstc</h3>
+  <article href=" https://www.are.na/daniel-galis/mstc-project" class="project-card">
+    <a><h3>♻️ mstc</h3></a>
     
     <p>Upcycled clothing designed for a circular economy.</p>
     <ul class="button-list">
