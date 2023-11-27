@@ -1,17 +1,13 @@
 <div class="projectlist">
 {% for project in projectlist | reverse %}
   <article href=" {{ project.data.research }}" class="project-card">
-    <a><h3>{{ project.data.emoji }} {{ project.data.title }}</h3></a>
+    <span>{{ project.data.emoji }} <a href="{{ project.url }}" class="project-title">{{ project.data.title }}</a></span>
     {# {% if project.data.image %}<img class="projectlist-image" src="{{ project.data.image }}" alt="🔑">{% endif %} #}
     <p>{{ project.data.description }}</p>
     <ul class="button-list">
       {%- for label, link in project.data.links %}
-      <li><a class="button" href="{{ link }}">{{ label }}</a></li>
+      <li><a class="button" href="{{ link }}" target="_blank">↗ {{ label }}</a></li>
       {%- endfor %}
-      {# {% if project.data.github %}<li><a class="button" href="{{ project.data.github }}">GitHub</a></li>{% endif %}
-      {% if project.data.post %}<li><a class="button" href="/posts/{{ project.data.post }}">Post</a></li>{% endif %}
-      {% if project.data.pdf %}<li><a class="button" href="/projects/attachments/{{ project.data.pdf }}">PDF (SK)</a></li>{% endif %}
-      {% if project.data.research %}<li><a class="button" href="{{ project.data.research }}">Research</a></li>{% endif %} #}
     </ul>
     <div class="metadata">
       <ul class="metadata-tags">

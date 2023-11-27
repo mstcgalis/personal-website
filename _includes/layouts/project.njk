@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+---
+<h1 class="post-title">{{ emoji }} {{ title }}</h1>
+
+<div class="metadata">
+	<ul class="metadata-tags">
+		{%- for tag in tags | filterTagList %}
+		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+		<li><a href="{{ tagUrl }}" class="tag">#{{ tag }}</a></li>
+		{%- endfor %}
+	</ul>
+	<span class="metadata-date">{{ year }}</span>
+</div>
+<hr>
+
+{# {% if image %}<img class="ist-image" src="{{ image }}" alt="🔑">{% endif %} #}
+<p>{{ description }}</p>
+<ul class="button-list">
+    {%- for label, link in links %}
+    <li><a class="button" href="{{ link }}" target="_blank">↗ {{ label }}</a></li>
+    {%- endfor %}
+</ul>
+
+{#-- The content of the page #}
+{{ content | safe }}
+
+{# random project button #}
+{%- if collections.projects %}
+  {%- set projectUrls = collections.projects | mapPageUrls %}
+  <div class="nav-under-content">
+    <p>
+      <a id="randomButton" href="#" data-urls='{{ projectUrls | toJson }}'>Random Project</a>.
+      See all <a href="/projects/">Projects</a>.
+    </p>
+    <script src="/js/randomPage.js"></script>
+  </div>
+{%- endif %}

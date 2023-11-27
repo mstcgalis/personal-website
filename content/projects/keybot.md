@@ -5,8 +5,8 @@ emoji: 🔑
 date: 2023-07-30
 year: 2023
 links:
-    Research: https://www.are.na/daniel-galis/key-bot-project
     GitHub: https://github.com/mstcgalis/Keybot
+    Research: https://www.are.na/daniel-galis/key-bot-project
     Post: key-bot
 image: /posts/attachments/key-bot_installed.jpg
 tags:
