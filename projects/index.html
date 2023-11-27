@@ -118,7 +118,7 @@
 
 /* Global stylesheet */
 * {
-	box-sizing: border-box;
+	box-sizing: -box;
 }
 
 html,
@@ -199,7 +199,7 @@ main :first-child {
 
 footer {
 	/* margin-top: 1.6em; */
-	/* border-top: 1px solid var(--color-offset); */
+	/* -top: 1px solid var(--color-offset); */
 	color: var(--color-grey-50);
 	text-align: center;
 	font-size: var(--font-size-small);
@@ -211,14 +211,14 @@ footer a[href]:visited, footer a[href]:hover, footer a[href]:active, footer a[hr
 .links-nextprev {
 	margin: 1.6em 0 0 0;
 	list-style: none;
-	border-top: 2px solid var(--color-offset);
+	-top: 2px solid var(--color-offset);
 	padding-top: 0.8em;
 }
 
 .nav-under-content {
 	margin-top: 1.6em;
 	padding-top: 1.6em;
-	border-top: 2px solid var(--color-offset);
+	border-top: 1px solid var(--color-offset);
 	justify-content: center;
 	display:flex;
 }
@@ -256,7 +256,7 @@ code {
 
 hr {
 	border: 0;
-	border-top: 2px solid var(--color-offset);
+	border-top: 1px solid var(--color-offset);
 	margin: 0.8em 0;
 }
 
@@ -423,7 +423,7 @@ header:after {
 	margin: 0.8em 0em 0.8em 0em;
 	padding: 0;
 
-	row-gap: 0.8em;
+	row-gap: 1.6em;
 	display: grid;
 	grid-template-columns: 1fr; /* Single column on mobile */
 	justify-items: stretch; /* Stretch items to fill the width */
@@ -434,6 +434,15 @@ header:after {
 	  column-gap: 0.8em;
 	}
 } */
+.project-card > .metadata {
+	border-top: 1px solid var(--color-offset);
+	padding: 0.4em 0.2em 0em 0.2em;
+}
+
+.project-title {
+	font-size: var(--font-size-h3);
+	font-weight: var(--font-weight-normal);
+}
 
 .project-emoji {
 	white-space: pre;
@@ -449,7 +458,7 @@ header:after {
 	counter-increment: start-from -1;
 	padding: 0.4em;
 	
-	border: 2px var(--color-offset) solid;
+	border: 1px var(--color-offset) solid;
 	border-radius: var(--radius);
 }
 
@@ -458,9 +467,8 @@ header:after {
 	align-items: center;
 	justify-content: center;
 	
-	color: var(--color-white) !important;
-	background-color: var(--color-blue);
-	padding: 0.2em 0.6em;
+	border: 1px solid var(--text-color-link);
+	padding: 0.1em 0.4em;
 	border-radius: var(--radius-tag);
 	
 	font-size: var(--font-size-body);
@@ -478,9 +486,10 @@ header:after {
 	display: inline-flex;
 	text-align: right;
 	flex-wrap: wrap;
-	gap: 0.4em;
 	list-style: none;
-	padding-left: 0;
+	gap: 0em;
+	padding: 0em;
+	margin-block-end: 0.8em;
 }
 
 /* Tags */
@@ -694,33 +703,31 @@ align-items: center;
 <div class="projectlist">
 
   <article href=" " class="project-card">
-    <a><h3>🥁 purefuckingfun</h3></a>
+    <span>🥁 <a href="/projects/pff/" class="project-title">purefuckingfun</a></span>
     
     <p>Organizing OPEN JAM SESSIONS and making sounds.</p>
     <ul class="button-list">
-      <li><a class="button" href="https://photos.app.goo.gl/vVSBPggwpnJ4sDgJ6">Images</a></li>
-      <li><a class="button" href="https://www.instagram.com/purefuckingfun/">Instagram</a></li>
-      <li><a class="button" href="https://discord.gg/bk8qEs56fr">Discord</a></li>
-      <li><a class="button" href="https://soundcloud.com/pure-fucking-fun">Soundcloud</a></li>
-      
+      <li><a class="button" href="https://photos.app.goo.gl/vVSBPggwpnJ4sDgJ6" target="_blank">↗ Images</a></li>
+      <li><a class="button" href="https://www.instagram.com/purefuckingfun/" target="_blank">↗ Instagram</a></li>
+      <li><a class="button" href="https://discord.gg/bk8qEs56fr" target="_blank">↗ Discord</a></li>
+      <li><a class="button" href="https://soundcloud.com/pure-fucking-fun" target="_blank">↗ Soundcloud</a></li>
     </ul>
     <div class="metadata">
       <ul class="metadata-tags">
         <li><a href="/tags/music/" class="tag">#music</a></li>
       </ul>
-      <time class="metadata-date" datetime="Wed Nov 22 2023 00:00:00 GMT+0000 (Coordinated Universal Time)">2023</time>
+      <time class="metadata-date" datetime="Wed Nov 22 2023 00:00:00 GMT+0000 (Coordinated Universal Time)">2022 -&gt; 3000</time>
     </div>
   </article>
 
   <article href=" " class="project-card">
-    <a><h3>🔑 Keybot</h3></a>
+    <span>🔑 <a href="/projects/keybot/" class="project-title">Keybot</a></span>
     
     <p>Discord connected IoT device, designed to be used in a shared workspace where only a single key is available.</p>
     <ul class="button-list">
-      <li><a class="button" href="https://www.are.na/daniel-galis/key-bot-project">Research</a></li>
-      <li><a class="button" href="https://github.com/mstcgalis/Keybot">GitHub</a></li>
-      <li><a class="button" href="key-bot">Post</a></li>
-      
+      <li><a class="button" href="https://github.com/mstcgalis/Keybot" target="_blank">↗ GitHub</a></li>
+      <li><a class="button" href="https://www.are.na/daniel-galis/key-bot-project" target="_blank">↗ Research</a></li>
+      <li><a class="button" href="key-bot" target="_blank">↗ Post</a></li>
     </ul>
     <div class="metadata">
       <ul class="metadata-tags">
@@ -733,32 +740,63 @@ align-items: center;
   </article>
 
   <article href=" " class="project-card">
-    <a><h3>🍅 Tomado</h3></a>
+    <span>🫧 <a href="/projects/bublina/" class="project-title">Bublina</a></span>
+    
+    <p>Student magazine distributed online and in print.</p>
+    <ul class="button-list">
+      <li><a class="button" href="https://bublina.favu.vut.cz/" target="_blank">↗ Web</a></li>
+    </ul>
+    <div class="metadata">
+      <ul class="metadata-tags">
+        <li><a href="/tags/web/" class="tag">#web</a></li>
+        <li><a href="/tags/writing/" class="tag">#writing</a></li>
+      </ul>
+      <time class="metadata-date" datetime="Sun Jan 01 2023 00:00:00 GMT+0000 (Coordinated Universal Time)">2023 -&gt; ????</time>
+    </div>
+  </article>
+
+  <article href=" " class="project-card">
+    <span>🥕 <a href="/projects/cookbook/" class="project-title">cookbook</a></span>
+    
+    <p>Cooking (an app) from local and seasonal ingredients using first principles.</p>
+    <ul class="button-list">
+      <li><a class="button" href="https://www.are.na/kitchen-axdx" target="_blank">↗ Research</a></li>
+      <li><a class="button" href="https://www.figma.com/proto/QHKAcNflDBrcVlPJgcojVy/cookbook-(interface)?page-id=0%3A1&amp;type=design&amp;node-id=30-15&amp;viewport=501%2C418%2C0.13&amp;t=lcpyLoRERISPUhci-1&amp;scaling=scale-down-width&amp;starting-point-node-id=30%3A15&amp;mode=design" target="_blank">↗ Interface prototype</a></li>
+    </ul>
+    <div class="metadata">
+      <ul class="metadata-tags">
+        <li><a href="/tags/cooking/" class="tag">#cooking</a></li>
+        <li><a href="/tags/tools/" class="tag">#tools</a></li>
+      </ul>
+      <time class="metadata-date" datetime="Tue Nov 22 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">FW22 -&gt; ????</time>
+    </div>
+  </article>
+
+  <article href=" " class="project-card">
+    <span>🍅 <a href="/projects/tomado/" class="project-title">Tomado</a></span>
     
     <p>Simple Pomodoro Timer that lives in your MacOS Menu Bar.</p>
     <ul class="button-list">
-      <li><a class="button" href="https://www.are.na/daniel-galis/tomado-project">Research</a></li>
-      <li><a class="button" href="https://github.com/mstcgalis/Tomado">GitHub</a></li>
-      <li><a class="button" href="/projects/attachments/tomado.pdf">PDF (SK)</a></li>
-      
+      <li><a class="button" href="https://github.com/mstcgalis/Tomado" target="_blank">↗ GitHub</a></li>
+      <li><a class="button" href="https://www.are.na/daniel-galis/tomado-project" target="_blank">↗ Research</a></li>
+      <li><a class="button" href="/projects/attachments/tomado.pdf" target="_blank">↗ PDF (SK)</a></li>
     </ul>
     <div class="metadata">
       <ul class="metadata-tags">
         <li><a href="/tags/tools/" class="tag">#tools</a></li>
         <li><a href="/tags/self-governance/" class="tag">#self-governance</a></li>
       </ul>
-      <time class="metadata-date" datetime="Sat Jul 30 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">2022</time>
+      <time class="metadata-date" datetime="Fri Jul 30 2021 00:00:00 GMT+0000 (Coordinated Universal Time)">2021 -&gt; 2022</time>
     </div>
   </article>
 
   <article href=" " class="project-card">
-    <a><h3>♻️ mstc</h3></a>
+    <span>♻️ <a href="/projects/mstc/" class="project-title">mstc</a></span>
     
     <p>Upcycled clothing designed for a circular economy.</p>
     <ul class="button-list">
-      <li><a class="button" href="https://www.are.na/daniel-galis/mstc-project">Research</a></li>
-      <li><a class="button" href="/projects/attachments/mstc.pdf">PDF (SK)</a></li>
-      
+      <li><a class="button" href="https://www.are.na/daniel-galis/mstc-project" target="_blank">↗ Research</a></li>
+      <li><a class="button" href="/projects/attachments/mstc.pdf" target="_blank">↗ PDF (SK)</a></li>
     </ul>
     <div class="metadata">
       <ul class="metadata-tags">

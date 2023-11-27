@@ -39,175 +39,7 @@
 			});
 		</script>
 		
-		<style>/**
- * okaidia theme for JavaScript, CSS and HTML
- * Loosely based on Monokai textmate theme by http://www.monokai.nl/
- * @author ocodia
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-	color: #f8f8f2;
-	background: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
-	border-radius: 0.3em;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #272822;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: #8292a2;
-}
-
-.token.punctuation {
-	color: #f8f8f2;
-}
-
-.token.namespace {
-	opacity: .7;
-}
-
-.token.property,
-.token.tag,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #f92672;
-}
-
-.token.boolean,
-.token.number {
-	color: #ae81ff;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: #a6e22e;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable {
-	color: #f8f8f2;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.function,
-.token.class-name {
-	color: #e6db74;
-}
-
-.token.keyword {
-	color: #66d9ef;
-}
-
-.token.regex,
-.token.important {
-	color: #fd971f;
-}
-
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-.token.italic {
-	font-style: italic;
-}
-
-.token.entity {
-	cursor: help;
-}
-/*
- * New diff- syntax
- */
-
-pre[class*="language-diff-"] {
-	--eleventy-code-padding: 1.25em;
-	padding-left: var(--eleventy-code-padding);
-	padding-right: var(--eleventy-code-padding);
-}
-.token.deleted {
-	background-color: hsl(0, 51%, 37%);
-	color: inherit;
-}
-.token.inserted {
-	background-color: hsl(126, 31%, 39%);
-	color: inherit;
-}
-
-/* Make the + and - characters unselectable for copy/paste */
-.token.prefix.unchanged,
-.token.prefix.inserted,
-.token.prefix.deleted {
-	-webkit-user-select: none;
-	user-select: none;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
-.token.prefix.inserted,
-.token.prefix.deleted {
-	width: var(--eleventy-code-padding);
-	background-color: rgba(0,0,0,.2);
-}
-
-/* Optional: full-width background color */
-.token.inserted:not(.prefix),
-.token.deleted:not(.prefix) {
-	display: block;
-	margin-left: calc(-1 * var(--eleventy-code-padding));
-	margin-right: calc(-1 * var(--eleventy-code-padding));
-	text-decoration: none; /* override del, ins, mark defaults */
-	color: inherit; /* override del, ins, mark defaults */
-}
-* { box-sizing: border-box; }
+		<style>* { box-sizing: border-box; }
 /* Defaults */
 :root {
 	--font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -286,7 +118,7 @@ pre[class*="language-diff-"] {
 
 /* Global stylesheet */
 * {
-	box-sizing: border-box;
+	box-sizing: -box;
 }
 
 html,
@@ -367,7 +199,7 @@ main :first-child {
 
 footer {
 	/* margin-top: 1.6em; */
-	/* border-top: 1px solid var(--color-offset); */
+	/* -top: 1px solid var(--color-offset); */
 	color: var(--color-grey-50);
 	text-align: center;
 	font-size: var(--font-size-small);
@@ -379,14 +211,14 @@ footer a[href]:visited, footer a[href]:hover, footer a[href]:active, footer a[hr
 .links-nextprev {
 	margin: 1.6em 0 0 0;
 	list-style: none;
-	border-top: 2px solid var(--color-offset);
+	-top: 2px solid var(--color-offset);
 	padding-top: 0.8em;
 }
 
 .nav-under-content {
 	margin-top: 1.6em;
 	padding-top: 1.6em;
-	border-top: 2px solid var(--color-offset);
+	border-top: 1px solid var(--color-offset);
 	justify-content: center;
 	display:flex;
 }
@@ -424,7 +256,7 @@ code {
 
 hr {
 	border: 0;
-	border-top: 2px solid var(--color-offset);
+	border-top: 1px solid var(--color-offset);
 	margin: 0.8em 0;
 }
 
@@ -591,7 +423,7 @@ header:after {
 	margin: 0.8em 0em 0.8em 0em;
 	padding: 0;
 
-	row-gap: 0.8em;
+	row-gap: 1.6em;
 	display: grid;
 	grid-template-columns: 1fr; /* Single column on mobile */
 	justify-items: stretch; /* Stretch items to fill the width */
@@ -602,6 +434,15 @@ header:after {
 	  column-gap: 0.8em;
 	}
 } */
+.project-card > .metadata {
+	border-top: 1px solid var(--color-offset);
+	padding: 0.4em 0.2em 0em 0.2em;
+}
+
+.project-title {
+	font-size: var(--font-size-h3);
+	font-weight: var(--font-weight-normal);
+}
 
 .project-emoji {
 	white-space: pre;
@@ -617,7 +458,7 @@ header:after {
 	counter-increment: start-from -1;
 	padding: 0.4em;
 	
-	border: 2px var(--color-offset) solid;
+	border: 1px var(--color-offset) solid;
 	border-radius: var(--radius);
 }
 
@@ -626,9 +467,8 @@ header:after {
 	align-items: center;
 	justify-content: center;
 	
-	color: var(--color-white) !important;
-	background-color: var(--color-blue);
-	padding: 0.2em 0.6em;
+	border: 1px solid var(--text-color-link);
+	padding: 0.1em 0.4em;
 	border-radius: var(--radius-tag);
 	
 	font-size: var(--font-size-body);
@@ -646,9 +486,10 @@ header:after {
 	display: inline-flex;
 	text-align: right;
 	flex-wrap: wrap;
-	gap: 0.4em;
 	list-style: none;
-	padding-left: 0;
+	gap: 0em;
+	padding: 0em;
+	margin-block-end: 0.8em;
 }
 
 /* Tags */
@@ -856,34 +697,34 @@ align-items: center;
 			</header>
 
 			<main id="skip">
-				
-<h1 class="post-title">Tomado</h1>
+				<h1 class="post-title">🍅 Tomado</h1>
 
 <div class="metadata">
-	<time class="metadata-date" datetime="2022-07-30">2022-07-30 SAT</time>
 	<ul class="metadata-tags">
 		<li><a href="/tags/tools/" class="tag">#tools</a></li>
 		<li><a href="/tags/self-governance/" class="tag">#self-governance</a></li>
 	</ul>
+	<span class="metadata-date">2021 -&gt; 2022</span>
 </div>
 <hr>
 
 
+<p>Simple Pomodoro Timer that lives in your MacOS Menu Bar.</p>
+<ul class="button-list">
+    <li><a class="button" href="https://github.com/mstcgalis/Tomado" target="_blank">↗ GitHub</a></li>
+    <li><a class="button" href="https://www.are.na/daniel-galis/tomado-project" target="_blank">↗ Research</a></li>
+    <li><a class="button" href="/projects/attachments/tomado.pdf" target="_blank">↗ PDF (SK)</a></li>
+</ul>
 
 
 
   <div class="nav-under-content">
     <p>
-      <a id="randomButton" href="#" data-urls='[&quot;/posts/ritual-sketching/&quot;,&quot;/posts/key-bot/&quot;,&quot;/posts/public-digital-garden/&quot;,&quot;/posts/arc-boosts/&quot;]'>Random Post</a>
-      See all <a href="/posts/">Posts</a>.
+      <a id="randomButton" href="#" data-urls='[&quot;/projects/mstc/&quot;,&quot;/projects/tomado/&quot;,&quot;/projects/cookbook/&quot;,&quot;/projects/bublina/&quot;,&quot;/projects/keybot/&quot;,&quot;/projects/pff/&quot;]'>Random Project</a>.
+      See all <a href="/projects/">Projects</a>.
     </p>
     <script src="/js/randomPage.js"></script>
   </div>
-
-
-
-
-
 			</main>
 
 		</div>
@@ -893,6 +734,6 @@ align-items: center;
 			<div>© Daniel Gális, 2023. Built with <a href="https://www.11ty.dev/">Eleventy</a>, <span style="color: red">love</span> and <span style="color: green">care</span>.</div>
 		</footer>
 
-		<!-- Current page: /projects/tomado-project/ -->
+		<!-- Current page: /projects/tomado/ -->
 	</body>
 </html>

@@ -118,7 +118,7 @@
 
 /* Global stylesheet */
 * {
-	box-sizing: border-box;
+	box-sizing: -box;
 }
 
 html,
@@ -199,7 +199,7 @@ main :first-child {
 
 footer {
 	/* margin-top: 1.6em; */
-	/* border-top: 1px solid var(--color-offset); */
+	/* -top: 1px solid var(--color-offset); */
 	color: var(--color-grey-50);
 	text-align: center;
 	font-size: var(--font-size-small);
@@ -211,14 +211,14 @@ footer a[href]:visited, footer a[href]:hover, footer a[href]:active, footer a[hr
 .links-nextprev {
 	margin: 1.6em 0 0 0;
 	list-style: none;
-	border-top: 2px solid var(--color-offset);
+	-top: 2px solid var(--color-offset);
 	padding-top: 0.8em;
 }
 
 .nav-under-content {
 	margin-top: 1.6em;
 	padding-top: 1.6em;
-	border-top: 2px solid var(--color-offset);
+	border-top: 1px solid var(--color-offset);
 	justify-content: center;
 	display:flex;
 }
@@ -256,7 +256,7 @@ code {
 
 hr {
 	border: 0;
-	border-top: 2px solid var(--color-offset);
+	border-top: 1px solid var(--color-offset);
 	margin: 0.8em 0;
 }
 
@@ -423,7 +423,7 @@ header:after {
 	margin: 0.8em 0em 0.8em 0em;
 	padding: 0;
 
-	row-gap: 0.8em;
+	row-gap: 1.6em;
 	display: grid;
 	grid-template-columns: 1fr; /* Single column on mobile */
 	justify-items: stretch; /* Stretch items to fill the width */
@@ -434,6 +434,15 @@ header:after {
 	  column-gap: 0.8em;
 	}
 } */
+.project-card > .metadata {
+	border-top: 1px solid var(--color-offset);
+	padding: 0.4em 0.2em 0em 0.2em;
+}
+
+.project-title {
+	font-size: var(--font-size-h3);
+	font-weight: var(--font-weight-normal);
+}
 
 .project-emoji {
 	white-space: pre;
@@ -449,7 +458,7 @@ header:after {
 	counter-increment: start-from -1;
 	padding: 0.4em;
 	
-	border: 2px var(--color-offset) solid;
+	border: 1px var(--color-offset) solid;
 	border-radius: var(--radius);
 }
 
@@ -458,9 +467,8 @@ header:after {
 	align-items: center;
 	justify-content: center;
 	
-	color: var(--color-white) !important;
-	background-color: var(--color-blue);
-	padding: 0.2em 0.6em;
+	border: 1px solid var(--text-color-link);
+	padding: 0.1em 0.4em;
 	border-radius: var(--radius-tag);
 	
 	font-size: var(--font-size-body);
@@ -478,9 +486,10 @@ header:after {
 	display: inline-flex;
 	text-align: right;
 	flex-wrap: wrap;
-	gap: 0.4em;
 	list-style: none;
-	padding-left: 0;
+	gap: 0em;
+	padding: 0em;
+	margin-block-end: 0.8em;
 }
 
 /* Tags */
@@ -692,7 +701,7 @@ align-items: center;
 <h1>#tools</h1>
 
 
-<ol reversed class="postlist" style="counter-reset: start-from 7">
+<ol reversed class="postlist" style="counter-reset: start-from 8">
 
 	<li onclick="location.href = '/posts/arc-boosts/';" class="postlist-item">
 		<span class="project-emoji"></span><a href="/posts/arc-boosts/" class="postlist-link">I made a skin for Are.na</a>
@@ -704,8 +713,8 @@ align-items: center;
 		</div>
 	</li>
 
-	<li onclick="location.href = '/projects/keybot-project/';" class="postlist-item">
-		<span class="project-emoji">🔑 </span><a href="/projects/keybot-project/" class="postlist-link">Keybot</a>
+	<li onclick="location.href = '/projects/keybot/';" class="postlist-item">
+		<span class="project-emoji">🔑 </span><a href="/projects/keybot/" class="postlist-link">Keybot</a>
 		<div class="metadata">
 			
 			<time class="metadata-date" datetime="Sun Jul 30 2023 00:00:00 GMT+0000 (Coordinated Universal Time)">2023 PROJECT</time>
@@ -744,11 +753,21 @@ align-items: center;
 		</div>
 	</li>
 
-	<li onclick="location.href = '/projects/tomado-project/';" class="postlist-item">
-		<span class="project-emoji">🍅 </span><a href="/projects/tomado-project/" class="postlist-link">Tomado</a>
+	<li onclick="location.href = '/projects/cookbook/';" class="postlist-item">
+		<span class="project-emoji">🥕 </span><a href="/projects/cookbook/" class="postlist-link">cookbook</a>
 		<div class="metadata">
 			
-			<time class="metadata-date" datetime="Sat Jul 30 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">2022 PROJECT</time>
+			<time class="metadata-date" datetime="Tue Nov 22 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">FW22 -&gt; ???? PROJECT</time>
+			
+			
+		</div>
+	</li>
+
+	<li onclick="location.href = '/projects/tomado/';" class="postlist-item">
+		<span class="project-emoji">🍅 </span><a href="/projects/tomado/" class="postlist-link">Tomado</a>
+		<div class="metadata">
+			
+			<time class="metadata-date" datetime="Fri Jul 30 2021 00:00:00 GMT+0000 (Coordinated Universal Time)">2021 -&gt; 2022 PROJECT</time>
 			
 			
 		</div>
@@ -773,7 +792,7 @@ align-items: center;
 
 <div class="nav-under-content">
   <p>
-    <a id="randomButton" href="#" data-urls='[&quot;/tags/clothing&quot;,&quot;/tags/economics&quot;,&quot;/tags/biodesign&quot;,&quot;/tags/tools&quot;,&quot;/tags/self-governance&quot;,&quot;/tags/rituals&quot;,&quot;/tags/iot&quot;,&quot;/tags/3d&quot;,&quot;/tags/second-brain&quot;,&quot;/tags/web&quot;,&quot;/tags/music&quot;]'>Random Tag</a>. 
+    <a id="randomButton" href="#" data-urls='[&quot;/tags/clothing&quot;,&quot;/tags/economics&quot;,&quot;/tags/biodesign&quot;,&quot;/tags/tools&quot;,&quot;/tags/self-governance&quot;,&quot;/tags/cooking&quot;,&quot;/tags/web&quot;,&quot;/tags/writing&quot;,&quot;/tags/rituals&quot;,&quot;/tags/iot&quot;,&quot;/tags/3d&quot;,&quot;/tags/second-brain&quot;,&quot;/tags/music&quot;]'>Random Tag</a>. 
     See all <a href="/tags/">Tags</a>.
   </p>
   <script src="/js/randomPage.js"></script>

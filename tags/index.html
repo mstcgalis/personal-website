@@ -118,7 +118,7 @@
 
 /* Global stylesheet */
 * {
-	box-sizing: border-box;
+	box-sizing: -box;
 }
 
 html,
@@ -199,7 +199,7 @@ main :first-child {
 
 footer {
 	/* margin-top: 1.6em; */
-	/* border-top: 1px solid var(--color-offset); */
+	/* -top: 1px solid var(--color-offset); */
 	color: var(--color-grey-50);
 	text-align: center;
 	font-size: var(--font-size-small);
@@ -211,14 +211,14 @@ footer a[href]:visited, footer a[href]:hover, footer a[href]:active, footer a[hr
 .links-nextprev {
 	margin: 1.6em 0 0 0;
 	list-style: none;
-	border-top: 2px solid var(--color-offset);
+	-top: 2px solid var(--color-offset);
 	padding-top: 0.8em;
 }
 
 .nav-under-content {
 	margin-top: 1.6em;
 	padding-top: 1.6em;
-	border-top: 2px solid var(--color-offset);
+	border-top: 1px solid var(--color-offset);
 	justify-content: center;
 	display:flex;
 }
@@ -256,7 +256,7 @@ code {
 
 hr {
 	border: 0;
-	border-top: 2px solid var(--color-offset);
+	border-top: 1px solid var(--color-offset);
 	margin: 0.8em 0;
 }
 
@@ -423,7 +423,7 @@ header:after {
 	margin: 0.8em 0em 0.8em 0em;
 	padding: 0;
 
-	row-gap: 0.8em;
+	row-gap: 1.6em;
 	display: grid;
 	grid-template-columns: 1fr; /* Single column on mobile */
 	justify-items: stretch; /* Stretch items to fill the width */
@@ -434,6 +434,15 @@ header:after {
 	  column-gap: 0.8em;
 	}
 } */
+.project-card > .metadata {
+	border-top: 1px solid var(--color-offset);
+	padding: 0.4em 0.2em 0em 0.2em;
+}
+
+.project-title {
+	font-size: var(--font-size-h3);
+	font-weight: var(--font-weight-normal);
+}
 
 .project-emoji {
 	white-space: pre;
@@ -449,7 +458,7 @@ header:after {
 	counter-increment: start-from -1;
 	padding: 0.4em;
 	
-	border: 2px var(--color-offset) solid;
+	border: 1px var(--color-offset) solid;
 	border-radius: var(--radius);
 }
 
@@ -458,9 +467,8 @@ header:after {
 	align-items: center;
 	justify-content: center;
 	
-	color: var(--color-white) !important;
-	background-color: var(--color-blue);
-	padding: 0.2em 0.6em;
+	border: 1px solid var(--text-color-link);
+	padding: 0.1em 0.4em;
 	border-radius: var(--radius-tag);
 	
 	font-size: var(--font-size-body);
@@ -478,9 +486,10 @@ header:after {
 	display: inline-flex;
 	text-align: right;
 	flex-wrap: wrap;
-	gap: 0.4em;
 	list-style: none;
-	padding-left: 0;
+	gap: 0em;
+	padding: 0em;
+	margin-block-end: 0.8em;
 }
 
 /* Tags */
@@ -702,6 +711,9 @@ align-items: center;
 	<a href="/tags/clothing/" class="tag">#clothing</a>
 
 	
+	<a href="/tags/cooking/" class="tag">#cooking</a>
+
+	
 	<a href="/tags/economics/" class="tag">#economics</a>
 
 	
@@ -724,6 +736,9 @@ align-items: center;
 
 	
 	<a href="/tags/web/" class="tag">#web</a>
+
+	
+	<a href="/tags/writing/" class="tag">#writing</a>
 
 </ol>
 
