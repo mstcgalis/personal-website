@@ -9,7 +9,7 @@
       <li><a class="button" href="{{ link }}" target="_blank">↗ {{ label }}</a></li>
       {%- endfor %}
     </ul>
-    <div class="metadata">
+    {# <div class="metadata">
       <ul class="metadata-tags">
         {%- for tag in project.data.tags | filterTagList %}
         {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
@@ -17,7 +17,7 @@
         {%- endfor %}
       </ul>
       <time class="metadata-date" datetime="{{ project.date }}">{{ project.data.year }}</time>
-    </div>
+    </div> #}
   </article>
 {% endfor %}
 </div>
