@@ -456,10 +456,16 @@ header:after {
 	justify-content: left;
 
 	counter-increment: start-from -1;
-	padding: 0.4em;
 	
+	/* padding: 0.4em;
 	border: 1px var(--color-offset) solid;
-	border-radius: var(--radius);
+	border-radius: var(--radius); */
+}
+
+.project-card:hover {
+	background-color: var(--color-offset);
+	border-radius: 0.000001em;
+	outline: var(--color-offset) 0.4em solid;
 }
 
 .button {
@@ -489,7 +495,7 @@ header:after {
 	list-style: none;
 	gap: 0em;
 	padding: 0em;
-	margin-block-end: 0.8em;
+	margin-block-end: 0.4em;
 }
 
 /* Tags */
@@ -702,7 +708,7 @@ align-items: center;
 
 <div class="projectlist">
 
-  <article href=" " class="project-card">
+  <article href=" " class="project-card" onclick="location.href = '/projects/pff/';">
     <span>🥁 <a href="/projects/pff/" class="project-title">pure fucking fun</a></span>
     
     <p>Organizing OPEN JAM SESSIONS and making sounds.</p>
@@ -712,15 +718,10 @@ align-items: center;
       <li><a class="button" href="https://discord.gg/bk8qEs56fr" target="_blank">↗ Discord</a></li>
       <li><a class="button" href="https://soundcloud.com/pure-fucking-fun" target="_blank">↗ Soundcloud</a></li>
     </ul>
-    <div class="metadata">
-      <ul class="metadata-tags">
-        <li><a href="/tags/music/" class="tag">#music</a></li>
-      </ul>
-      <time class="metadata-date" datetime="Wed Nov 22 2023 00:00:00 GMT+0000 (Coordinated Universal Time)">2022 -&gt; 3000</time>
-    </div>
+    
   </article>
 
-  <article href=" " class="project-card">
+  <article href=" " class="project-card" onclick="location.href = '/projects/keybot/';">
     <span>🔑 <a href="/projects/keybot/" class="project-title">Keybot</a></span>
     
     <p>Discord connected IoT device, designed to be used in a shared workspace where only a single key is available.</p>
@@ -729,50 +730,31 @@ align-items: center;
       <li><a class="button" href="https://www.are.na/daniel-galis/key-bot-project" target="_blank">↗ Research</a></li>
       <li><a class="button" href="key-bot" target="_blank">↗ Post</a></li>
     </ul>
-    <div class="metadata">
-      <ul class="metadata-tags">
-        <li><a href="/tags/tools/" class="tag">#tools</a></li>
-        <li><a href="/tags/iot/" class="tag">#IoT</a></li>
-        <li><a href="/tags/3d/" class="tag">#3D</a></li>
-      </ul>
-      <time class="metadata-date" datetime="Sun Jul 30 2023 00:00:00 GMT+0000 (Coordinated Universal Time)">2023</time>
-    </div>
+    
   </article>
 
-  <article href=" " class="project-card">
+  <article href=" " class="project-card" onclick="location.href = '/projects/bublina/';">
     <span>🫧 <a href="/projects/bublina/" class="project-title">Bublina</a></span>
     
     <p>Student magazine distributed online and in print.</p>
     <ul class="button-list">
       <li><a class="button" href="https://bublina.favu.vut.cz/" target="_blank">↗ Web</a></li>
     </ul>
-    <div class="metadata">
-      <ul class="metadata-tags">
-        <li><a href="/tags/web/" class="tag">#web</a></li>
-        <li><a href="/tags/writing/" class="tag">#writing</a></li>
-      </ul>
-      <time class="metadata-date" datetime="Sun Jan 01 2023 00:00:00 GMT+0000 (Coordinated Universal Time)">2023 -&gt; ????</time>
-    </div>
+    
   </article>
 
-  <article href=" " class="project-card">
-    <span>🥕 <a href="/projects/cookbook/" class="project-title">cookbook</a></span>
+  <article href=" " class="project-card" onclick="location.href = '/projects/cookbook/';">
+    <span>🥕 <a href="/projects/cookbook/" class="project-title">Cookbook</a></span>
     
     <p>Cooking (an app) from local and seasonal ingredients using first principles.</p>
     <ul class="button-list">
       <li><a class="button" href="https://www.are.na/kitchen-axdx" target="_blank">↗ Research</a></li>
       <li><a class="button" href="https://www.figma.com/proto/QHKAcNflDBrcVlPJgcojVy/cookbook-(interface)?page-id=0%3A1&amp;type=design&amp;node-id=30-15&amp;viewport=501%2C418%2C0.13&amp;t=lcpyLoRERISPUhci-1&amp;scaling=scale-down-width&amp;starting-point-node-id=30%3A15&amp;mode=design" target="_blank">↗ Interface prototype</a></li>
     </ul>
-    <div class="metadata">
-      <ul class="metadata-tags">
-        <li><a href="/tags/cooking/" class="tag">#cooking</a></li>
-        <li><a href="/tags/tools/" class="tag">#tools</a></li>
-      </ul>
-      <time class="metadata-date" datetime="Tue Nov 22 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">2022 -&gt; ????</time>
-    </div>
+    
   </article>
 
-  <article href=" " class="project-card">
+  <article href=" " class="project-card" onclick="location.href = '/projects/tomado/';">
     <span>🍅 <a href="/projects/tomado/" class="project-title">Tomado</a></span>
     
     <p>Simple Pomodoro Timer that lives in your MacOS Menu Bar.</p>
@@ -781,16 +763,10 @@ align-items: center;
       <li><a class="button" href="https://www.are.na/daniel-galis/tomado-project" target="_blank">↗ Research</a></li>
       <li><a class="button" href="/projects/attachments/tomado.pdf" target="_blank">↗ PDF (SK)</a></li>
     </ul>
-    <div class="metadata">
-      <ul class="metadata-tags">
-        <li><a href="/tags/tools/" class="tag">#tools</a></li>
-        <li><a href="/tags/self-governance/" class="tag">#self-governance</a></li>
-      </ul>
-      <time class="metadata-date" datetime="Fri Jul 30 2021 00:00:00 GMT+0000 (Coordinated Universal Time)">2021 -&gt; 2022</time>
-    </div>
+    
   </article>
 
-  <article href=" " class="project-card">
+  <article href=" " class="project-card" onclick="location.href = '/projects/mstc/';">
     <span>♻️ <a href="/projects/mstc/" class="project-title">mstc</a></span>
     
     <p>Upcycled clothing designed for a circular economy.</p>
@@ -798,14 +774,7 @@ align-items: center;
       <li><a class="button" href="https://www.are.na/daniel-galis/mstc-project" target="_blank">↗ Research</a></li>
       <li><a class="button" href="/projects/attachments/mstc.pdf" target="_blank">↗ PDF (SK)</a></li>
     </ul>
-    <div class="metadata">
-      <ul class="metadata-tags">
-        <li><a href="/tags/clothing/" class="tag">#clothing</a></li>
-        <li><a href="/tags/economics/" class="tag">#economics</a></li>
-        <li><a href="/tags/biodesign/" class="tag">#biodesign</a></li>
-      </ul>
-      <time class="metadata-date" datetime="Fri Jul 30 2021 00:00:00 GMT+0000 (Coordinated Universal Time)">2021</time>
-    </div>
+    
   </article>
 
 </div>

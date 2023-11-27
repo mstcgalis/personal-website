@@ -624,10 +624,16 @@ header:after {
 	justify-content: left;
 
 	counter-increment: start-from -1;
-	padding: 0.4em;
 	
+	/* padding: 0.4em;
 	border: 1px var(--color-offset) solid;
-	border-radius: var(--radius);
+	border-radius: var(--radius); */
+}
+
+.project-card:hover {
+	background-color: var(--color-offset);
+	border-radius: 0.000001em;
+	outline: var(--color-offset) 0.4em solid;
 }
 
 .button {
@@ -657,7 +663,7 @@ header:after {
 	list-style: none;
 	gap: 0em;
 	padding: 0em;
-	margin-block-end: 0.8em;
+	margin-block-end: 0.4em;
 }
 
 /* Tags */

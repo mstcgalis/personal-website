@@ -10,7 +10,7 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>cookbook</title>
+		<title>Cookbook</title>
 		<meta name="description" content="Cooking (an app) from local and seasonal ingredients using first principles.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Daniel Gális">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Daniel Gális">
@@ -456,10 +456,16 @@ header:after {
 	justify-content: left;
 
 	counter-increment: start-from -1;
-	padding: 0.4em;
 	
+	/* padding: 0.4em;
 	border: 1px var(--color-offset) solid;
-	border-radius: var(--radius);
+	border-radius: var(--radius); */
+}
+
+.project-card:hover {
+	background-color: var(--color-offset);
+	border-radius: 0.000001em;
+	outline: var(--color-offset) 0.4em solid;
 }
 
 .button {
@@ -489,7 +495,7 @@ header:after {
 	list-style: none;
 	gap: 0em;
 	padding: 0em;
-	margin-block-end: 0.8em;
+	margin-block-end: 0.4em;
 }
 
 /* Tags */
@@ -697,7 +703,7 @@ align-items: center;
 			</header>
 
 			<main id="skip">
-				<h1 class="post-title">🥕 cookbook</h1>
+				<h1 class="post-title">🥕 Cookbook</h1>
 
 <div class="metadata">
 	<ul class="metadata-tags">
