@@ -10,8 +10,8 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>#self-governance</title>
-		<meta name="description" content="Daniel Gális is a designer, researcher and developer working with web technologies.">
+		<title>purefuckingfun</title>
+		<meta name="description" content="Organizing OPEN JAM SESSIONS and making sounds.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Daniel Gális">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Daniel Gális">
 
@@ -39,7 +39,175 @@
 			});
 		</script>
 		
-		<style>* { box-sizing: border-box; }
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+* { box-sizing: border-box; }
 /* Defaults */
 :root {
 	--font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -689,55 +857,29 @@ align-items: center;
 
 			<main id="skip">
 				
-<h1>#self-governance</h1>
+<h1 class="post-title">purefuckingfun</h1>
 
-
-<ol reversed class="postlist" style="counter-reset: start-from 3">
-
-	<li onclick="location.href = '/posts/ritual-sketching/';" class="postlist-item">
-		<span class="project-emoji"></span><a href="/posts/ritual-sketching/" class="postlist-link">Ritual Sketching - A Creative Approach to Habit Tracking</a>
-		<div class="metadata">
-			
-			<time class="metadata-date" datetime="2023-04-02">2023-04-02 SUN</time>
-			
-			
-		</div>
-	</li>
-
-	<li onclick="location.href = '/projects/tomado-project/';" class="postlist-item">
-		<span class="project-emoji">🍅 </span><a href="/projects/tomado-project/" class="postlist-link">Tomado</a>
-		<div class="metadata">
-			
-			<time class="metadata-date" datetime="Sat Jul 30 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">2022 PROJECT</time>
-			
-			
-		</div>
-	</li>
-
-</ol>
-
-
-
-
-  
-  
-<iframe class="my-iframe" src="https://www.are.na/daniel-galis/self-governance-tools/embed" width="100%" height="560px"></iframe>
-
-  
-  
-<iframe class="my-iframe" src="https://www.are.na/daniel-galis/self-governance-research/embed" width="100%" height="560px"></iframe>
-
-
-
-
-
-<div class="nav-under-content">
-  <p>
-    <a id="randomButton" href="#" data-urls='[&quot;/tags/clothing&quot;,&quot;/tags/economics&quot;,&quot;/tags/biodesign&quot;,&quot;/tags/tools&quot;,&quot;/tags/self-governance&quot;,&quot;/tags/rituals&quot;,&quot;/tags/iot&quot;,&quot;/tags/3d&quot;,&quot;/tags/second-brain&quot;,&quot;/tags/web&quot;,&quot;/tags/music&quot;]'>Random Tag</a>. 
-    See all <a href="/tags/">Tags</a>.
-  </p>
-  <script src="/js/randomPage.js"></script>
+<div class="metadata">
+	<time class="metadata-date" datetime="2023-11-22">2023-11-22 WED</time>
+	<ul class="metadata-tags">
+		<li><a href="/tags/music/" class="tag">#music</a></li>
+	</ul>
 </div>
+<hr>
+
+
+
+
+
+  <div class="nav-under-content">
+    <p>
+      <a id="randomButton" href="#" data-urls='[&quot;/posts/ritual-sketching/&quot;,&quot;/posts/key-bot/&quot;,&quot;/posts/public-digital-garden/&quot;,&quot;/posts/arc-boosts/&quot;]'>Random Post</a>
+      See all <a href="/posts/">Posts</a>.
+    </p>
+    <script src="/js/randomPage.js"></script>
+  </div>
+
+
 
 
 
@@ -750,6 +892,6 @@ align-items: center;
 			<div>© Daniel Gális, 2023. Built with <a href="https://www.11ty.dev/">Eleventy</a>, <span style="color: red">love</span> and <span style="color: green">care</span>.</div>
 		</footer>
 
-		<!-- Current page: /tags/self-governance/ -->
+		<!-- Current page: /projects/pff-project/ -->
 	</body>
 </html>
