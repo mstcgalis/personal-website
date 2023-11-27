@@ -1,5 +1,5 @@
 ---
-title: cookbook
+title: Cookbook
 description: Cooking (an app) from local and seasonal ingredients using first principles. 
 emoji: 🥕
 date: 2022-11-22
