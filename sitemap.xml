@@ -117,6 +117,11 @@
 	</url>
 	
 	<url>
+		<loc>https://danielgalis.com/tags/music/</loc>
+		<lastmod>2023-11-27</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://danielgalis.com/tags/cooking/</loc>
 		<lastmod>2023-11-27</lastmod>
 	</url>
@@ -133,11 +138,6 @@
 	
 	<url>
 		<loc>https://danielgalis.com/tags/biodesign/</loc>
-		<lastmod>2023-11-27</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/music/</loc>
 		<lastmod>2023-11-27</lastmod>
 	</url>
 </urlset>
