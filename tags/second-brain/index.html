@@ -380,7 +380,7 @@ header:after {
 	text-align: right;
 	margin-left: -1.5rem;
 }
-.postlist-link {
+.postlist-title {
 	font-size: var(--font-size-h3);
 	font-weight: var(--font-weight-normal);
 	flex-basis: calc(100% - 1.5rem);
@@ -440,8 +440,12 @@ header:after {
 }
 
 .project-title {
-	font-size: var(--font-size-h3);
+	font-size: var(--font-size-h2);
 	font-weight: var(--font-weight-normal);
+}
+
+.project-description {
+	margin-block-end: 0.4em;
 }
 
 .project-emoji {
@@ -710,7 +714,7 @@ align-items: center;
 <ol reversed class="postlist" style="counter-reset: start-from 3">
 
 	<li onclick="location.href = '/posts/arc-boosts/';" class="postlist-item">
-		<span class="project-emoji"></span><a href="/posts/arc-boosts/" class="postlist-link">I made a skin for Are.na</a>
+		<span class="project-emoji"></span><a href="/posts/arc-boosts/" class="postlist-title">I made a skin for Are.na</a>
 		<div class="metadata">
 			
 			<time class="metadata-date" datetime="2023-08-30">2023-08-30 WED</time>
@@ -720,7 +724,7 @@ align-items: center;
 	</li>
 
 	<li onclick="location.href = '/posts/public-digital-garden/';" class="postlist-item">
-		<span class="project-emoji"></span><a href="/posts/public-digital-garden/" class="postlist-link">Thoughts On a Public Digital Garden</a>
+		<span class="project-emoji"></span><a href="/posts/public-digital-garden/" class="postlist-title">Thoughts On a Public Digital Garden</a>
 		<div class="metadata">
 			
 			<time class="metadata-date" datetime="2023-07-14">2023-07-14 FRI</time>
