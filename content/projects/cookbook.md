@@ -3,7 +3,7 @@ title: cookbook
 description: Cooking (an app) from local and seasonal ingredients using first principles. 
 emoji: 🥕
 date: 2022-11-22
-year: FW22 -> ????
+year: 2022 -> ????
 image: ojs-01-topdown.jpeg
 links:
     Research: https://www.are.na/kitchen-axdx

@@ -1,5 +1,5 @@
 ---
-title: purefuckingfun
+title: pure fucking fun
 description: Organizing OPEN JAM SESSIONS and making sounds.
 emoji: 🥁
 date: 2023-11-22
