@@ -419,10 +419,12 @@ header:after {
 	justify-content: left;
 
 	counter-increment: start-from -1;
-	
-	/* padding: 0.4em;
-	border: 1px var(--color-offset) solid;
-	border-radius: var(--radius); */
+}
+
+@media screen and (min-width: 425px) {
+	.project-card {
+		width: 80%;
+	}
 }
 
 .project-card:hover {
@@ -456,7 +458,7 @@ header:after {
 	text-align: right;
 	flex-wrap: wrap;
 	list-style: none;
-	gap: 0em;
+	gap: 0.4em 0em;
 	padding: 0em;
 	margin-block-end: 0.4em;
 }
