@@ -7,7 +7,7 @@ year: 2023
 links:
     GitHub: https://github.com/mstcgalis/Keybot
     Research: https://www.are.na/daniel-galis/key-bot-project
-    Post: key-bot
+    Post: /posts/keybot
 image: /posts/attachments/key-bot_installed.jpg
 tags:
     - tools
