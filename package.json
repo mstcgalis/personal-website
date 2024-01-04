@@ -1,7 +1,7 @@
 {
 	"name": "danielgalis-personal-web",
 	"version": "8.0.0",
-	"description": "A personal website using the Eleventy site generator.",
+	"description": "Daniel Gális personal website",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
@@ -15,9 +15,9 @@
 		"url": "git://github.com/11ty/eleventy-base-blog.git"
 	},
 	"author": {
-		"name": "Daniel",
-		"email": "zachleatherman@gmail.com",
-		"url": "https://zachleat.com/"
+		"name": "Daniel Gális",
+		"email": "danielgalis21@gmail.com",
+		"url": "https://danielgalis.com/"
 	},
 	"license": "MIT",
 	"engines": {
