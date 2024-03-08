@@ -1,24 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		
+    <head>
+        
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
 
-
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>#3D</title>
-		<meta name="description" content="Daniel Gális is a designer, researcher and developer working with web technologies.">
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Daniel Gális">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Daniel Gális">
-
-		<meta name="generator" content="Eleventy v2.0.1">
-		<link rel="preconnect" href="https://rsms.me/">
-		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-		<script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>#3D</title>
+        <meta name="description"
+              content="Daniel Gális is a designer, researcher and developer working with web technologies.">
+        <link rel="alternate"
+              href="/feed/feed.xml"
+              type="application/atom+xml"
+              title="Daniel Gális">
+        <link rel="alternate"
+              href="/feed/feed.json"
+              type="application/json"
+              title="Daniel Gális">
+        <meta name="generator" content="Eleventy v2.0.1">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <script>
 			let lastScroll = 0;
 
 			window.addEventListener("scroll", () => {
@@ -37,9 +42,10 @@
 			
 			lastScroll = currentScroll;
 			});
-		</script>
 		
-		<style>* { box-sizing: border-box; }
+        </script>
+    
+    <style>* { box-sizing: border-box; }
 /* Defaults */
 :root {
 	--font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -689,28 +695,52 @@ align-items: center;
 	99.86%, 100% {
 		opacity: 1;
 	}
+}
+
+.red-filter{
+	z-index: 50;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: red;
+	opacity: 50%;
+	left: 0;
+	top: 0;
+	pointer-events: none;
 }</style>
-	</head>
-	<body>
-		<a href="#skip" class="visually-hidden">Skip to main content</a>
+</head>
 
-		<div class="view">
-
-			<header>
-				<nav style="width: 100%;">
-					<h2 class="visually-hidden">Top level navigation menu</h2>
-					<ul class="nav">
-						<li><a href="/" class="home-link"></a></li>
-						<li class="nav-item"><a href="/projects/">Projects</a></li>
-						<li class="nav-item"><a href="/posts/">Posts</a></li>
-						<li class="nav-item"><a href="/tags/">Tags</a></li>
-						<li class="nav-item"><a href="https://danielgalis.thoughts.page">Thoughts</a>
-					</ul>
-				</nav>
-			</header>
-
-			<main id="skip">
-				
+<body>
+    <a href="#skip" class="visually-hidden">Skip to main content</a>
+    <div class="view">
+        <header>
+            <nav style="width: 100%;">
+                <h2 class="visually-hidden">Top level navigation menu</h2>
+                <ul class="nav">
+                    <li>
+                        <a href="/"
+                           class="home-link"
+                           ></a>
+                    </li>
+                        <li class="nav-item">
+                            <a href="/projects/"
+                               >Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/posts/"
+                               >Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/tags/"
+                               >Tags</a>
+                        </li>
+                    <li class="nav-item">
+                        <a href="https://danielgalis.thoughts.page">Thoughts</a>
+                    </ul>
+                </nav>
+            </header>
+            <main id="skip">
+                
 <h1>#3D</h1>
 
 
@@ -759,15 +789,14 @@ align-items: center;
 
 
 
-			</main>
-
-		</div>
-
-		<footer>
-			<hr>
-			<div>© Daniel Gális, 2023. Built with <a href="https://www.11ty.dev/">Eleventy</a>, <span style="color: red">love</span> and <span style="color: green">care</span>.</div>
-		</footer>
-
-		<!-- Current page: /tags/3d/ -->
-	</body>
+            </main>
+        </div>
+        <footer>
+            <hr>
+            <div>
+                © Daniel Gális, 2023. Built with <a href="https://www.11ty.dev/">Eleventy</a>, <span style="color: red">love</span> and <span style="color: green">care</span>.
+            </div>
+        </footer>
+        <!-- Current page: /tags/3d/ -->
+    </body>
 </html>

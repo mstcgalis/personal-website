@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://danielgalis.com/posts/sample-terminal/",
+			"url": "https://danielgalis.com/posts/sample-terminal/",
+			"title": "Sampling music in the MacOS terminal",
+			"content_html": "<pre><code>function sample() {\n    yt-dlp -f 'ba/b' --default-search &quot;ytsearch&quot; --extract-audio --audio-format wav --output '~/Desktop/music/songs/%(title)s.%(ext)s' $1\n}\n\nexport NVM_DIR=&quot;$HOME/.nvm&quot;\n[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \\. &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm\n[ -s &quot;$NVM_DIR/bash_completion&quot; ] &amp;&amp; \\. &quot;$NVM_DIR/bash_completion&quot;  # This loads nvm bash_completion\n</code></pre>\n",
+			"date_published": "2024-03-08T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://danielgalis.com/posts/arc-boosts/",
 			"url": "https://danielgalis.com/posts/arc-boosts/",
 			"title": "I made a skin for Are.na",
