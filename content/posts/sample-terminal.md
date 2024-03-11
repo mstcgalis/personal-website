@@ -15,7 +15,7 @@ To extract audio only files from videos, we're also gonna need **ffmpeg** and **
 
 To set up an easy and replicable way of using **yt-dlp**, we have to modify our shell configuration file. For me (and most current version MacOS users), this is `~/.zshrc`. you can find it using the `Shift + Command + G` shortcut in Finder and typing in the afformentioned filepath (`~/.zshrc`). This is just a simple text file, so editing it via TextExit works perfect.
 
-Just add this silly little code (a shell function definition) to your shell configuration file and you should be set. If you want to download to a different folder, just modify the `--output` parameter (in my case it is `~/Music`, where `~` is the user home directory).
+Just add this silly little code (a shell function definition) to your shell configuration file, save it and you should be set. If you want to download to a different folder, just modify the `--output` parameter (in my case it is `~/Music`, where `~` is the user home directory).
 
 ```shell
 function sample() {
