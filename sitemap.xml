@@ -127,11 +127,6 @@
 	</url>
 	
 	<url>
-		<loc>https://danielgalis.com/tags/cooking/</loc>
-		<lastmod>2024-03-11</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://danielgalis.com/tags/clothing/</loc>
 		<lastmod>2024-03-11</lastmod>
 	</url>
@@ -143,6 +138,11 @@
 	
 	<url>
 		<loc>https://danielgalis.com/tags/biodesign/</loc>
+		<lastmod>2024-03-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/cooking/</loc>
 		<lastmod>2024-03-11</lastmod>
 	</url>
 </urlset>
