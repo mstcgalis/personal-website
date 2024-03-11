@@ -11,7 +11,9 @@ Hello internet traveler! Do you want to download music from YouTube, but hate us
 
 We'are gonna be using a Python package called **yt-dlp** (have a look at it's [GitHub](https://github.com/yt-dlp/yt-dlp)). MacOS already comes with Python, so the installation process should be straightforward. Try entering `pip install yt-dlp` into your Terminal, or reference the [guide](https://github.com/yt-dlp/yt-dlp#installation) for detailed instructions.
 
-To set up an easy and replicable way of using **yt-dlp**, we have to modify our shell configuration file. For me (and most current version MacOS users), this is `~/.zshrc`. you can find it using the `Shift + Command + G` shortcut in Finder and typing in the afformentioned filepath (`~/.zshrc`). Tt is just a simple text file, so editing it via TextExit works perfect.
+To extract audio only files, we're also gonna need **ffmpeg** and **ffprobe**. Download **ffmpeg** from their [official site](https://ffmpeg.org/download.html#build-mac) and \*\*ffprobe should be included.
+
+To set up an easy and replicable way of using **yt-dlp**, we have to modify our shell configuration file. For me (and most current version MacOS users), this is `~/.zshrc`. you can find it using the `Shift + Command + G` shortcut in Finder and typing in the afformentioned filepath (`~/.zshrc`). This is just a simple text file, so editing it via TextExit works perfect.
 
 Just add this silly little code (a shell function definition) to your shell configuration file and you should be set. If you want to download to a different folder, just modify the `--output` parameter (in my case it is `~/Music`, where `~` is the user home directory).
 
