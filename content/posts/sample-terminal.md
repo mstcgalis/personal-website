@@ -7,7 +7,7 @@ tags:
   - tools
 ---
 
-Hello! Do you want to download music from the internet, specifically from Youtube, but hate using shady web converters? I sure do. Here is a cleaner and faster way to enjoy and sample your favourite music - locally and forever.
+Hello! Do you want to download music from the internet, specifically from YouTube, but hate using shady web converters? I sure do. Here is a cleaner and faster way to enjoy and sample your favourite music - locally and forever.
 
 We'are gonna be using a Python package called **yt-dlp** (have a look at it's [GitHub](https://github.com/yt-dlp/yt-dlp)). MacOS already comes with Python, so the installation process should be straightforward. Try entering `pip install yt-dlp` into your Terminal, or reference the [guide](https://github.com/yt-dlp/yt-dlp#installation) for detailed instructions.
 
@@ -21,12 +21,14 @@ function sample() {
 }
 ```
 
-Now, when you open a new Terminal, you can download audio from Youtube by simply entering this command:
+Now, when you open a new Terminal, you can download audio from YouTube by simply entering this command:
 
 ```shell
 sample "your-youtube-link"
 ```
 
 The .wav file should be at your specified `--output` directory.
+
+As a bonus, you can also enter keywords inside the quotation marks to search YouTube instead od providing a direct link.
 
 Have fun sampling!
