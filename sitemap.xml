@@ -77,12 +77,22 @@
 	</url>
 	
 	<url>
-		<loc>https://danielgalis.com/tags/second-brain/</loc>
+		<loc>https://danielgalis.com/tags/projects/</loc>
 		<lastmod>2024-03-11</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://danielgalis.com/tags/web/</loc>
+		<lastmod>2024-03-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/writing/</loc>
+		<lastmod>2024-03-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/cooking/</loc>
 		<lastmod>2024-03-11</lastmod>
 	</url>
 	
@@ -102,32 +112,12 @@
 	</url>
 	
 	<url>
-		<loc>https://danielgalis.com/tags/rituals/</loc>
-		<lastmod>2024-03-11</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/self-governance/</loc>
-		<lastmod>2024-03-11</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://danielgalis.com/tags/music/</loc>
 		<lastmod>2024-03-11</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://danielgalis.com/tags/projects/</loc>
-		<lastmod>2024-03-11</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/writing/</loc>
-		<lastmod>2024-03-11</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/cooking/</loc>
+		<loc>https://danielgalis.com/tags/self-governance/</loc>
 		<lastmod>2024-03-11</lastmod>
 	</url>
 	
@@ -143,6 +133,16 @@
 	
 	<url>
 		<loc>https://danielgalis.com/tags/biodesign/</loc>
+		<lastmod>2024-03-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/second-brain/</loc>
+		<lastmod>2024-03-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/rituals/</loc>
 		<lastmod>2024-03-11</lastmod>
 	</url>
 </urlset>
