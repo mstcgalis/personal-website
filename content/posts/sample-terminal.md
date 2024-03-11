@@ -9,7 +9,7 @@ tags:
 
 Hello internet traveler! Do you want to download music from YouTube, but hate using shady web converters? I sure do. Here is a cleaner and faster way to download and sample all your favourite music using open-source software.
 
-We'are gonna be using a Python package called **yt-dlp** (have a look at it's [GitHub](https://github.com/yt-dlp/yt-dlp)). MacOS already comes with Python, so the installation process should be straightforward. Try entering `pip install yt-dlp` into your Terminal, or reference the [guide](https://github.com/yt-dlp/yt-dlp#installation) for detailed instructions.
+We'are gonna be using a Python package called **yt-dlp** (have a look at it's [GitHub](https://github.com/yt-dlp/yt-dlp)). MacOS already comes with Python, so the installation process should be straightforward. Try entering `pip install yt-dlp` into your Terminal, or reference the [guide](https://github.com/yt-dlp/yt-dlp#installation) for detailed instructions. To check if you have **yt-dlp** installed, enter `yt-dlp --version`` into your Terminal. The version number should be printed out.
 
 To extract audio only files from videos, we're also gonna need **ffmpeg** and **ffprobe**. Download **ffmpeg** from their [official site](https://ffmpeg.org/download.html#build-mac) and **ffprobe** should come included. To test if the installation was successful, try entering this `ffmpeg` into your Terminal. You should see a bunch of information about the package.
 
