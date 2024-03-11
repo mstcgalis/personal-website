@@ -7,7 +7,7 @@ tags:
   - tools
 ---
 
-Hello! Do you want to download music from the internet, specifically from YouTube, but hate using shady web converters? I sure do. Here is a cleaner and faster way to enjoy and sample your favourite music - locally and forever.
+Hello internet traveler! Do you want to download music from YouTube, but hate using shady web converters? I sure do. Here is a cleaner and faster way to download and sample all your favourite music using open-source software.
 
 We'are gonna be using a Python package called **yt-dlp** (have a look at it's [GitHub](https://github.com/yt-dlp/yt-dlp)). MacOS already comes with Python, so the installation process should be straightforward. Try entering `pip install yt-dlp` into your Terminal, or reference the [guide](https://github.com/yt-dlp/yt-dlp#installation) for detailed instructions.
 
