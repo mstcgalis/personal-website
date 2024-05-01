@@ -9,9 +9,9 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tomado</title>
+        <title>erg motivational letter</title>
         <meta name="description"
-              content="Simple Pomodoro Timer that lives in your MacOS Menu Bar.">
+              content="Letter of motivation for an exchange at erg.">
         <link rel="alternate"
               href="/feed/feed.xml"
               type="application/atom+xml"
@@ -45,7 +45,175 @@
 		
         </script>
     
-    <style>* { box-sizing: border-box; }
+    <style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+* { box-sizing: border-box; }
 @tailwind components;
 @tailwind utilities;
 
@@ -1507,34 +1675,35 @@ img {
                 </nav>
             </header>
             <main id="skip">
-                <h1 class="post-title">🍅 Tomado</h1>
+                
+<h1 class="post-title">erg motivational letter</h1>
 
 <div class="metadata">
 	<ul class="metadata-tags">
-		<li><a href="/tags/tools/" class="tag">#tools</a></li>
-		<li><a href="/tags/self/" class="tag">#self</a></li>
-		<li><a href="/tags/code/" class="tag">#code</a></li>
-		<li><a href="/tags/interface/" class="tag">#interface</a></li>
-		<li><a href="/tags/design/" class="tag">#design</a></li>
 	</ul>
-	<span class="metadata-date">2021 -&gt; 2022</span>
+	<time class="metadata-date" datetime="2024-05-01">2024-05-01 WED</time>
 </div>
 <hr>
 
-
-<p>Simple Pomodoro Timer that lives in your MacOS Menu Bar.</p>
-<ul class="button-list">
-    <li><a class="button" href="https://github.com/mstcgalis/Tomado" target="_blank">↗ GitHub</a></li>
-    <li><a class="button" href="https://www.are.na/daniel-galis/tomado-project" target="_blank">↗ Research</a></li>
-    <li><a class="button" href="/projects/attachments/tomado.pdf" target="_blank">↗ PDF (SK)</a></li>
-</ul>
+<p>Dear ~,</p>
+<p>I am expressing my interest in an exchange at eeerrrggg 🤮. As a student at the BUT Faculty of Fine Arts, specifically in Graphic Design Studio 1, I am enthusiastic about the opportunity to broaden my academic horizons, refine my design skills, and immerse myself in new cultural experiences.</p>
+<p>My studies at AGD1 have equipped me with a solid foundation in research, visual design, digital product design, and programming. These skills have been instrumental in completing projects such as the MacOS app <a href="/projects/tomado">Tomado</a> and the IoT device <a href="/projects/keybot">Keybot</a>.</p>
+<p>I am proficient in Adobe Creative Suite, Figma and Fusion 360, can analyse and visualise data with Python, create websites using HTML, CSS, and JavaScript, and program microcontrollers in C. I have hands-on experience creating physical prototypes with 3D printing, paper, and IoT components. I am always eager to learn new skills or master some of those already in my toolbelt.</p>
+<p>Furthermore, collaborative activities like working on the community radio <a href="/projects/flus">flus.fm</a> and organising <a href="https://purefucking.fun/pages/ojs.html">OPEN JAM SESSIONS</a> honed my soft skills in project management and fostered a passion for interdisciplinary collaboration. These experiences will enable me to contribute actively to the academic community of your institution.</p>
+<p>I will apply these creative, technical and soft skills in a broader context. I want to work individually and on group projects, creating visuals, products, tools and communities. My hunger for knowledge drives me to seek out challenging academic pursuits, this exchange being one of them.</p>
+<p>I wholeheartedly believe that carefully designed technology can make people's lives better. I'm fascinated by digital tools and services that help individuals and communities gain control of their time, data and environments, expanding their agency in the digital realm. The world of tomorrow is being born today, and I want to participate in its shaping.</p>
+<p>I’ve selected the Digital Design orientation, which unites my lifelong love of technology with user-centric, research-driven design. I want to continue exploring tools-for-thought, handmade websites, and collaborative sound (online and offline) all the while diving into new territories.</p>
+<p>I am particularly attracted to the opportunity to live and study in Brussels, which will provide me with a rare cultural experience and broaden my understanding of the local design practice. Working with diverse teams on international projects is a personal dream that will become more attainable thanks to the Erasmus+ programme.</p>
+<p>I am fully committed to making the most of this opportunity. An exchange semester will contribute to my design practice and future career in design. Alongside personal growth, I am keen to contribute meaningfully to my host institution and bring back a wealth of knowledge to share with my peers and faculty at FFA BUT.</p>
+<p>Thank you for considering my application for the Erasmus+ programme. I am eager to embark on this enriching study abroad experience that will shape my academic and professional journey.</p>
+<p>Yours sincerely, <a href="/">Daniel Gális</a></p>
 
 
 
   <div class="nav-under-content">
     <p>
-      <a id="randomButton" href="#" data-urls='[&quot;/projects/mstc/&quot;,&quot;/projects/tomado/&quot;,&quot;/projects/cookbook/&quot;,&quot;/projects/bublina/&quot;,&quot;/projects/keybot/&quot;,&quot;/projects/pff/&quot;,&quot;/projects/flus/&quot;]'>Random Project</a>.
-      See all <a href="/projects/">Projects</a>.
+      <a id="randomButton" href="#" data-urls='[&quot;/posts/ritual-sketching/&quot;,&quot;/posts/keybot/&quot;,&quot;/posts/public-digital-garden/&quot;,&quot;/posts/arc-boosts/&quot;,&quot;/posts/sample-terminal/&quot;,&quot;/posts/erg-letter/&quot;]'>Random Post</a>.
+      See all <a href="/posts/">Posts</a>.
     </p>
     <script src="/js/randomPage.js"></script>
   </div>
@@ -1546,6 +1715,6 @@ img {
                 © Daniel Gális, 2024 and forever. Built with <a href="https://www.11ty.dev/">Eleventy</a>, <span style="color: red">love</span> and <span style="color: green">care</span>.
             </div>
         </footer>
-        <!-- Current page: /projects/tomado/ -->
+        <!-- Current page: /posts/erg-letter/ -->
     </body>
 </html>

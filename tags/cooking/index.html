@@ -741,6 +741,15 @@ img {
   display: contents;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -1504,15 +1513,17 @@ img {
 
 <ol reversed class="postlist" style="counter-reset: start-from 2">
 
-	<li onclick="location.href = '/projects/cookbook/';" class="postlist-item">
-		<span class="project-emoji">🥕 </span><a href="/projects/cookbook/" class="postlist-title">Cookbook</a>
-		<div class="metadata">
-			
-			<time class="metadata-date" datetime="Tue Nov 22 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">2022 -&gt; ???? PROJECT</time>
-			
-			
-		</div>
-	</li>
+    
+        <li onclick="location.href = '/projects/cookbook/';" class="cursor-pointer postlist-item">
+            <span class="project-emoji">🥕 </span><a href="/projects/cookbook/" class="postlist-title">Cookbook</a>
+            <div class="metadata">
+                
+                <time class="metadata-date" datetime="Tue Nov 22 2022 00:00:00 GMT+0000 (Coordinated Universal Time)">2022 -&gt; ???? PROJECT</time>
+                
+                
+            </div>
+        </li>
+    
 
 </ol>
 
