@@ -140,11 +140,8 @@ p {
 a[href] {
 	color: var(--text-color-link);
 }
-a[href]:visited {
-	color: var(--text-color-link-visited);
-}
 a[href]:hover {
-	color: var(--text-color-link);
+	color: red;
 }
 a[href]:active {
 	/* color: var(--text-color-link-active); */
@@ -335,7 +332,7 @@ header:after {
 */
 .nav-item a[href]:hover,
 .nav-item a[href]:active {
-	color: var(--text-color-link-active);
+	color: red;
 }
 .nav a[href][aria-current="page"] {
 	text-decoration: underline;

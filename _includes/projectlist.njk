@@ -1,6 +1,6 @@
 <div class="projectlist">
 {% for project in projectlist | reverse %}
-  <article href=" {{ project.data.research }}" class="project-card" onclick="location.href = '{{ project.url }}';">
+  <article href=" {{ project.data.research }}" class="project-card">
     <span>{{ project.data.emoji }} <a href="{{ project.url }}" class="project-title">{{ project.data.title }}</a></span>
     {# {% if project.data.image %}<img class="projectlist-image" src="{{ project.data.image }}" alt="🔑">{% endif %} #}
     <p class="project-description">{{ project.data.description }}</p>
