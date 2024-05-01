@@ -6,7 +6,7 @@
     <p class="project-description">{{ project.data.description }}</p>
     <ul class="button-list">
       {%- for label, link in project.data.links %}
-      <li><a class="button" href="{{ link }}" target="_blank">↗ {{ label }}</a></li>
+      <li><a class="button" href="{{ link }}" target="_blank"><span class="arrow mr-1">↗ </span>{{ label }}</a></li>
       {%- endfor %}
     </ul>
     {# <div class="metadata">
