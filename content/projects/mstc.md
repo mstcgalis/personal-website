@@ -5,10 +5,11 @@ emoji: ♻️
 date: 2021-07-30
 year: 2021
 links:
-    Research: https://www.are.na/daniel-galis/mstc-project
-    PDF (SK): /projects/attachments/mstc.pdf
+  Research: https://www.are.na/daniel-galis/mstc-project
+  PDF (SK): /projects/attachments/mstc.pdf
 tags:
-    - clothing
-    - economics
-    - biodesign
+  - clothing
+  - economics
+  - biodesign
+  - design
 ---

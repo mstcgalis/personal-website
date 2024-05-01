@@ -5,8 +5,9 @@ emoji: 🫧
 date: 2023-01-01
 year: 2023 -> ????
 links:
-    Web: https://bublina.favu.vut.cz/
+  Web: https://bublina.favu.vut.cz/
 tags:
-    - web
-    - writing
+  - web
+  - writing
+  - design
 ---

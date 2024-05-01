@@ -3,8 +3,9 @@ title: Sampling music in the MacOS terminal
 description: YouTube
 date: 2024-03-08
 tags:
-  - music
+  - sound
   - tools
+  - code
 ---
 
 Hello internet traveler! Do you want to download music from YouTube, but hate using shady web converters? I sure do. Here is a cleaner and faster way to download and sample all your favourite music using open-source software.
