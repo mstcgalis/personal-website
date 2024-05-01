@@ -518,6 +518,9 @@ header:after {
 .tags-list > .tag {
 	font-size: var(--font-size-h3);
 }
+.arrow {
+	color: red;
+}
 
 /* Metadata */
 .metadata-tags {
