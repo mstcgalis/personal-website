@@ -18,7 +18,15 @@ Furthermore, collaborative activities like working on the community radio [flus.
 
 I will apply these creative, technical and soft skills in a broader context. I want to work individually and on group projects, creating visuals, products, tools and communities. My hunger for knowledge drives me to seek out challenging academic pursuits, this exchange being one of them.
 
-I wholeheartedly believe that carefully designed technology can make people's lives better. I'm fascinated by digital tools and services that help individuals and communities gain control of their time, data and environments, expanding their agency in the digital realm. The world of tomorrow is being born today, and I want to participate in its shaping.
+I wholeheartedly believe that carefully designed technology can make people's lives better. I'm fascinated by digital tools and services that help individuals and communities gain control of their time, data and environments, expanding their agency in the digital realm.
+
+The exchange as eeerrrggg 🤮 is an opportunity to dive deep into my research. I would love to continue exploring recipes and intuitive cooking in my project [cookbook](/projects/cookbook). Two research questions have already arisen from my explorations:
+
+> The essential function of a recipe is documenting an experience for oneself and others, thus preserving and accumulating knowledge. But following exact recipes also limits the development of one’s intuition and sharpening of one's senses, instead trusting the opinion of an “expert” to achieve a certain reproducible, “branded” meal. Following instructions can feel like a game, but it also feels restraining and creates unnecessary expectations. Similar to society's roles, a recipe is something you have to fit into. How can we redesign recipes so that they still preserve knowledge, but don't perpetuate the toxic nature of exactness?
+
+> In my opinion, the AIs of today (LLMs, LIMs…) are better described as “very limited artificial intuition” rather than “artificial intelligence”. Everything they produce is made up on the spot, referencing training data in a hazy rather than exact way. Can we leverage computer intuition in building our intuition?
+
+[flus.fm](/projects/flus) in another project with great research potential. I see it as a live collaborative sound medium, similar to an offline jam session. I’m interested in the interplay of scheduled programming and live broadcasts from many distributed broadcasters - creating an environment for play and two-way sound-based communication. The main inspiration for my research into online radio is the French project [∏Node](https://p-node.org/), which I would love to explore in detail and build my versions of their hardware designs.
 
 I’ve selected the Digital Design orientation, which unites my lifelong love of technology with user-centric, research-driven design. I want to continue exploring tools-for-thought, handmade websites, and collaborative sound (online and offline) all the while diving into new territories.
 
