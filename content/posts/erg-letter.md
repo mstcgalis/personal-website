@@ -8,7 +8,7 @@ tags:
 
 Dear ~,
 
-I am expressing my interest in an exchange at eeerrrggg 🤮. As a student at the BUT Faculty of Fine Arts, specifically in Graphic Design Studio 1, I am enthusiastic about the opportunity to broaden my academic horizons, refine my design skills, and immerse myself in new cultural experiences.
+I am expressing my interest in an exchange at erg. As a student at the BUT Faculty of Fine Arts, specifically in Graphic Design Studio 1, I am enthusiastic about the opportunity to broaden my academic horizons, refine my design skills, and immerse myself in new cultural experiences.
 
 My studies at AGD1 have equipped me with a solid foundation in research, visual design, digital product design, and programming. These skills have been instrumental in completing projects such as the MacOS app [Tomado](/projects/tomado) and the IoT device [Keybot](/projects/keybot).
 
@@ -20,7 +20,7 @@ I will apply these creative, technical and soft skills in a broader context. I w
 
 I wholeheartedly believe that carefully designed technology can make people's lives better. I'm fascinated by digital tools and services that help individuals and communities gain control of their time, data and environments, expanding their agency in the digital realm.
 
-The exchange as eeerrrggg 🤮 is an opportunity to dive deep into my research. I would love to continue exploring recipes and intuitive cooking in my project [cookbook](/projects/cookbook). Two research questions have already arisen from my explorations:
+The exchange as erg is an opportunity to dive deep into my research. I would love to continue exploring recipes and intuitive cooking in my project [cookbook](/projects/cookbook). Two research questions have already arisen from my explorations:
 
 > The essential function of a recipe is documenting an experience for oneself and others, thus preserving and accumulating knowledge. But following exact recipes also limits the development of one’s intuition and sharpening of one's senses, instead trusting the opinion of an “expert” to achieve a certain reproducible, “branded” meal. Following instructions can feel like a game, but it also feels restraining and creates unnecessary expectations. Similar to society's roles, a recipe is something you have to fit into. How can we redesign recipes so that they still preserve knowledge, but don't perpetuate the toxic nature of exactness?
 
