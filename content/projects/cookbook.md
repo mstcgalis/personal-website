@@ -19,6 +19,7 @@ tags:
   - ai
 ---
 
+
 ## synthesis
 
 DG:
@@ -30,7 +31,7 @@ JD:
 cookbook.care (c.c) is mainly a sharing and caring collaboration between Daniel Gális and Julie Dudová while also being a FaVU school project. It's about spreading the idea of sustainable eating (environmentally, economically and spiritually). c.c encourages inspiration by season and place and rejects stuffy traditions and recipes.
 
 DG:
-I am starting to conceptualize c.c. as an in-between space, an intersection, but one that makes sense of the whole…
+I am starting to conceptualise c.c. as an in-between space, an intersection, but one that makes sense of the whole…
 
 JD:
 finding the connections between design and food - the preparation, the ritual, the preservation.
@@ -46,13 +47,13 @@ JD:
 i don't expect any fluctuations I guess. work and school are consistent throughout the semester.
 
 I hope that in the future,
-c.c. will become a platform for sharing texts and ideas related to sustainability (in life and design), care and perception of experience (individual and collective). I want our process itself to be sustainable (recognizing possible developments in context of how much time and resources we want to devote to it)
+c.c. will become a platform for sharing texts and ideas related to sustainability (in life and design), care and perception of experience (individual and collective). I want our process itself to be sustainable (recognising possible developments in context of how much time and resources we want to devote to it)
 
 DG:
 …modify the app to serve my real needs better
 
 JD:
-gradually work on a manifesto [no rush we have forever] - I would like to write it together, maybe during one long session. I think it is impoertant to share a text describing the core of c.c. regarding how dialogue-oriented the project is.
+gradually work on a manifesto [no rush we have forever] - I would like to write it together, maybe during one long session. I think it is important to share a text describing the core of c.c. regarding how dialogue-oriented the project is.
 
 **I would like to learn**
 
