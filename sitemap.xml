@@ -87,7 +87,7 @@
 	</url>
 	
 	<url>
-		<loc>https://danielgalis.com/tags/second-brain/</loc>
+		<loc>https://danielgalis.com/tags/projects/</loc>
 		<lastmod>2024-05-08</lastmod>
 	</url>
 	
@@ -97,7 +97,7 @@
 	</url>
 	
 	<url>
-		<loc>https://danielgalis.com/tags/tools/</loc>
+		<loc>https://danielgalis.com/tags/writing/</loc>
 		<lastmod>2024-05-08</lastmod>
 	</url>
 	
@@ -107,7 +107,37 @@
 	</url>
 	
 	<url>
+		<loc>https://danielgalis.com/tags/cooking/</loc>
+		<lastmod>2024-05-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/tools/</loc>
+		<lastmod>2024-05-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/code/</loc>
+		<lastmod>2024-05-08</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://danielgalis.com/tags/interface/</loc>
+		<lastmod>2024-05-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/data/</loc>
+		<lastmod>2024-05-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/ai/</loc>
+		<lastmod>2024-05-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/sound/</loc>
 		<lastmod>2024-05-08</lastmod>
 	</url>
 	
@@ -123,51 +153,6 @@
 	
 	<url>
 		<loc>https://danielgalis.com/tags/computers/</loc>
-		<lastmod>2024-05-08</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/code/</loc>
-		<lastmod>2024-05-08</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/self/</loc>
-		<lastmod>2024-05-08</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/sound/</loc>
-		<lastmod>2024-05-08</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/rituals/</loc>
-		<lastmod>2024-05-08</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/projects/</loc>
-		<lastmod>2024-05-08</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/writing/</loc>
-		<lastmod>2024-05-08</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/cooking/</loc>
-		<lastmod>2024-05-08</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/data/</loc>
-		<lastmod>2024-05-08</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/ai/</loc>
 		<lastmod>2024-05-08</lastmod>
 	</url>
 	
@@ -188,6 +173,21 @@
 	
 	<url>
 		<loc>https://danielgalis.com/tags/community/</loc>
+		<lastmod>2024-05-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/self/</loc>
+		<lastmod>2024-05-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/second-brain/</loc>
+		<lastmod>2024-05-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/rituals/</loc>
 		<lastmod>2024-05-08</lastmod>
 	</url>
 </urlset>
