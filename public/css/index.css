@@ -483,7 +483,7 @@ header:after {
 	list-style: none;
 	gap: 0em;
 	padding: 0em;
-	margin-block-end: 0.4em;
+	margin-block-end: 0em;
 }
 
 /* Tags */
@@ -686,4 +686,8 @@ img {
 	left: 0;
 	top: 0;
 	pointer-events: none;
+}
+
+.cookbook-dg {
+	color: red;
 }
