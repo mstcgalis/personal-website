@@ -554,7 +554,7 @@ header:after {
 }
 
 .arrow {
-	color: var(--color-blue);
+	color: red;
 	text-decoration: none !important;
 }
 
