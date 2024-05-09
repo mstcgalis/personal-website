@@ -419,8 +419,8 @@ header:after {
 
 .postlist-item:hover {
   background-color: var(--color-offset);
-  border-radius: 0.000001rem;
-  outline: var(--color-offset) 0.4em solid;
+  border-radius: var(--radius);
+  outline: var(--color-offset) 0.2em solid;
 }
 
 .postlist-item-active .postlist-link {
@@ -495,16 +495,10 @@ header:after {
   counter-increment: start-from -1;
 }
 
-@media screen and (min-width: 425px) {
-  .project-card {
-    width: 80%;
-  }
-}
-
 .project-card:hover {
   background-color: var(--color-offset);
-  border-radius: 0.000001rem;
-  outline: var(--color-offset) 0.4em solid;
+  border-radius: var(--radius);
+  outline: var(--color-offset) 0.2em solid;
 }
 
 .button {
@@ -571,7 +565,7 @@ header:after {
 }
 
 .arrow {
-  color: red;
+  color: var(--color-blue);
   text-decoration: none !important;
 }
 
