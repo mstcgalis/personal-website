@@ -112,11 +112,6 @@
 	</url>
 	
 	<url>
-		<loc>https://danielgalis.com/tags/self/</loc>
-		<lastmod>2024-05-09</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://danielgalis.com/tags/iot/</loc>
 		<lastmod>2024-05-09</lastmod>
 	</url>
@@ -138,6 +133,11 @@
 	
 	<url>
 		<loc>https://danielgalis.com/tags/rituals/</loc>
+		<lastmod>2024-05-09</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/self/</loc>
 		<lastmod>2024-05-09</lastmod>
 	</url>
 	
@@ -173,11 +173,6 @@
 	
 	<url>
 		<loc>https://danielgalis.com/tags/community/</loc>
-		<lastmod>2024-05-09</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/rtd/</loc>
 		<lastmod>2024-05-09</lastmod>
 	</url>
 	
