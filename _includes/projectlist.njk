@@ -1,15 +1,19 @@
 <div class="projectlist">
-{% for project in projectlist | reverse %}
-  <article href=" {{ project.data.research }}" class="project-card">
-    <span>{{ project.data.emoji }} <a href="{{ project.url }}" class="project-title">{{ project.data.title }}</a></span>
-    {# {% if project.data.image %}<img class="projectlist-image" src="{{ project.data.image }}" alt="🔑">{% endif %} #}
-    <p class="project-description">{{ project.data.description }}</p>
-    <ul class="button-list">
-      {%- for label, link in project.data.links %}
-      <li><a class="button" href="{{ link }}" target="_blank"><span class="arrow mr-1">↗ </span>{{ label }}</a></li>
-      {%- endfor %}
-    </ul>
-    {# <div class="metadata">
+  {% for project in projectlist | reverse %}
+    <article href=" {{ project.data.research }}" class="project-card">
+      <span>{{ project.data.emoji }} <a href="{{ project.url }}" class="project-title">{{ project.data.title }}</a></span>
+      {# {% if project.data.image %}<img class="projectlist-image" src="{{ project.data.image }}" alt="🔑">{% endif %} #}
+      <p class="project-description">{{ project.data.description }}</p>
+      <ul class="button-list">
+        {%- for label, link in project.data.links %}
+          <li class="button">
+            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+   href="{{ link }}"
+   target="_blank">{{ label }}</a>
+          </li>
+        {%- endfor %}
+      </ul>
+      {# <div class="metadata">
       <ul class="metadata-tags">
         {%- for tag in project.data.tags | filterTagList %}
         {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
@@ -18,6 +22,6 @@
       </ul>
       <time class="metadata-date" datetime="{{ project.date }}">{{ project.data.year }}</time>
     </div> #}
-  </article>
-{% endfor %}
+    </article>
+  {% endfor %}
 </div>
