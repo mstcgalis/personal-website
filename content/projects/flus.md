@@ -9,10 +9,10 @@ links:
   Research: https://are.na/daniel-galis/flus-fm
 tags:
   - sound
-  - writing
-  - design
   - community
-  - Rtd
+  - web
+  - code
+  - interface
 ---
 
 Along with a number of collaborators, I am building a community radio station called [flus.fm](https://flus.fm). It is supported by [FaVU](https://www.favu.vut.cz/en/) and based in Brno.
