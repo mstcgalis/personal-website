@@ -147,15 +147,18 @@ body {
 	font-weight: var(--font-weight-normal);
 	line-height: var(--line-height);
 }
+
 .view {
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
+
 html {
 	overflow-y: scroll;
 }
+
 body {
 	padding: 0em 0.6em;
 	max-width: 40em;
@@ -179,6 +182,7 @@ body {
 p:last-child {
 	margin-bottom: 0;
 }
+
 p {
 	line-height: var(--line-height);
 	margin-block-end: 0.8em;
@@ -188,9 +192,11 @@ p {
 a[href] {
 	color: var(--text-color-link);
 }
+
 a[href]:hover {
 	color: red;
 }
+
 a[href]:active {
 	/* color: var(--text-color-link-active); */
 	color: red;
@@ -216,6 +222,7 @@ footer {
 	font-size: var(--font-size-small);
 	margin-bottom: 0.8em;
 }
+
 footer a[href]:visited,
 footer a[href]:hover,
 footer a[href]:active,
@@ -241,6 +248,7 @@ footer a[href] {
 table {
 	margin: 0.8em 0;
 }
+
 table td,
 table th {
 	padding-right: 0.8em;
@@ -251,9 +259,11 @@ code {
 	font-family: var(--font-family-monospace);
 	background-color: var(--color-offset);
 }
+
 pre:not([class*="language-"]) {
 	margin: 0.5em 0;
-	line-height: 1.375; /* 22px /16 */
+	line-height: 1.375;
+	/* 22px /16 */
 	-moz-tab-size: var(--syntax-tab-size);
 	-o-tab-size: var(--syntax-tab-size);
 	tab-size: var(--syntax-tab-size);
@@ -266,9 +276,11 @@ pre:not([class*="language-"]) {
 	word-spacing: normal;
 	word-break: normal;
 }
+
 code {
 	word-break: none;
 }
+
 blockquote {
 	font-style: italic;
 }
@@ -287,33 +299,41 @@ h4 {
 	margin-block-start: 0.8em;
 	margin-block-end: 0.2em;
 }
+
 h1 {
 	font-size: var(--font-size-h1);
 	font-weight: var(--font-weight-bold);
 }
+
 h2 {
 	font-size: var(--font-size-h2);
 	font-weight: var(--font-weight-bold);
 }
+
 h3 {
 	font-size: var(--font-size-h3);
 	font-weight: var(--font-weight-bold);
 }
+
 h4 {
 	font-size: var(--font-size-h4);
 	font-weight: var(--font-weight-bold);
 }
+
 b {
 	font-weight: var(--font-weight-bold);
 }
+
 ul {
 	margin-block-end: 0.8em;
 	margin-block-start: 0;
 }
+
 .now::marker {
 	content: "ꨁ  ";
 	color: red;
 }
+
 .always::marker {
 	content: "ꨘ  ";
 	color: red;
@@ -328,24 +348,31 @@ header {
 	top: 0;
 	background-color: var(--color-background);
 }
+
 .nav-hidden {
 	top: -3em;
 }
+
 header:after {
 	content: "";
 	display: table;
 	clear: both;
 }
+
 .home-link {
-	font-size: 1em; /* 16px /16 */
+	font-size: 1em;
+	/* 16px /16 */
 	color: var(--text-color) !important;
 }
+
 .home-link[aria-current="page"] {
 	color: red !important;
 }
+
 .home-link:link:not(:hover) {
 	text-decoration: none;
 }
+
 @media (max-width: 424px) {
 	.home-link::before {
 		content: "Daniel";
@@ -371,6 +398,7 @@ header:after {
 .nav-item {
 	display: inline-block;
 }
+
 /* .nav-item a[href] {
 	color: var(--text-color);
 }
@@ -385,6 +413,7 @@ header:after {
 .nav-item a[href]:active {
 	color: red;
 }
+
 .nav a[href][aria-current="page"] {
 	text-decoration: underline;
 	color: red !important;
@@ -396,6 +425,7 @@ header:after {
 	margin: 0.8em 0em 0.8em 0em;
 	padding: 0;
 }
+
 .postlist-item {
 	/* display: flex;
 	flex-wrap: wrap;
@@ -403,6 +433,7 @@ header:after {
 	counter-increment: start-from -1;
 	margin: 1em 0em 1em 0em;
 }
+
 .postlist-item:before {
 	display: inline-block;
 	pointer-events: none;
@@ -410,6 +441,7 @@ header:after {
 	text-align: right;
 	margin-left: -1.5rem;
 }
+
 .postlist-title {
 	font-size: var(--font-size-h3);
 	font-weight: var(--font-weight-normal);
@@ -420,18 +452,22 @@ header:after {
 	text-decoration-thickness: 1px;
 	margin-bottom: 0.4em;
 }
+
 .postlist-item:hover {
 	background-color: var(--color-offset);
 	border-radius: 0.000001em;
 	outline: var(--color-offset) 0.4em solid;
 }
+
 .postlist-item-active .postlist-link {
 	font-weight: var(--font-weight-bold);
 }
+
 .postlist-item > .metadata {
 	margin-block-end: 0;
 	background-color: transparent;
 }
+
 /* .postlist-item > .metadata > .metadata-date {
 	font-size: var(--font-size-small);
 	line-height: 1.6;
@@ -455,9 +491,12 @@ header:after {
 
 	row-gap: 1.6em;
 	display: grid;
-	grid-template-columns: 1fr; /* Single column on mobile */
-	justify-items: stretch; /* Stretch items to fill the width */
+	grid-template-columns: 1fr;
+	/* Single column on mobile */
+	justify-items: stretch;
+	/* Stretch items to fill the width */
 }
+
 /* @media only screen and (min-width: 768px) {
 	.projectlist {
 	  grid-template-columns: 1fr 1fr;
@@ -516,9 +555,7 @@ header:after {
 	font-size: var(--font-size-body);
 	text-decoration: none;
 }
-.button:hover {
-	text-decoration: underline;
-}
+
 .button:active {
 	text-decoration: underline;
 	color: red !important;
@@ -547,9 +584,11 @@ header:after {
 	font-size: var(--font-size-body);
 	text-decoration: none; */
 }
+
 .tag:hover {
 	text-decoration: underline;
 }
+
 .text-tag {
 	text-decoration: underline;
 }
@@ -563,11 +602,14 @@ header:after {
 	gap: 0.8em;
 	justify-content: left;
 }
+
 .tags-list > .tag {
 	font-size: var(--font-size-h3);
 }
+
 .arrow {
 	color: red;
+	text-decoration: none !important;
 }
 
 /* Metadata */
@@ -580,6 +622,7 @@ header:after {
 	padding-left: 0;
 	margin-block-end: 0;
 }
+
 .metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -614,14 +657,17 @@ header:after {
 	font-size: 1em;
 	margin-left: 0.1em;
 }
+
 a[href].header-anchor,
 a[href].header-anchor:visited {
 	color: transparent;
 }
+
 a[href].header-anchor:focus,
 a[href].header-anchor:hover {
 	text-decoration: underline;
 }
+
 a[href].header-anchor:focus,
 :hover > a[href].header-anchor {
 	color: #aaa;
@@ -653,6 +699,7 @@ img {
 .iframe-container {
 	position: relative;
 }
+
 .loading {
 	position: absolute;
 	left: 0;
@@ -663,6 +710,7 @@ img {
 	justify-content: center;
 	align-items: center;
 }
+
 .my-iframe {
 	border: none;
 
@@ -706,18 +754,23 @@ img {
 	40% {
 		opacity: 0;
 	}
+
 	90% {
 		opacity: 0.2;
 	}
+
 	99.79% {
 		opacity: 1;
 	}
+
 	99.8% {
 		opacity: 0;
 	}
+
 	99.85% {
 		opacity: 0;
 	}
+
 	99.86%,
 	100% {
 		opacity: 1;
@@ -755,6 +808,10 @@ img {
 .bg-blue-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.no-underline {
+  text-decoration-line: none;
 }
 
 .filter {
@@ -1165,7 +1222,7 @@ header:after {
   font-weight: var(--font-weight-bold);
 }
 
-.postlist-item > .metadata {
+.postlist-item>.metadata {
   margin-block-end: 0;
   background-color: transparent;
 }
@@ -1206,7 +1263,7 @@ header:after {
 	}
 } */
 
-.project-card > .metadata {
+.project-card>.metadata {
   border-top: 1px solid var(--color-offset);
   padding: 0.4em 0.2em 0em 0.2em;
 }
@@ -1254,10 +1311,6 @@ header:after {
   border-radius: var(--radius-tag);
   font-size: var(--font-size-body);
   text-decoration: none;
-}
-
-.button:hover {
-  text-decoration: underline;
 }
 
 .button:active {
@@ -1308,12 +1361,13 @@ header:after {
   justify-content: left;
 }
 
-.tags-list > .tag {
+.tags-list>.tag {
   font-size: var(--font-size-h3);
 }
 
 .arrow {
   color: red;
+  text-decoration: none !important;
 }
 
 /* Metadata */
@@ -1372,11 +1426,11 @@ a[href].header-anchor:hover {
 }
 
 a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
+:hover>a[href].header-anchor {
   color: #aaa;
 }
 
-h2 + .header-anchor {
+h2+.header-anchor {
   font-size: 1.5em;
 }
 
@@ -1491,6 +1545,18 @@ img {
 
 .cookbook-dg {
   color: red;
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.hover\:no-underline:hover {
+  text-decoration-line: none;
+}
+
+.group:hover .group-hover\:no-underline {
+  text-decoration-line: none;
 }</style>
 </head>
 
@@ -1549,11 +1615,15 @@ img {
 
 <p>Upcycled clothing designed for a circular economy.</p>
 <ul class="button-list">
-    <li>
-      <a class="button" href="https://www.are.na/daniel-galis/mstc-project" target="_blank"><span class="arrow mr-1">↗</span>Research</a>
+    <li class="button">
+      <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+   href="https://www.are.na/daniel-galis/mstc-project"
+   target="_blank">Research</a>
     </li>
-    <li>
-      <a class="button" href="/projects/attachments/mstc.pdf" target="_blank"><span class="arrow mr-1">↗</span>PDF (SK)</a>
+    <li class="button">
+      <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+   href="/projects/attachments/mstc.pdf"
+   target="_blank">PDF (SK)</a>
     </li>
 </ul>
 <hr>
