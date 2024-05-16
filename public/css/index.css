@@ -735,6 +735,6 @@ img {
 	pointer-events: none;
 }
 
-.cookbook-dg {
-	color: red;
+.collaborator {
+	padding: 0.1em 0.4rem;
 }
