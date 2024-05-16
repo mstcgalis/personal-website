@@ -14,16 +14,15 @@ tags:
   - code
   - interface
 ---
-
 Along with a number of collaborators, I am building a community radio station called [flus.fm](https://flus.fm). It is supported by [FaVU](https://www.favu.vut.cz/en/) and based in Brno.
 
-The main purpose is to create a local online platform for sharing, promoting and discussing music, podcasts, and other forms of audio. It is essentialy a community project, catering first and foremost to the needs and interests of our local (sound + art + music) scene, with a secondary goal of showcasing the content to the broader public.
+The main purpose is to create a local online platform for sharing, promoting and discussing music, podcasts, and other forms of audio. It is essentially a community project, catering first and foremost to the needs and interests of our local (sound + art + music) scene, with a secondary goal of showcasing the content to the broader public.
 
 The radio is still in the early stages of development, but we are already broadcasting a 24/7 stream of music and podcasts, all locally produced.
 
-Our current music programming consits of the archival [FaVU 30](https://favulabel.bandcamp.com/album/favu-30) release, which mappes the rich history of music at [FaVU](https://www.favu.vut.cz/en/), the contemporary compilation [máš na míň](https://favulabel.bandcamp.com/album/m-na-m) released in 2023, and will be expanded soon with other [favulabel](https://favulabel.bandcamp.com) associated releases.
+Our current music programming consists of the archival [FaVU 30](https://favulabel.bandcamp.com/album/favu-30) release, which mapped the rich history of music at [FaVU](https://www.favu.vut.cz/en/), the contemporary compilation [máš na míň](https://favulabel.bandcamp.com/album/m-na-m) released in 2023, and will be expanded soon with other [favulabel](https://favulabel.bandcamp.com) associated releases.
 
-We have also started bradcasting two Brno based podcasts. [Brno G's](https://www.instagram.com/brno_gs/) explores small, self-made local businesses, while [slovem](https://www.instagram.com/jsme.slovem/) is a series of recordings from queer feminist discussion events.
+We have also started broadcasting two Brno based podcasts. [Brno G's](https://www.instagram.com/brno_gs/) explores small, self-made local businesses, while [slovem](https://www.instagram.com/jsme.slovem/) is a series of recordings from queer feminist discussion events.
 
 [flus.fm](https://flus.fm) is also a research platform for experimenting with new forms of sound and music production, distribution and presentation, while also exploring the potential of radio as a medium. I am exploring ways of bringing the live collaboration and open participation of in-person [open jam sessions](https://purefucking.fun/pages/ojs.html) to an online space.
 
