@@ -235,6 +235,9 @@ code {
 
 blockquote {
 	font-style: italic;
+	line-height: var(--line-height);
+	margin-block-end: 0.8rem;
+	margin-block-start: 0;
 }
 
 hr {
