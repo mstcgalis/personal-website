@@ -283,6 +283,9 @@ code {
 
 blockquote {
 	font-style: italic;
+	line-height: var(--line-height);
+	margin-block-end: 0.8rem;
+	margin-block-start: 0;
 }
 
 hr {
@@ -799,6 +802,10 @@ img {
   cursor: pointer;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -809,6 +816,10 @@ img {
 
 .border-solid {
   border-style: solid;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .\!text-cookbook-blue {
@@ -831,12 +842,22 @@ img {
   color: rgb(208 46 43 / var(--tw-text-opacity));
 }
 
-.no-underline {
-  text-decoration-line: none;
+.text-cookbook-yellow {
+  --tw-text-opacity: 1;
+  color: rgb(254 237 160 / var(--tw-text-opacity));
+}
+
+.text-cookbook-brown {
+  --tw-text-opacity: 1;
+  color: rgb(89 36 54 / var(--tw-text-opacity));
 }
 
 .\!no-underline {
   text-decoration-line: none !important;
+}
+
+.no-underline {
+  text-decoration-line: none;
 }
 
 .filter {
@@ -1064,6 +1085,9 @@ code {
 
 blockquote {
   font-style: italic;
+  line-height: var(--line-height);
+  margin-block-end: 0.8rem;
+  margin-block-start: 0;
 }
 
 hr {
@@ -1566,17 +1590,8 @@ img {
   padding: 0.1em 0.4rem;
 }
 
-.hover\:bg-cookbook-blue:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(68 108 175 / var(--tw-bg-opacity));
-}
-
 .hover\:underline:hover {
   text-decoration-line: underline;
-}
-
-.hover\:\!underline:hover {
-  text-decoration-line: underline !important;
 }
 
 .hover\:no-underline:hover {
@@ -1602,6 +1617,11 @@ img {
   .dark\:text-cookbook-sky {
     --tw-text-opacity: 1;
     color: rgb(183 211 225 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-cookbook-yellow {
+    --tw-text-opacity: 1;
+    color: rgb(254 237 160 / var(--tw-text-opacity));
   }
 }</style>
 </head>
@@ -1690,18 +1710,24 @@ img {
     </li>
 </ul>
 <hr>
-
+<div class="text-cookbook-brown dark:text-cookbook-yellow">
 <p>
   <a href="https://cookbook.care">cookbook.care</a> is a collaboration
   between <a href="/" class="collaborator border-solid border rounded-xl !no-underline !text-cookbook-blue dark:!text-cookbook-sky">Daniel Gális</a> and <a href="https://www.instagram.com/juliedudova" class="collaborator !no-underline border-solid border rounded-xl !text-cookbook-red dark:!text-cookbook-pink">Julie Dudová</a> based around sharing and caring while also being a FaVU school project.
 </span>
+<blockquote>
+  a truly safe space should allow and nurture existence outside of the social roles people normally occupy in their families and workplaces
+</blockquote>
 <p>
   Our main goal is spreading the idea of sustainable eating (environmentally, economically and spiritually).
   <a href="https://cookbook.care">c.c</a> encourages inspiration by season and place while questioning the role recipes, focusing instead on building intuition using first principles.
 </p>
+<blockquote><p>There is nothing better than eating delicious food, but for most people eating is just a way to nourish the body, to have energy to work and to live to an old age. Mothers often tell their children to eat their food even if they do not like the taste—because it is "good" for them.</p><p>
+But nutrition cannot be separated from the sense of taste. Nutritious foods, good for the human body, whet the appetite and are delicious on their own account. Proper nourishment is inseparable from good flavor.</p></blockquote>
 <p>
   In the 2023 winter semester, we designed an app to help us cook more, use more local and seasonal ingredient and (re)learn first the principles of taste, heat, texture, and so on.
 </p>
+<img src="/projects/attachments/cookbook-attachments/scope-definition.png"></img>
 <p>
   The open-source <a href="https://cookbook.care">app</a> is based on a connections dialogue between Julie, who has been cooking without recipes for years, and Daniel, a beginner cook who appreciates the structure of a recipe.
 </p>
@@ -1754,6 +1780,7 @@ img {
   being able to decide what is necessary
   a bit more political radicalism
 </p>
+<blockquote><p>Cooking is political. It always has been and it always will be. It is a method of education and a catalyst for community engagement. It can simultaneously be a voice of dissent and a tool of extreme oppression. In its purest form, cooking is an act of love.</p></blockquote>
 <p class="text-cookbook-blue dark:text-cookbook-sky">
   to embrace consistent blogging about the soft poetic aspects as well as the technological research being done, but most importantly - be real and honest, creating a dialogue
 </p>
@@ -1785,7 +1812,11 @@ img {
   In my opinion, the AIs of today (LLMs, LIMs…) are better described as “very limited artificial intuition” rather than “artificial intelligence”. Everything they produce is made up on the spot, referencing training data in a hazy rather than exact way. Can we leverage computer intuition in building our intuition?
 </p>
 <p class="text-cookbook-red dark:text-cookbook-pink">Is there something c.c. related that you would like to read, but it doesn't exist (yet)?</p>
-
+<img src="/projects/attachments/cookbook-attachments/we-love-our-bread.jpg"></img>
+<blockquote>
+  <p class="text-right">...there's no such thing as caring to much</p>
+</blockquote>
+</div>
 
   <div class="nav-under-content">
     <p>
