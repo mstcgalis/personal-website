@@ -5,7 +5,7 @@ emoji: 📻
 date: 2024-02-01
 year: 2024 -> ????
 links:
-  Web radio: https://flus.fm/
+  Web radio: https://flus.danielgalis.com/
   Research: https://are.na/daniel-galis/flus-fm
 tags:
   - sound
@@ -14,6 +14,7 @@ tags:
   - code
   - interface
 ---
+
 Along with a number of collaborators, I am building a community radio station called [flus.fm](https://flus.fm). It is supported by [FaVU](https://www.favu.vut.cz/en/) and based in Brno.
 
 The main purpose is to create a local online platform for sharing, promoting and discussing music, podcasts, and other forms of audio. It is essentially a community project, catering first and foremost to the needs and interests of our local (sound + art + music) scene, with a secondary goal of showcasing the content to the broader public.
