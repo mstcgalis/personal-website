@@ -87,27 +87,7 @@
 	</url>
 	
 	<url>
-		<loc>https://danielgalis.com/tags/second-brain/</loc>
-		<lastmod>2024-09-24</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/web/</loc>
-		<lastmod>2024-09-24</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://danielgalis.com/tags/tools/</loc>
-		<lastmod>2024-09-24</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/design/</loc>
-		<lastmod>2024-09-24</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/interface/</loc>
 		<lastmod>2024-09-24</lastmod>
 	</url>
 	
@@ -122,12 +102,32 @@
 	</url>
 	
 	<url>
+		<loc>https://danielgalis.com/tags/design/</loc>
+		<lastmod>2024-09-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/interface/</loc>
+		<lastmod>2024-09-24</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://danielgalis.com/tags/computers/</loc>
 		<lastmod>2024-09-24</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://danielgalis.com/tags/code/</loc>
+		<lastmod>2024-09-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/second-brain/</loc>
+		<lastmod>2024-09-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/web/</loc>
 		<lastmod>2024-09-24</lastmod>
 	</url>
 	
@@ -157,11 +157,6 @@
 	</url>
 	
 	<url>
-		<loc>https://danielgalis.com/tags/community/</loc>
-		<lastmod>2024-09-24</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://danielgalis.com/tags/cooking/</loc>
 		<lastmod>2024-09-24</lastmod>
 	</url>
@@ -173,6 +168,11 @@
 	
 	<url>
 		<loc>https://danielgalis.com/tags/ai/</loc>
+		<lastmod>2024-09-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://danielgalis.com/tags/community/</loc>
 		<lastmod>2024-09-24</lastmod>
 	</url>
 	
