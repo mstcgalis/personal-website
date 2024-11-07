@@ -411,7 +411,7 @@ header:after {
 .postlist-item:hover {
 	background-color: var(--color-offset);
 	border-radius: var(--radius);
-	outline: var(--color-offset) 0.2em solid;
+	outline: var(--color-offset) 0.8em solid;
 }
 
 .postlist-item-active .postlist-link {
