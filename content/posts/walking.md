@@ -23,6 +23,5 @@ As much as I love to image a world where I could always learn and create outside
 
 ### Reference:
 
-[^1]:
-    Masschelein, J. (2010). E-ducating the gaze: The idea of a poor pedagogy. Ethics and Education, 5(1), 43–53. https://doi.org/10.1080/17449641003590621
-    [^2:] Nachmanovitch, S. (2007). Bateson and the Arts. Kybernetes, 36(7/8), 1122–1133. https://doi.org/10.1108/03684920710777919
+[^1]: Masschelein, J. (2010). E-ducating the gaze: The idea of a poor pedagogy. Ethics and Education, 5(1), 43–53. https://doi.org/10.1080/17449641003590621
+[^2]: Nachmanovitch, S. (2007). Bateson and the Arts. Kybernetes, 36(7/8), 1122–1133. https://doi.org/10.1108/03684920710777919
