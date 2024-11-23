@@ -13,7 +13,7 @@ Haidt is a social psychologist known for his work on moral psychology. He frames
 
 A particularly compelling passage from Haidt reads:
 
-> "Social media has trapped an entire generation in a collective-action problem. Early app developers deliberately and knowingly exploited the psychological weaknesses and insecurities of young people to pressure them to consume a product that, upon reflection, many wish they could use less, or not at all." (Haidt, 2024)
+> Social media has trapped an entire generation in a collective-action problem. Early app developers deliberately and knowingly exploited the psychological weaknesses and insecurities of young people to pressure them to consume a product that, upon reflection, many wish they could use less, or not at all. (Haidt, 2024)
 
 This insight is vital to my research, as it underscores how the architecture of social media is inherently exploitative. Accepting this fact is crucial for moving beyond traditional control-based interventions, such as restricting screen time, and considering more transformative approaches.
 
