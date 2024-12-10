@@ -7,7 +7,6 @@ year: 2021 -> 2022
 links:
   GitHub (download): https://github.com/mstcgalis/Tomado
   Research: https://www.are.na/daniel-galis/tomado-project
-  PDF (SK): /projects/attachments/tomado.pdf
 tags:
   - tools
   - self
