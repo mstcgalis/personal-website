@@ -6,7 +6,7 @@ date: 2024-02-01
 year: 2024 -> ????
 links:
   Web radio: https://flus.danielgalis.com/
-  Research: https://are.na/daniel-galis/flus-fm
+  Research: https://www.are.na/daniel-galis/flus-fm
 tags:
   - sound
   - community
