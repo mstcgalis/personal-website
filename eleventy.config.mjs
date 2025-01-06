@@ -5,7 +5,8 @@ import markdownItObsidianImages from "markdown-it-obsidian-images";
 
 const markdownItObsidianImagesConfig = markdownItObsidianImages({
 	baseURL: "/posts/attachments/",
-	relativeBaseURL: "/posts/attachments/",
+	relativeBaseURL: "/posts/attachments",
+	suffix: "",
 });
 
 import embedEverything from "eleventy-plugin-embed-everything";

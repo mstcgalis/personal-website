@@ -49,6 +49,7 @@
 	},
 	"dependencies": {
 		"@11ty/eleventy-upgrade-help": "^3.0.1",
-		"eleventy-plugin-gen-favicons": "^1.1.2"
+		"eleventy-plugin-gen-favicons": "^1.1.2",
+		"sharp": "^0.33.5"
 	}
 }
