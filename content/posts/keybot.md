@@ -22,7 +22,7 @@ The aim of **Keybot** is to replace cumbersome human interactions with a robotic
 
 In the spring/summer of 2023, I participated in the studio course titled "Research with Yo-Yo Machines – exploring context, form, and function" led by visiting educator Alma Leora Culén. This course delved into the realm of Research Through Design (RtD) and interaction design through a multifaceted approach. It was comprised of theoretical studies, hands-on workshops for ideation and creation, and practical exploration of the do-it-yourself (DIY) playful communication devices known as [Yo-Yo Machines](https://www.yoyomachines.io/). The present project serves as the outcome of this course.
 
-_fig.N: Knock Knock Yo-Yo Machine_ ![[/attachments/knock-knock.png]]
+_fig.N: Knock Knock Yo-Yo Machine_ ![[knock-knock.png]]
 
 ## Identifying an Opportunity: Streamlining Access to Shared Workspaces
 
