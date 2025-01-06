@@ -5,7 +5,7 @@ import markdownItObsidianImages from "markdown-it-obsidian-images";
 
 const markdownItObsidianImagesConfig = markdownItObsidianImages({
 	baseURL: "/posts/attachments/",
-	relativeBaseURL: "/posts/attachments",
+	relativeBaseURL: "/posts/attachments/",
 	suffix: "",
 });
 
@@ -131,7 +131,7 @@ export default function (eleventyConfig) {
 			slugify: eleventyConfig.getFilter("slugify"),
 		});
 		mdLib.use(markdownItFootnote);
-		mdLib.use(markdownItObsidianImages);
+		mdLib.use(markdownItObsidianImagesConfig);
 	});
 
 	// Parse tag-URL mapping from text file

@@ -56,7 +56,7 @@ Smartphones and apps are currently the go-to solutions for addressing communicat
 
 However, I contend that _chat_, an integral part of maintaining and organising a group of humans in the digital age, can also be a platform for prototyping technology. Instead of relying on complex coding, prototypes can be built using social conventions and simple text formatting. I have witnessed and participated in using chats as platforms for various purposes such as reading clubs, habit trackers, diaries, complex polls, wikis, directories, and even art projects. Over time, intentionally or organically (or a combination thereof), the chat evolves and transcends its original purpose.
 
-_fig.N: Reading club inside a chat_ ![[/attachments/reading_club.png]]
+_fig.N: Reading club inside a chat_ ![[/reading_club.png]]
 
 The key element in developing tools within a chat environment lies in establishing shared social conventions. The group of users must reach a consensus on how and when the chat transitions into a distinct tool, determining its designated functionalities and behaviours.
 
@@ -70,11 +70,11 @@ The majority of our computing activities, including chatting, occur on general-p
 
 In contrast, single-purpose or special-purpose computers occupy the other end of the computer design spectrum. These computers are purpose-built with a singular objective in mind, providing a specialised interface tailored to specific interactions. This singular focus enables simplicity, as seen in Dieter Rams's devices, and tactility, exemplified by retro gaming cabinets. The limitations imposed by their singular function allow for a greater emphasis on the quality and aesthetics of the interaction.
 
-_fig.N: Specialised computer interface for manual atmospheric reentry on the Soyuz spacecraft_ ![[/attachments/soyuz.png]]
+_fig.N: Specialised computer interface for manual atmospheric reentry on the Soyuz spacecraft_ ![[/soyuz.png]]
 
 From a physical environment design standpoint, the concept of the single-purposed **Keybot** computer drew inspiration from an existing feature in our studio—a simple nail positioned next to the door where the key should always hang. By leveraging this analog nail, I positioned my device in the same location, striving for near invisibility to minimise friction and facilitate a seamless transition to the new device.
 
-_fig.N: The original nail_ ![[/attachments/key_nail.png]]
+_fig.N: The original nail_ ![[/key_nail.png]]
 
 # Exploring Interactions
 
@@ -82,7 +82,7 @@ _fig.N: The original nail_ ![[/attachments/key_nail.png]]
 
 The core interaction of **Keybot** makes use of a sensor designed to detect the presence of a key. Once the sensor detects a key hanging of it, a message that is sent to a specific Discord chat channel, which serves as the platform for interacting with the device over the internet.
 
-_fig.N: Interaction on entry_ ![[attachments/interaction_entry.png]]
+_fig.N: Interaction on entry_ ![[interaction_entry.png]]
 
 Applying the same principle, when the sensor no longer detects a key, it assumes that everyone is leaving the studio, and that the key will be returned to the reception. Studio members are notified of this through a message in a designated chat channel, just as with the _on entry_ interaction described in _fig.N_.
 
@@ -100,7 +100,7 @@ In the final design of **Keybot**, I drew inspiration from the Yo-Yo Machines pr
 
 The symbolism of knocking, as a means of communication through closed doors, resonated with me, and I decided to adapt this technology for a slightly different purpose. In the **Keybot** device, the solenoid is also employed to produce a knocking sound, serving as a way to capture the attention of someone in the studio. If you are on your way and there is no notification of the doors being unlocked, you can send a message containing the word "knock" in the designated chat. In the event that someone is already in the studio but has forgotten to hang the key, the sound, accompanied by a flashing blue LED, aims to grab their attention, prompting them to hang the key.
 
-_fig.N: Knock Interaction_ ![[/attachments/interaction_knock.png]]
+_fig.N: Knock Interaction_ ![[/interaction_knock.png]]
 
 # Putting It Together In Practice
 
@@ -122,7 +122,7 @@ Drawing inspiration once again from the Yo-Yo Machines project, I incorporated s
 
 In the early prototyping stage, a breadboard and some Dupont cables were used to test the functionality of the hardware and firmware. In the final prototype, a combination of Dupont cables, and traditional soldering methods take care of the electrical connections.
 
-_fig.N: Prototyping_ ![[/attachments/breadboard.jpg]]
+_fig.N: Prototyping_ ![[/breadboard.jpg]]
 
 ## Coding The Firmware
 
@@ -132,13 +132,13 @@ The microcontroller can be programmed using the C programming language. For this
 
 I opted for a 3D printed casing for the device, enabling me to quickly obtain a sturdy and precise prototype. I employed a CAD software to design the casing, and the final 3D model is publicly available on the internet. I also utilised paper and styrofoam mockups, allowing for a more hands-on approach to solving any model-related issues during the design process.
 
-_fig.N: Paper Mockup Of The Casing_ ![[/attachments/paper_prototype.jpg]]
-_fig.N: Bottom Half Of The Casing Model_ ![[/attachments/case_bottom.png]]
-_fig.N: Top Half Of The Casing Model_ ![[/attachments/case_top.png]]
+_fig.N: Paper Mockup Of The Casing_ ![[/paper_prototype.jpg]]
+_fig.N: Bottom Half Of The Casing Model_ ![[/case_bottom.png]]
+_fig.N: Top Half Of The Casing Model_ ![[/case_top.png]]
 
 The initial 3D print had some imperfections, as expected, prompting me to revise and refine the design accordingly. Furthermore, I conducted a poll within the studio's Discord server to gather opinions on whether to keep the "KEY BOT" logo. The response was overwhelmingly against it, which pleased me, as I shared the same sentiment.
 
-_fig.N: First Printed Version Of The Casing_ ![[/attachments/key-bot_installed.jpg]]
+_fig.N: First Printed Version Of The Casing_ ![[/key-bot_installed.jpg]]
 
 - [ ] ADD: photos of the second version
 
@@ -159,7 +159,7 @@ I want to acknowledge my own criticism of this project, which is that it doesn't
 ## 🚧 Reflection (WIP)
 
 I will finish this section after the final examination.
-![[/attachments/key-hook-cat.gif]]
+![[/key-hook-cat.gif]]
 
 ### Reference:
 
