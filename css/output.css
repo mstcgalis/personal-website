@@ -1,3 +1,7 @@
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -8,10 +12,6 @@
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .rounded-xl {
@@ -45,19 +45,14 @@
   color: rgb(68 108 175 / var(--tw-text-opacity));
 }
 
-.text-cookbook-red {
-  --tw-text-opacity: 1;
-  color: rgb(208 46 43 / var(--tw-text-opacity));
-}
-
-.text-cookbook-yellow {
-  --tw-text-opacity: 1;
-  color: rgb(254 237 160 / var(--tw-text-opacity));
-}
-
 .text-cookbook-brown {
   --tw-text-opacity: 1;
   color: rgb(89 36 54 / var(--tw-text-opacity));
+}
+
+.text-cookbook-red {
+  --tw-text-opacity: 1;
+  color: rgb(208 46 43 / var(--tw-text-opacity));
 }
 
 .\!no-underline {
@@ -469,12 +464,6 @@ header:after {
   margin-bottom: 0.4rem;
 }
 
-.postlist-item:hover {
-  background-color: var(--color-offset);
-  border-radius: var(--radius);
-  outline: var(--color-offset) 0.2em solid;
-}
-
 .postlist-item-active .postlist-link {
   font-weight: var(--font-weight-bold);
 }
@@ -544,13 +533,8 @@ header:after {
   flex-direction: column;
   align-items: baseline;
   justify-content: left;
+  padding-bottom: 0.4rem;
   counter-increment: start-from -1;
-}
-
-.project-card:hover {
-  background-color: var(--color-offset);
-  border-radius: var(--radius);
-  outline: var(--color-offset) 0.2em solid;
 }
 
 .button {
@@ -576,7 +560,7 @@ header:after {
   list-style: none;
   gap: 0rem;
   padding: 0rem;
-  margin-block-end: 0.4rem;
+  margin-block-end: 0rem;
 }
 
 /* Tags */

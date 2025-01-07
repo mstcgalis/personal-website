@@ -408,12 +408,6 @@ header:after {
 	margin-bottom: 0.4rem;
 }
 
-.postlist-item:hover {
-	background-color: var(--color-offset);
-	border-radius: var(--radius);
-	outline: var(--color-offset) 0.8em solid;
-}
-
 .postlist-item-active .postlist-link {
 	font-weight: var(--font-weight-bold);
 }
@@ -482,14 +476,8 @@ header:after {
 	flex-direction: column;
 	align-items: baseline;
 	justify-content: left;
-
+	padding-bottom: 0.4rem;
 	counter-increment: start-from -1;
-}
-
-.project-card:hover {
-	background-color: var(--color-offset);
-	border-radius: var(--radius);
-	outline: var(--color-offset) 0.2em solid;
 }
 
 .button {
@@ -517,7 +505,7 @@ header:after {
 	list-style: none;
 	gap: 0rem;
 	padding: 0rem;
-	margin-block-end: 0.4rem;
+	margin-block-end: 0rem;
 }
 
 /* Tags */
