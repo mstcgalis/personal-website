@@ -17,8 +17,7 @@ layout: layouts/base.njk
 </div>
 <hr>
 {# {% if image %}<img class="ist-image" src="{{ image }}" alt="🔑">{% endif %} #}
-<p>{{ description }}</p>
-<ul class="button-list">
+<ul class="button-list mb-0">
   {%- for label, link in links %}
     <li class="button">
       <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
