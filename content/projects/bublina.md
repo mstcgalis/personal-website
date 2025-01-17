@@ -1,6 +1,6 @@
 ---
 title: Bublina
-description: Student magazine. Small print zine monthly, big online zine yearly.
+description: Student magazine. Small printed zine monthly, big online zine yearly.
 emoji: 🫧
 date: 2023-01-01
 year: 2023 -> ????
@@ -12,3 +12,5 @@ tags:
   - writing
   - design
 ---
+
+Bublina is a student magazine where I handle the graphic design web administration.
