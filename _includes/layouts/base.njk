@@ -62,38 +62,39 @@
     <style>{% getBundle "css" %}</style>
 </head>
 {# <div class="red-filter"></div> #}
-<body>
-    <a href="#skip" class="visually-hidden">Skip to main content</a>
-    <div class="view">
-        <header>
-            {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-            <nav style="width: 100%;">
-                <h2 class="visually-hidden">Top level navigation menu</h2>
-                <ul class="nav">
-                    <li>
-                        <a href="/"
-                           class="home-link"
-                           {% if page.url == "/" %}aria-current="page"{% endif %}></a>
-                    </li>
-                    {%- for entry in collections.all | eleventyNavigation %}
-                        <li class="nav-item">
-                            <a href="{{ entry.url }}"
-                               {% if page.url == entry.url %}aria-current="page"{% endif %}>{{ entry.title }}</a>
+    <body>
+        <a href="#skip" class="visually-hidden">Skip to main content</a>
+        <div class="view">
+            <header>
+                {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+                <nav style="width: 100%;">
+                    <h2 class="visually-hidden">Top level navigation menu</h2>
+                    <ul class="nav">
+                        <li>
+                            <a href="/"
+                            class="home-link"
+                            {% if page.url == "/" %}aria-current="page"{% endif %}></a>
                         </li>
-                    {%- endfor %}
-                    </ul>
-                </nav>
+                        {%- for entry in collections.all | eleventyNavigation %}
+                            <li class="nav-item">
+                                <a href="{{ entry.url }}"
+                                {% if page.url == entry.url %}aria-current="page"{% endif %}>{{ entry.title }}</a>
+                            </li>
+                        {%- endfor %}
+                        </ul>
+                    </nav>
             </header>
-            <main id="skip">
-                {{ content | safe }}
-            </main>
-        </div>
-        <footer>
-            <hr>
-            <div>
-                © Daniel Gális, 2024 and forever. Built with <a href="https://www.11ty.dev/">Eleventy</a>, <span style="color: red">love</span> and <span style="color: green">care</span>.
+                <main id="skip">
+                    {{ content | safe }}
+                </main>
             </div>
-        </footer>
-        <!-- Current page: {{ page.url | htmlBaseUrl }} -->
+            <footer>
+                <hr>
+                <div>
+                    © Daniel Gális, 2024 and forever. Built with <a href="https://www.11ty.dev/">Eleventy</a>, <span style="color: red">love</span> and <span style="color: green">care</span>.
+                </div>
+            </footer>
+            <!-- Current page: {{ page.url | htmlBaseUrl }} -->
+        </div>
     </body>
 </html>
