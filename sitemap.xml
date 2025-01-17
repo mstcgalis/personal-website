@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://danielgalis.com/projects/mstc/</loc>
-		<lastmod>2021-07-30</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://danielgalis.com/projects/tomado/</loc>
 		<lastmod>2021-07-30</lastmod>
 	</url>
@@ -163,21 +158,6 @@
 	
 	<url>
 		<loc>https://danielgalis.com/tags/computers/</loc>
-		<lastmod>2025-01-17</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/clothing/</loc>
-		<lastmod>2025-01-17</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/economics/</loc>
-		<lastmod>2025-01-17</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://danielgalis.com/tags/biodesign/</loc>
 		<lastmod>2025-01-17</lastmod>
 	</url>
 	
