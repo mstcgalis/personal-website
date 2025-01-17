@@ -156,9 +156,6 @@ To encourage further modification and exploration, I have made all the code, 3D 
 
 I want to acknowledge my own criticism of this project, which is that it doesn't address the underlying issue of having only one key available; instead, it focuses on alleviating the symptoms. Alternative approaches could have involved attempting to change the school's system or creating unofficial copies of the key for everyone. It's possible that one of these scenarios may occur in the future, rendering **Keybot** obsolete. However, despite considering this perspective, I am not overly concerned. This project has provided valuable learning experiences and has been a highly enjoyable endeavour.
 
-## 🚧 Reflection (WIP)
-
-I will finish this section after the final examination.
 ![[/key-hook-cat.gif]]
 
 ### Reference:
