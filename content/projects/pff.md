@@ -4,7 +4,6 @@ description: Organizing OPEN JAM SESSIONS and making sounds.
 emoji: 🥁
 date: 2023-11-22
 year: 2022 -> 3000
-image: ojs-01-topdown.jpeg
 links:
   Web: https://purefucking.fun
   Instagram: https://www.instagram.com/purefuckingfun/
@@ -13,6 +12,8 @@ links:
 tags:
   - sound
   - community
+video:
+  - /projects/backgrounds/ojs1.mp4
 ---
 
 pff is not a band. it’s a way of playing music, creating sounds and living life. it stands on freestyling, letting your emotions control things you do and mainly - having fun.

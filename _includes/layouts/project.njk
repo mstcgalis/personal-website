@@ -1,7 +1,6 @@
 ---
 layout: layouts/base.njk
 ---
-
 <h1 class="post-title">{{ emoji }} {{ title }}</h1>
 <div class="metadata">
   <ul class="metadata-tags">
@@ -16,7 +15,6 @@ layout: layouts/base.njk
   <span class="metadata-date">{{ year }}</span>
 </div>
 <hr>
-{# {% if image %}<img class="ist-image" src="{{ image }}" alt="🔑">{% endif %} #}
 <ul class="button-list mb-0">
   {%- for label, link in links %}
     <li class="button">
@@ -30,6 +28,7 @@ layout: layouts/base.njk
 {#-- The content of the page #}
 {{ content | safe }}
 {# random project button #}
+{# {% if image %}<img class="ist-image" src="{{ image }}" alt={{ emoji }}>{% endif %} #}
 {%- if collections.projects %}
   {%- set projectUrls = collections.projects | mapPageUrls %}
   <div class="nav-under-content">

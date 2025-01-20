@@ -13,6 +13,9 @@ tags:
   - code
   - interface
   - design
+image:
+  - /projects/backgrounds/Tomado1.png
+  - /projects/backgrounds/Tomado2.png
 ---
 
 Tomado is a very simple timer app based on the pomodoro technique for concentration. It lives in the MacOS Menu Bar, dutifully counting minutes while you work. When the time for a break comes, Tomado lets you know.

@@ -11,6 +11,9 @@ tags:
   - web
   - writing
   - design
+image:
+  - /projects/backgrounds/Bublina.png
+  - /projects/backgrounds/Bublinka.jpeg
 ---
 
-Bublina is a student magazine where I handle the graphic design web administration.
+Bublina is a student magazine, I contribute with graphic design and web administration.

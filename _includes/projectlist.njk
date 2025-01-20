@@ -1,27 +1,35 @@
 <div class="projectlist">
   {% for project in projectlist | reverse %}
-    <article href=" {{ project.data.research }}" class="project-card">
-      <span>{{ project.data.emoji }} <a href="{{ project.url }}" class="project-title">{{ project.data.title }}</a></span>
-      {# {% if project.data.image %}<img class="projectlist-image" src="{{ project.data.image }}" alt="🔑">{% endif %} #}
-      <p class="project-description">{{ project.data.description }}</p>
-      <ul class="button-list">
-        {%- for label, link in project.data.links %}
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="{{ link }}"
-   target="_blank">{{ label }}</a>
-          </li>
-        {%- endfor %}
-      </ul>
-      {# <div class="metadata">
-      <ul class="metadata-tags">
-        {%- for tag in project.data.tags | filterTagList %}
-        {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-        <li><a href="{{ tagUrl }}" class="tag">#{{ tag }}</a></li>
-        {%- endfor %}
-      </ul>
-      <time class="metadata-date" datetime="{{ project.date }}">{{ project.data.year }}</time>
-    </div> #}
+    <article href="{{ project.data.research }}" class="project-card group relative">
+      {% if project.data.image or project.data.video %}
+        <div class="background-gallery fixed flex justify-between inset-0 w-screen h-screen opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10">
+          {% if project.data.video %}
+            {% for video in project.data.video %}
+            <video class="h-full w-full object-cover" autoplay loop muted controls="false">
+              <source src="{{ video }}" type="video/mp4">
+            </video>
+            {% endfor %}
+          {% endif %}
+          {% if project.data.image %}
+            {% for img in project.data.image %}
+            <img class="h-full object-cover" src="{{ img }}">
+            {% endfor %}
+          {% endif %}
+        </div>
+      {% endif %}
+      <div class="relative">
+        <span>{{ project.data.emoji }} <a href="{{ project.url }}" class="project-title">{{ project.data.title }}</a></span>
+        <p class="project-description">{{ project.data.description }}</p>
+        <ul class="button-list">
+          {%- for label, link in project.data.links %}
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="{{ link }}"
+     target="_blank">{{ label }}</a>
+            </li>
+          {%- endfor %}
+        </ul>
+      </div>
     </article>
   {% endfor %}
 </div>

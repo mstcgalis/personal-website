@@ -8,7 +8,6 @@ links:
   GitHub: https://github.com/mstcgalis/Keybot
   Research: https://www.are.na/daniel-galis/key-bot
   Paper: /posts/keybot
-image: /posts/attachments/key-bot_installed.jpg
 tags:
   - tools
   - IoT
@@ -17,6 +16,9 @@ tags:
   - computers
   - interface
   - code
+image:
+  - /posts/attachments/key-bot_installed.jpg
+  - /posts/attachments/breadboard.jpg
 ---
 
 The research interaction project, known as **Keybot**, addresses the challenge of limited key access in shared studio workspaces at design and art schools. Typically, only a single shared key is available, causing repetitive and frustrating interactions for individuals seeking entry. To facilitate this process, I designed and constructed a device to automatically notify colleagues of someone's presence, indicating that the doors are already unlocked. By simply placing the key in its usual location, the device handles communication automatically.
