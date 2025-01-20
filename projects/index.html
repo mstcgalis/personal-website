@@ -397,6 +397,7 @@ header:after {
 
 .nav-item {
 	display: inline-block;
+	padding-right: 2rem;
 }
 
 /* .nav-item a[href] {
@@ -508,7 +509,7 @@ header:after {
 }
 
 .project-description {
-	margin-block-end: 0.4rem;
+	margin-block-end: 0rem;
 }
 
 .project-emoji {
@@ -674,10 +675,10 @@ svg {
 	max-width: 100%;
 }
 
-img {
+/* img {
 	border-radius: var(--radius);
 }
-
+ */
 /* iframe */
 .iframe-container {
 	position: relative;
@@ -776,7 +777,23 @@ img {
 	padding: 0.1em 0.4rem;
 }
 
-        .mb-0 {
+        .fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
+.mb-0 {
   margin-bottom: 0px;
 }
 
@@ -784,12 +801,36 @@ img {
   margin-right: 0.25rem;
 }
 
+.flex {
+  display: flex;
+}
+
 .contents {
   display: contents;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .rounded-xl {
@@ -802,6 +843,11 @@ img {
 
 .border-solid {
   border-style: solid;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .text-right {
@@ -841,8 +887,22 @@ img {
   text-decoration-line: none;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 /* Defaults */
@@ -1181,6 +1241,7 @@ header:after {
 
 .nav-item {
   display: inline-block;
+  padding-right: 2rem;
 }
 
 /* .nav-item a[href] {
@@ -1295,7 +1356,7 @@ header:after {
 }
 
 .project-description {
-  margin-block-end: 0.4rem;
+  margin-block-end: 0rem;
 }
 
 .project-emoji {
@@ -1460,9 +1521,10 @@ svg {
   max-width: 100%;
 }
 
-img {
-  border-radius: var(--radius);
+/* img {
+	border-radius: var(--radius);
 }
+ */
 
 /* iframe */
 
@@ -1566,6 +1628,10 @@ img {
   text-decoration-line: none;
 }
 
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
 @media (prefers-color-scheme: dark) {
   .dark\:\!text-cookbook-pink {
     --tw-text-opacity: 1 !important;
@@ -1601,7 +1667,7 @@ img {
                 <nav style="width: 100%;">
                     <h2 class="visually-hidden">Top level navigation menu</h2>
                     <ul class="nav">
-                        <li>
+                        <li class="nav-item">
                             <a href="/"
                             class="home-link"
                             ></a>
@@ -1618,8 +1684,8 @@ img {
                                 <a href="/tags/"
                                 >Tags</a>
                             </li>
-                        </ul>
-                    </nav>
+                    </ul>
+                </nav>
             </header>
                 <main id="skip">
                     
@@ -1627,138 +1693,210 @@ img {
 
 <div class="projectlist">
   
-    <article href=" " class="project-card">
-      <span>📻 <a href="/projects/flus/" class="project-title">flus.fm</a></span>
+    <article href="" class="project-card group relative">
       
-      <p class="project-description">Community radio based at FFA.</p>
-      <ul class="button-list">
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://flus.danielgalis.com/"
-   target="_blank">Web radio</a>
-          </li>
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://www.are.na/daniel-galis/flus-fm"
-   target="_blank">Research</a>
-          </li>
-      </ul>
+        <div class="background-gallery fixed flex justify-between inset-0 w-screen h-screen opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10">
+          
+          
+            
+            <img class="h-full object-cover" src="/projects/backgrounds/Flus1.png">
+            
+            <img class="h-full object-cover" src="/projects/backgrounds/Flus2.png">
+            
+          
+        </div>
       
+      <div class="relative">
+        <span>📻 <a href="/projects/flus/" class="project-title">flus.fm</a></span>
+        <p class="project-description">Community radio based at FFA.</p>
+        <ul class="button-list">
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://flus.danielgalis.com/"
+     target="_blank">Web radio</a>
+            </li>
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://www.are.na/daniel-galis/flus-fm"
+     target="_blank">Research</a>
+            </li>
+        </ul>
+      </div>
     </article>
   
-    <article href=" " class="project-card">
-      <span>🥁 <a href="/projects/pff/" class="project-title">pure fucking fun</a></span>
+    <article href="" class="project-card group relative">
       
-      <p class="project-description">Organizing OPEN JAM SESSIONS and making sounds.</p>
-      <ul class="button-list">
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://purefucking.fun"
-   target="_blank">Web</a>
-          </li>
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://www.instagram.com/purefuckingfun/"
-   target="_blank">Instagram</a>
-          </li>
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://discord.gg/bk8qEs56fr"
-   target="_blank">Discord</a>
-          </li>
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://soundcloud.com/pure-fucking-fun"
-   target="_blank">Soundcloud</a>
-          </li>
-      </ul>
+        <div class="background-gallery fixed flex justify-between inset-0 w-screen h-screen opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10">
+          
+            
+            <video class="h-full w-full object-cover" autoplay loop muted controls="false">
+              <source src="/projects/backgrounds/ojs1.mp4" type="video/mp4">
+            </video>
+            
+          
+          
+        </div>
       
+      <div class="relative">
+        <span>🥁 <a href="/projects/pff/" class="project-title">pure fucking fun</a></span>
+        <p class="project-description">Organizing OPEN JAM SESSIONS and making sounds.</p>
+        <ul class="button-list">
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://purefucking.fun"
+     target="_blank">Web</a>
+            </li>
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://www.instagram.com/purefuckingfun/"
+     target="_blank">Instagram</a>
+            </li>
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://discord.gg/bk8qEs56fr"
+     target="_blank">Discord</a>
+            </li>
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://soundcloud.com/pure-fucking-fun"
+     target="_blank">Soundcloud</a>
+            </li>
+        </ul>
+      </div>
     </article>
   
-    <article href=" " class="project-card">
-      <span>🔑 <a href="/projects/keybot/" class="project-title">Keybot</a></span>
+    <article href="" class="project-card group relative">
       
-      <p class="project-description">Discord connected IoT device, designed to be used in a shared workspace where only a single key is available.</p>
-      <ul class="button-list">
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://github.com/mstcgalis/Keybot"
-   target="_blank">GitHub</a>
-          </li>
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://www.are.na/daniel-galis/key-bot"
-   target="_blank">Research</a>
-          </li>
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="/posts/keybot"
-   target="_blank">Paper</a>
-          </li>
-      </ul>
+        <div class="background-gallery fixed flex justify-between inset-0 w-screen h-screen opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10">
+          
+          
+            
+            <img class="h-full object-cover" src="/posts/attachments/key-bot_installed.jpg">
+            
+            <img class="h-full object-cover" src="/posts/attachments/breadboard.jpg">
+            
+          
+        </div>
       
+      <div class="relative">
+        <span>🔑 <a href="/projects/keybot/" class="project-title">Keybot</a></span>
+        <p class="project-description">Discord connected IoT device, designed to be used in a shared workspace where only a single key is available.</p>
+        <ul class="button-list">
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://github.com/mstcgalis/Keybot"
+     target="_blank">GitHub</a>
+            </li>
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://www.are.na/daniel-galis/key-bot"
+     target="_blank">Research</a>
+            </li>
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="/posts/keybot"
+     target="_blank">Paper</a>
+            </li>
+        </ul>
+      </div>
     </article>
   
-    <article href=" " class="project-card">
-      <span>🫧 <a href="/projects/bublina/" class="project-title">Bublina</a></span>
+    <article href="" class="project-card group relative">
       
-      <p class="project-description">Student magazine. Small printed zine monthly, big online zine yearly.</p>
-      <ul class="button-list">
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://bublina.favu.vut.cz/"
-   target="_blank">Web</a>
-          </li>
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://www.instagram.com/bublinamagazine/"
-   target="_blank">Instagram</a>
-          </li>
-      </ul>
+        <div class="background-gallery fixed flex justify-between inset-0 w-screen h-screen opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10">
+          
+          
+            
+            <img class="h-full object-cover" src="/projects/backgrounds/Bublina.png">
+            
+            <img class="h-full object-cover" src="/projects/backgrounds/Bublinka.jpeg">
+            
+          
+        </div>
       
+      <div class="relative">
+        <span>🫧 <a href="/projects/bublina/" class="project-title">Bublina</a></span>
+        <p class="project-description">Student magazine. Small printed zine monthly, big online zine yearly.</p>
+        <ul class="button-list">
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://bublina.favu.vut.cz/"
+     target="_blank">Web</a>
+            </li>
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://www.instagram.com/bublinamagazine/"
+     target="_blank">Instagram</a>
+            </li>
+        </ul>
+      </div>
     </article>
   
-    <article href=" " class="project-card">
-      <span>🥕 <a href="/projects/cookbook/" class="project-title">cookbook.care</a></span>
+    <article href="" class="project-card group relative">
       
-      <p class="project-description">Cooking (an app) from local and seasonal ingredients using first principles.</p>
-      <ul class="button-list">
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://www.are.na/kitchen-axdx"
-   target="_blank">Research</a>
-          </li>
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://www.figma.com/proto/QHKAcNflDBrcVlPJgcojVy/cookbook-(interface)?page-id=0%3A1&amp;type=design&amp;node-id=30-15&amp;viewport=501%2C418%2C0.13&amp;t=lcpyLoRERISPUhci-1&amp;scaling=scale-down-width&amp;starting-point-node-id=30%3A15&amp;mode=design"
-   target="_blank">Interface prototype</a>
-          </li>
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://www.are.na/kitchen-axdx/cookbook-zine-moodboard"
-   target="_blank">Moodboard</a>
-          </li>
-      </ul>
+        <div class="background-gallery fixed flex justify-between inset-0 w-screen h-screen opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10">
+          
+          
+            
+            <img class="h-full object-cover" src="/projects/backgrounds/Cookbook1.png">
+            
+            <img class="h-full object-cover" src="/projects/backgrounds/Cookbook2.png">
+            
+          
+        </div>
       
+      <div class="relative">
+        <span>🥕 <a href="/projects/cookbook/" class="project-title">cookbook.care</a></span>
+        <p class="project-description">Cooking (an app) from local and seasonal ingredients using first principles.</p>
+        <ul class="button-list">
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://www.are.na/kitchen-axdx"
+     target="_blank">Research</a>
+            </li>
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://www.figma.com/proto/QHKAcNflDBrcVlPJgcojVy/cookbook-(interface)?page-id=0%3A1&amp;type=design&amp;node-id=30-15&amp;viewport=501%2C418%2C0.13&amp;t=lcpyLoRERISPUhci-1&amp;scaling=scale-down-width&amp;starting-point-node-id=30%3A15&amp;mode=design"
+     target="_blank">Interface prototype</a>
+            </li>
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://www.are.na/kitchen-axdx/cookbook-zine-moodboard"
+     target="_blank">Moodboard</a>
+            </li>
+        </ul>
+      </div>
     </article>
   
-    <article href=" " class="project-card">
-      <span>🍅 <a href="/projects/tomado/" class="project-title">Tomado</a></span>
+    <article href="" class="project-card group relative">
       
-      <p class="project-description">Simple Pomodoro Timer that lives in your MacOS Menu Bar.</p>
-      <ul class="button-list">
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://github.com/mstcgalis/Tomado"
-   target="_blank">GitHub (download)</a>
-          </li>
-          <li class="button">
-            <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="https://www.are.na/daniel-galis/tomado-project"
-   target="_blank">Research</a>
-          </li>
-      </ul>
+        <div class="background-gallery fixed flex justify-between inset-0 w-screen h-screen opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10">
+          
+          
+            
+            <img class="h-full object-cover" src="/projects/backgrounds/Tomado1.png">
+            
+            <img class="h-full object-cover" src="/projects/backgrounds/Tomado2.png">
+            
+          
+        </div>
       
+      <div class="relative">
+        <span>🍅 <a href="/projects/tomado/" class="project-title">Tomado</a></span>
+        <p class="project-description">Simple Pomodoro Timer that lives in your MacOS Menu Bar.</p>
+        <ul class="button-list">
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://github.com/mstcgalis/Tomado"
+     target="_blank">GitHub (download)</a>
+            </li>
+            <li class="button">
+              <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+     href="https://www.are.na/daniel-galis/tomado-project"
+     target="_blank">Research</a>
+            </li>
+        </ul>
+      </div>
     </article>
   
 </div>

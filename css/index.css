@@ -349,6 +349,7 @@ header:after {
 
 .nav-item {
 	display: inline-block;
+	padding-right: 2rem;
 }
 
 /* .nav-item a[href] {
@@ -460,7 +461,7 @@ header:after {
 }
 
 .project-description {
-	margin-block-end: 0.4rem;
+	margin-block-end: 0rem;
 }
 
 .project-emoji {
@@ -626,10 +627,10 @@ svg {
 	max-width: 100%;
 }
 
-img {
+/* img {
 	border-radius: var(--radius);
 }
-
+ */
 /* iframe */
 .iframe-container {
 	position: relative;
