@@ -15,7 +15,7 @@ tags:
   - interface
 image:
   - /projects/backgrounds/Flus1.png
-  - /projects/backgrounds/Flus2.png
+  - /projects/backgrounds/Flus2.jpg
 ---
 
 Along with a number of collaborators, I am building a community radio station called [flus.fm](https://flus.fm). It is supported by [FaVU](https://www.favu.vut.cz/en/) and based in Brno.
