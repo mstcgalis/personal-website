@@ -2,33 +2,31 @@
 layout: layouts/base.njk
 ---
 <h1 class="post-title">{{ emoji }} {{ title }}</h1>
-<div class="metadata">
-  <ul class="metadata-tags">
-    {%- for tag in tags | filterTagList %}
-      {%- set tagUrl %}/tags/{{ tag | slugify }}/
-      {% endset %}
-      <li>
-        <a href="{{ tagUrl }}" class="tag">#{{ tag }}</a>
+  <div class="metadata">
+    <ul class="metadata-tags">
+      {%- for tag in tags | filterTagList %}
+        {%- set tagUrl %}/tags/{{ tag | slugify }}/
+        {% endset %}
+        <li>
+          <a href="{{ tagUrl }}" class="tag">#{{ tag }}</a>
+        </li>
+      {%- endfor %}
+    </ul>
+    <span class="metadata-date">{{ year }}</span>
+  </div>
+  <ul class="button-list mb-0">
+    {%- for label, link in links %}
+      <li class="button">
+        <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
+    href="{{ link }}"
+    target="_blank">{{ label }}</a>
       </li>
     {%- endfor %}
   </ul>
-  <span class="metadata-date">{{ year }}</span>
+  {#-- The content of the page #}
+  {{ content | safe }}
 </div>
-<hr>
-<ul class="button-list mb-0">
-  {%- for label, link in links %}
-    <li class="button">
-      <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
-   href="{{ link }}"
-   target="_blank">{{ label }}</a>
-    </li>
-  {%- endfor %}
-</ul>
-<hr>
-{#-- The content of the page #}
-{{ content | safe }}
 {# random project button #}
-{# {% if image %}<img class="ist-image" src="{{ image }}" alt={{ emoji }}>{% endif %} #}
 {%- if collections.projects %}
   {%- set projectUrls = collections.projects | mapPageUrls %}
   <div class="nav-under-content">
@@ -39,3 +37,19 @@ layout: layouts/base.njk
     <script src="/js/randomPage.js"></script>
   </div>
 {%- endif %}
+<div class="group">
+  <div class="background-gallery fixed flex justify-between inset-0 w-screen h-screen opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10">
+    {% if video %}
+      {% for video in video %}
+      <video class="h-full w-full object-cover" autoplay loop muted>
+        <source src="{{ video }}" type="video/mp4">
+      </video>
+</video>
+      {% endfor %}
+    {% endif %}
+    {% if image %}
+      {% for img in image %}
+      <img class="h-full object-cover" src="{{ img }}">
+      {% endfor %}
+    {% endif %}
+  </div>
