@@ -2,8 +2,16 @@
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .inset-0 {
@@ -22,12 +30,32 @@
   margin-right: 0.25rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
+.grid {
+  display: grid;
+}
+
 .contents {
   display: contents;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-full {
@@ -46,8 +74,16 @@
   width: 100vw;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .justify-between {
@@ -66,6 +102,11 @@
   border-style: solid;
 }
 
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -75,14 +116,28 @@
   text-align: right;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .\!text-cookbook-blue {
   --tw-text-opacity: 1 !important;
   color: rgb(68 108 175 / var(--tw-text-opacity)) !important;
 }
 
+.\!text-cookbook-pink {
+  --tw-text-opacity: 1 !important;
+  color: rgb(233 204 224 / var(--tw-text-opacity)) !important;
+}
+
 .\!text-cookbook-red {
   --tw-text-opacity: 1 !important;
   color: rgb(208 46 43 / var(--tw-text-opacity)) !important;
+}
+
+.\!text-cookbook-sky {
+  --tw-text-opacity: 1 !important;
+  color: rgb(183 211 225 / var(--tw-text-opacity)) !important;
 }
 
 .text-cookbook-blue {
@@ -95,9 +150,28 @@
   color: rgb(89 36 54 / var(--tw-text-opacity));
 }
 
+.text-cookbook-pink {
+  --tw-text-opacity: 1;
+  color: rgb(233 204 224 / var(--tw-text-opacity));
+}
+
 .text-cookbook-red {
   --tw-text-opacity: 1;
   color: rgb(208 46 43 / var(--tw-text-opacity));
+}
+
+.text-cookbook-sky {
+  --tw-text-opacity: 1;
+  color: rgb(183 211 225 / var(--tw-text-opacity));
+}
+
+.text-cookbook-yellow {
+  --tw-text-opacity: 1;
+  color: rgb(254 237 160 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .\!no-underline {
@@ -112,8 +186,20 @@
   opacity: 0;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition-opacity {
@@ -269,7 +355,7 @@ a[href]:active {
 }
 
 main {
-  padding: 0.8em 0 0 0;
+  padding: 0.8em 0.2em 0 0.2em;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -402,6 +488,28 @@ ul {
 .always::marker {
   content: "ꨘ  ";
   color: red;
+}
+
+/* New classes for pure Markdown approach */
+
+.now-list ul li::marker {
+  content: "ꨁ  ";
+  color: red;
+}
+
+.always-list ul li::marker {
+  content: "ꨘ  ";
+  color: red;
+}
+
+.contact-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  list-style: none;
+  padding: 0;
 }
 
 /* Header */
@@ -681,7 +789,7 @@ header:after {
   width: 100%;
   gap: 0.2em 0.8rem;
   list-style: none;
-  margin: 0;
+  margin: 0.8rem 0 0.8rem 0;
   justify-content: space-between;
   /* padding: 0 0.2em 0em 0.2rem;
 	margin-block-end: 0.8rem;
