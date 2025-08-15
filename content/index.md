@@ -29,11 +29,11 @@ No matter what I do - I am always community-driven. That is the most truthful wa
 
 <div class="always-list">
 
-- swimming in lakes
+- loving
 - writing
+- swimming
 - repairing
 - organising
-- loving and caring
 - collaborating
 - excited to hear from you
 
