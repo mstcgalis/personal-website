@@ -705,10 +705,18 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 main :first-child {
   margin-top: 0;
+}
+
+/* Group the main content together */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -853,7 +861,6 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
-  margin-top: 0.8rem;
   list-style: none;
   padding: 0;
 }

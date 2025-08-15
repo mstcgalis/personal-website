@@ -11,7 +11,8 @@
 
 /* Contact list spacing */
 .contact-list {
-	margin-top: 0.6rem;
+	margin-top: auto;
+	padding-top: 1rem;
 }
 
 /* Additional custom styles can go here */

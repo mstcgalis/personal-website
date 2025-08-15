@@ -3,15 +3,15 @@ layout: layouts/home.njk
 numberOfLatestPostsToShow: 3
 ---
 
-# Hi! I'm Daniel.
+<div class="main-content">
 
-I create (digital) tools and practices that empower individuals and communities.
+I design, research and develop tools that empower individuals and communities.
 
-Interested in [#rituals](tags/rituals), keeping a [#second-brain](tags/second-brain), calm technology, thinking through making, and beautiful [#computers](tags/computers).
+Interested in [#rituals](tags/rituals), [#sound](tags/sound), and beautiful [#computers](tags/computers).
 
-No matter what I do - I am always community-driven. That is the most truthful way to describe my ambitions in every pursuit.
+Rapujem pod menom [GOLEM](https://soundcloud.com/favu-label/sets/golemiada).
 
-### Now:
+#### Now:
 
 <div class="now-list">
 
@@ -25,7 +25,7 @@ No matter what I do - I am always community-driven. That is the most truthful wa
 
 </div>
 
-### Always:
+#### Always:
 
 <div class="always-list">
 
@@ -36,6 +36,8 @@ No matter what I do - I am always community-driven. That is the most truthful wa
 - organising
 - collaborating
 - excited to hear from you
+
+</div>
 
 </div>
 
