@@ -376,7 +376,6 @@ header:after {
 
 .nav-item {
 	display: inline-block;
-	padding-right: 2rem;
 	transition: transform 0.2s ease, color 0.2s ease;
 }
 
@@ -712,6 +711,8 @@ svg {
 	margin-top: 0.8rem;
 	list-style: none;
 	padding: 0;
+	margin-left: -0.2rem;
+	margin-right: -0.2rem;
 }
 
 .logo {
