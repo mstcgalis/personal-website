@@ -159,7 +159,6 @@ main {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
 main :first-child {
@@ -379,6 +378,7 @@ header:after {
 .nav-item {
 	display: inline-block;
 	transition: transform 0.2s ease, color 0.2s ease;
+	margin-right: 0.3rem;
 }
 
 .nav-item:hover {
@@ -610,7 +610,6 @@ header:after {
 
 	list-style: none;
 	margin: 0.8rem 0 0.8rem 0;
-	justify-content: space-between;
 
 	/* padding: 0 0.2em 0em 0.2rem;
 	margin-block-end: 0.8rem;
