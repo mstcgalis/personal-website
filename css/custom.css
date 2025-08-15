@@ -1,0 +1,43 @@
+/* Custom styles for .now and .always classes */
+.now::marker {
+	content: "ꨁ  ";
+	color: red;
+}
+
+.always::marker {
+	content: "ꨘ  ";
+	color: red;
+}
+
+/* Contact list spacing */
+.contact-list {
+	margin-top: auto;
+	padding-top: 1rem;
+}
+
+/* Contact list link animations */
+.contact-list a {
+	transition: all 0.2s ease;
+	position: relative;
+}
+
+.contact-list a:hover {
+	transform: translateX(4px);
+}
+
+.contact-list a::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: var(--color-blue);
+	transition: width 0.3s ease;
+}
+
+.contact-list a:hover::after {
+	width: 100%;
+}
+
+/* Additional custom styles can go here */

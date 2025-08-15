@@ -48,7 +48,6 @@
     <style>* { box-sizing: border-box; }
 @tailwind components;
 @tailwind utilities;
-
 /* Defaults */
 :root {
 	--font-family: "Inter", -apple-system, BlinkMacSystemFont, system-ui,
@@ -191,6 +190,7 @@ p {
 
 a[href] {
 	color: var(--text-color-link);
+	transition: color 0.2s ease, transform 0.2s ease;
 }
 
 a[href]:hover {
@@ -203,15 +203,21 @@ a[href]:active {
 }
 
 main {
-	padding: 0.8em 0 0 0;
+	padding: 0.8em 0.2em 0 0.2em;
 	flex: 1;
-
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 main :first-child {
 	margin-top: 0;
+}
+
+/* Group the main content together */
+.main-content {
+	display: flex;
+	flex-direction: column;
 }
 
 footer {
@@ -339,14 +345,35 @@ ul {
 	color: red;
 }
 
+/* New classes for pure Markdown approach */
+.now-list ul li::marker {
+	content: "ꨁ  ";
+	color: red;
+}
+
+.always-list ul li::marker {
+	content: "ꨘ  ";
+	color: red;
+}
+
+.contact-list ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+}
+
 /* Header */
 header {
 	padding: 0.8em 0 0.8em 0;
-
-	transition: top 0.15s ease-in-out;
+	transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 	position: sticky;
 	top: 0;
 	background-color: var(--color-background);
+	backdrop-filter: blur(8px);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .nav-hidden {
@@ -397,7 +424,11 @@ header:after {
 
 .nav-item {
 	display: inline-block;
-	padding-right: 2rem;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-item:hover {
+	transform: translateY(-0.5px);
 }
 
 /* .nav-item a[href] {
@@ -481,15 +512,12 @@ header:after {
 /* Project list */
 .projectlist {
 	list-style: none;
-	margin: 0.8em 0em 0.8em 0rem;
+	margin: 1.5rem 0;
 	padding: 0;
-
-	row-gap: 1.6rem;
+	row-gap: 2rem;
 	display: grid;
 	grid-template-columns: 1fr;
-	/* Single column on mobile */
 	justify-items: stretch;
-	/* Stretch items to fill the width */
 }
 
 /* @media only screen and (min-width: 768px) {
@@ -526,6 +554,8 @@ header:after {
 	counter-increment: start-from -1;
 }
 
+/* Removed the top border hover effect */
+
 .button {
 	display: inline-flex;
 	align-items: center;
@@ -537,6 +567,16 @@ header:after {
 
 	font-size: var(--font-size-body);
 	text-decoration: none;
+}
+
+.button:active {
+	text-decoration: underline;
+	color: red !important;
+}
+
+.button:active {
+	transform: translateY(0);
+	box-shadow: 0 4px 10px rgba(20, 56, 255, 0.2);
 }
 
 .button:active {
@@ -615,7 +655,7 @@ header:after {
 	gap: 0.2em 0.8rem;
 
 	list-style: none;
-	margin: 0;
+	margin: 0.8rem 0 0.8rem 0;
 	justify-content: space-between;
 
 	/* padding: 0 0.2em 0em 0.2rem;
@@ -719,6 +759,8 @@ svg {
 	margin-top: 0.8rem;
 	list-style: none;
 	padding: 0;
+	margin-left: -0.2rem;
+	margin-right: -0.2rem;
 }
 
 .logo {
@@ -805,6 +847,10 @@ svg {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .contents {
   display: contents;
 }
@@ -843,6 +889,11 @@ svg {
 
 .border-solid {
   border-style: solid;
+}
+
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -893,6 +944,14 @@ svg {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition-opacity {
@@ -1036,6 +1095,7 @@ p {
 
 a[href] {
   color: var(--text-color-link);
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 a[href]:hover {
@@ -1048,14 +1108,22 @@ a[href]:active {
 }
 
 main {
-  padding: 0.8em 0 0 0;
+  padding: 0.8em 0.2em 0 0.2em;
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 main :first-child {
   margin-top: 0;
+}
+
+/* Group the main content together */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -1183,14 +1251,38 @@ ul {
   color: red;
 }
 
+/* New classes for pure Markdown approach */
+
+.now-list ul li::marker {
+  content: "ꨁ  ";
+  color: red;
+}
+
+.always-list ul li::marker {
+  content: "ꨘ  ";
+  color: red;
+}
+
+.contact-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
 /* Header */
 
 header {
   padding: 0.8em 0 0.8em 0;
-  transition: top 0.15s ease-in-out;
+  transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: sticky;
   top: 0;
   background-color: var(--color-background);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .nav-hidden {
@@ -1241,7 +1333,11 @@ header:after {
 
 .nav-item {
   display: inline-block;
-  padding-right: 2rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-item:hover {
+  transform: translateY(-0.5px);
 }
 
 /* .nav-item a[href] {
@@ -1328,14 +1424,12 @@ header:after {
 
 .projectlist {
   list-style: none;
-  margin: 0.8em 0em 0.8em 0rem;
+  margin: 1.5rem 0;
   padding: 0;
-  row-gap: 1.6rem;
+  row-gap: 2rem;
   display: grid;
   grid-template-columns: 1fr;
-  /* Single column on mobile */
   justify-items: stretch;
-  /* Stretch items to fill the width */
 }
 
 /* @media only screen and (min-width: 768px) {
@@ -1373,6 +1467,8 @@ header:after {
   counter-increment: start-from -1;
 }
 
+/* Removed the top border hover effect */
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -1385,6 +1481,8 @@ header:after {
 }
 
 .button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(20, 56, 255, 0.2);
   text-decoration: underline;
   color: red !important;
 }
@@ -1460,7 +1558,7 @@ header:after {
   width: 100%;
   gap: 0.2em 0.8rem;
   list-style: none;
-  margin: 0;
+  margin: 0.8rem 0 0.8rem 0;
   justify-content: space-between;
   /* padding: 0 0.2em 0em 0.2rem;
 	margin-block-end: 0.8rem;
@@ -1564,6 +1662,8 @@ svg {
   margin-top: 0.8rem;
   list-style: none;
   padding: 0;
+  margin-left: -0.2rem;
+  margin-right: -0.2rem;
 }
 
 .logo {
@@ -1657,7 +1757,51 @@ svg {
     --tw-text-opacity: 1;
     color: rgb(254 237 160 / var(--tw-text-opacity));
   }
-}</style>
+}
+
+        /* Custom styles for .now and .always classes */
+.now::marker {
+	content: "ꨁ  ";
+	color: red;
+}
+
+.always::marker {
+	content: "ꨘ  ";
+	color: red;
+}
+
+/* Contact list spacing */
+.contact-list {
+	margin-top: auto;
+	padding-top: 1rem;
+}
+
+/* Contact list link animations */
+.contact-list a {
+	transition: all 0.2s ease;
+	position: relative;
+}
+
+.contact-list a:hover {
+	transform: translateX(4px);
+}
+
+.contact-list a::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: var(--color-blue);
+	transition: width 0.3s ease;
+}
+
+.contact-list a:hover::after {
+	width: 100%;
+}
+
+/* Additional custom styles can go here */</style>
 </head>
 
     <body>
@@ -1778,7 +1922,7 @@ svg {
             <footer>
                 <hr>
                 <div>
-                    © Daniel Gális, 2024 and forever. Built with <a href="https://www.11ty.dev/">Eleventy</a>, <span style="color: red">love</span> and <span style="color: green">care</span>.
+                    © Daniel Gális 2025. Built with <span style="color: red">love</span> and <span style="color: green">care</span>.
                 </div>
             </footer>
             <!-- Current page: /tags/web/ -->

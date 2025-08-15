@@ -1,6 +1,5 @@
 @tailwind components;
 @tailwind utilities;
-
 /* Defaults */
 :root {
 	--font-family: "Inter", -apple-system, BlinkMacSystemFont, system-ui,
@@ -143,6 +142,7 @@ p {
 
 a[href] {
 	color: var(--text-color-link);
+	transition: color 0.2s ease, transform 0.2s ease;
 }
 
 a[href]:hover {
@@ -155,15 +155,21 @@ a[href]:active {
 }
 
 main {
-	padding: 0.8em 0 0 0;
+	padding: 0.8em 0.2em 0 0.2em;
 	flex: 1;
-
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 main :first-child {
 	margin-top: 0;
+}
+
+/* Group the main content together */
+.main-content {
+	display: flex;
+	flex-direction: column;
 }
 
 footer {
@@ -291,14 +297,35 @@ ul {
 	color: red;
 }
 
+/* New classes for pure Markdown approach */
+.now-list ul li::marker {
+	content: "ꨁ  ";
+	color: red;
+}
+
+.always-list ul li::marker {
+	content: "ꨘ  ";
+	color: red;
+}
+
+.contact-list ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+}
+
 /* Header */
 header {
 	padding: 0.8em 0 0.8em 0;
-
-	transition: top 0.15s ease-in-out;
+	transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 	position: sticky;
 	top: 0;
 	background-color: var(--color-background);
+	backdrop-filter: blur(8px);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .nav-hidden {
@@ -349,7 +376,11 @@ header:after {
 
 .nav-item {
 	display: inline-block;
-	padding-right: 2rem;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-item:hover {
+	transform: translateY(-0.5px);
 }
 
 /* .nav-item a[href] {
@@ -433,15 +464,12 @@ header:after {
 /* Project list */
 .projectlist {
 	list-style: none;
-	margin: 0.8em 0em 0.8em 0rem;
+	margin: 1.5rem 0;
 	padding: 0;
-
-	row-gap: 1.6rem;
+	row-gap: 2rem;
 	display: grid;
 	grid-template-columns: 1fr;
-	/* Single column on mobile */
 	justify-items: stretch;
-	/* Stretch items to fill the width */
 }
 
 /* @media only screen and (min-width: 768px) {
@@ -478,6 +506,8 @@ header:after {
 	counter-increment: start-from -1;
 }
 
+/* Removed the top border hover effect */
+
 .button {
 	display: inline-flex;
 	align-items: center;
@@ -489,6 +519,16 @@ header:after {
 
 	font-size: var(--font-size-body);
 	text-decoration: none;
+}
+
+.button:active {
+	text-decoration: underline;
+	color: red !important;
+}
+
+.button:active {
+	transform: translateY(0);
+	box-shadow: 0 4px 10px rgba(20, 56, 255, 0.2);
 }
 
 .button:active {
@@ -567,7 +607,7 @@ header:after {
 	gap: 0.2em 0.8rem;
 
 	list-style: none;
-	margin: 0;
+	margin: 0.8rem 0 0.8rem 0;
 	justify-content: space-between;
 
 	/* padding: 0 0.2em 0em 0.2rem;
@@ -671,6 +711,8 @@ svg {
 	margin-top: 0.8rem;
 	list-style: none;
 	padding: 0;
+	margin-left: -0.2rem;
+	margin-right: -0.2rem;
 }
 
 .logo {
