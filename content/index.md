@@ -39,8 +39,6 @@ Rapujem pod menom [GOLEM](https://soundcloud.com/favu-label/sets/golemiada).
 
 </div>
 
-</div>
-
 <div class="contact-list">
 
 - [E-mail](mailto:danielgalis21@gmail.com)

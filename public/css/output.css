@@ -522,8 +522,18 @@
   opacity: 0.3;
 }
 
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-filter {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition {
@@ -689,6 +699,7 @@ p {
 
 a[href] {
   color: var(--text-color-link);
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 a[href]:hover {
@@ -869,10 +880,13 @@ ul {
 
 header {
   padding: 0.8em 0 0.8em 0;
-  transition: top 0.15s ease-in-out;
+  transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: sticky;
   top: 0;
   background-color: var(--color-background);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .nav-hidden {
@@ -924,6 +938,11 @@ header:after {
 .nav-item {
   display: inline-block;
   padding-right: 2rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-item:hover {
+  transform: translateY(-0.5px);
 }
 
 /* .nav-item a[href] {
@@ -1010,14 +1029,12 @@ header:after {
 
 .projectlist {
   list-style: none;
-  margin: 0.8em 0em 0.8em 0rem;
+  margin: 1.5rem 0;
   padding: 0;
-  row-gap: 1.6rem;
+  row-gap: 2rem;
   display: grid;
   grid-template-columns: 1fr;
-  /* Single column on mobile */
   justify-items: stretch;
-  /* Stretch items to fill the width */
 }
 
 /* @media only screen and (min-width: 768px) {
@@ -1055,6 +1072,8 @@ header:after {
   counter-increment: start-from -1;
 }
 
+/* Removed the top border hover effect */
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -1067,6 +1086,8 @@ header:after {
 }
 
 .button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(20, 56, 255, 0.2);
   text-decoration: underline;
   color: red !important;
 }
