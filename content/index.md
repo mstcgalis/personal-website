@@ -31,8 +31,8 @@ No matter what I do - I am always community-driven. That is the most truthful wa
 
 - loving
 - writing
-- swimming
 - repairing
+- swimming
 - organising
 - collaborating
 - excited to hear from you
