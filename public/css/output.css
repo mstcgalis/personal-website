@@ -728,6 +728,7 @@ main :first-child {
 .main-content {
   display: flex;
   flex-direction: column;
+  margin-bottom: auto;
 }
 
 footer {
@@ -754,7 +755,8 @@ footer a[href] {
 }
 
 .nav-under-content {
-  padding-top: 1.6rem;
+  padding-top: 1.rem;
+  padding-bottom: 1.6rem;
   justify-content: center;
   display: flex;
 }

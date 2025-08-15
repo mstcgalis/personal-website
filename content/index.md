@@ -38,6 +38,7 @@ Rapujem pod menom [GOLEM](https://soundcloud.com/favu-label/sets/golemiada).
 - excited to hear from you
 
 </div>
+</div>
 
 <div class="contact-list">
 
