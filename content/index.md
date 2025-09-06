@@ -44,7 +44,5 @@ Rapujem pod menom [GOLEM](https://soundcloud.com/favu-label/sets/golemiada).
 
 - [E-mail](mailto:danielgalis21@gmail.com)
 - [Are.na](https://are.na/daniel-galis)
-- [GitHub](https://github.com/mstcgalis)
-- [Discord](https://discordapp.com/users/147823743882756096)
 
 </div>
