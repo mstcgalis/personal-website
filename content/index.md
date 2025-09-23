@@ -15,13 +15,14 @@ Rapujem pod menom [GOLEM](https://soundcloud.com/favu-label/sets/golemiada).
 
 <div class="now-list">
 
-- continually [researching](https://www.are.na/daniel-galis/communicator-aka-chc-ch-agdx) handheld devices
+- [researching](https://www.are.na/daniel-galis/communicator-aka-chc-ch-agdx) handheld devices
+- and expressive systems
+- and neo-neo-luddites
 - in a design studio with my peers
 - in a band with my dad
 - [favu label](https://www.instagram.com/favulabel/) member
 - [AGDX](https://agdx.info) member
 - living in [Brno](https://www.are.na/daniel-galis/brno-ohi23f4rocs)
-- staying in my [hometown](https://www.are.na/daniel-galis/banska-bystrica)
 
 </div>
 
