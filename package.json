@@ -3,12 +3,12 @@
 	"version": "8.0.0",
 	"description": "Daniel Gális personal website",
 	"scripts": {
-		"build": "npx tailwindcss -i ./public/css/index.css -o ./public/css/output.css && npx @11ty/eleventy",
-		"build-ghpages": "npx tailwindcss -i ./public/css/index.css -o ./public/css/output.css && npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
-		"dev": "concurrently \"npx tailwindcss -i ./public/css/index.css -o ./public/css/output.css --watch\" \"npx @11ty/eleventy --serve --quiet\"",
-		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
-		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
-		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+		"build": "tailwindcss -i ./public/css/index.css -o ./public/css/output.css && eleventy",
+		"build-ghpages": "tailwindcss -i ./public/css/index.css -o ./public/css/output.css && eleventy --pathprefix=/eleventy-base-blog/",
+		"dev": "concurrently \"tailwindcss -i ./public/css/index.css -o ./public/css/output.css --watch\" \"eleventy --serve --quiet\"",
+		"debug": "DEBUG=Eleventy* eleventy",
+		"debugstart": "DEBUG=Eleventy* eleventy --serve --quiet",
+		"benchmark": "DEBUG=Eleventy:Benchmark* eleventy"
 	},
 	"repository": {
 		"type": "git",
