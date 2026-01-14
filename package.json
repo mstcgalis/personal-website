@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/11ty/eleventy-base-blog.git"
+		"url": "git+https://github.com/mstcgalis/personal-website.git"
 	},
 	"author": {
 		"name": "Daniel Gális",
@@ -28,9 +28,9 @@
 		"url": "https://opencollective.com/11ty"
 	},
 	"bugs": {
-		"url": "https://github.com/11ty/eleventy-base-blog/issues"
+		"url": "https://github.com/mstcgalis/personal-website/issues"
 	},
-	"homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+	"homepage": "https://danielgalis.com/",
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.2",
 		"@11ty/eleventy-img": "^6.0.4",

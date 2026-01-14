@@ -3,7 +3,6 @@ module.exports = {
 	content: [
 		"./content/**/*.{html,njk,js,md}",
 		"./_includes/**/*.{html,njk,js}",
-		"./_site/**/*.html",
 	],
 	corePlugins: {
 		preflight: false,

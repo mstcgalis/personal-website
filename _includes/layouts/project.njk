@@ -19,7 +19,8 @@ layout: layouts/base.njk
       <li class="button">
         <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
     href="{{ link }}"
-    target="_blank">{{ label }}</a>
+    target="_blank"
+    rel="noopener noreferrer">{{ label }}</a>
       </li>
     {%- endfor %}
   </ul>
@@ -40,16 +41,16 @@ layout: layouts/base.njk
 <div class="group">
   <div class="background-gallery fixed flex justify-between inset-0 w-screen h-screen opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10">
     {% if video %}
-      {% for video in video %}
+      {% for vid in video %}
       <video class="h-full w-full object-cover" autoplay loop muted>
-        <source src="{{ video }}" type="video/mp4">
+        <source src="{{ vid }}" type="video/mp4">
       </video>
-</video>
       {% endfor %}
     {% endif %}
     {% if image %}
       {% for img in image %}
-      <img class="h-full object-cover" src="{{ img }}">
+      <img class="h-full object-cover" src="{{ img }}" alt="{{ title }} background image">
       {% endfor %}
     {% endif %}
   </div>
+</div>

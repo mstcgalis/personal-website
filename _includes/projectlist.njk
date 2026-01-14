@@ -12,7 +12,7 @@
           {% endif %}
           {% if project.data.image %}
             {% for img in project.data.image %}
-            <img class="h-full object-cover" src="{{ img }}">
+            <img class="h-full object-cover" src="{{ img }}" alt="{{ project.data.title }} background image">
             {% endfor %}
           {% endif %}
         </div>
@@ -25,7 +25,8 @@
             <li class="button">
               <span class="arrow mr-1 hover:no-underline">↗</span><a class="hover:underline no-underline"
      href="{{ link }}"
-     target="_blank">{{ label }}</a>
+     target="_blank"
+     rel="noopener noreferrer">{{ label }}</a>
             </li>
           {%- endfor %}
         </ul>
