@@ -10,17 +10,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>#society</title>
-        <meta name="description"
-              content="Daniel Gális is a designer, researcher and developer working with web technologies.">
-        <link rel="alternate"
-              href="/feed/feed.xml"
-              type="application/atom+xml"
-              title="Daniel Gális">
-        <link rel="alternate"
-              href="/feed/feed.json"
-              type="application/json"
-              title="Daniel Gális">
-        <meta name="generator" content="Eleventy v3.0.0">
+        <meta name="description" content="Daniel Gális is a designer, researcher and developer working with web technologies.">
+        <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Daniel Gális">
+        <link rel="alternate" href="/feed/feed.json" type="application/json" title="Daniel Gális">
+        <meta name="generator" content="Eleventy v3.1.2">
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <script>
@@ -131,7 +124,7 @@
 
 /* Global stylesheet */
 * {
-	box-sizing: -box;
+	box-sizing: border-box;
 }
 
 html,
@@ -223,7 +216,7 @@ main :first-child {
 footer {
 	/* margin-top: 1.6rem; */
 	/* -top: 1px solid var(--color-offset); */
-	color: var(--color-grey-50);
+	color: var(--color-gray-50);
 	text-align: center;
 	font-size: var(--font-size-small);
 	margin-bottom: 0.8rem;
@@ -233,13 +226,13 @@ footer a[href]:visited,
 footer a[href]:hover,
 footer a[href]:active,
 footer a[href] {
-	color: var(--color-grey-50);
+	color: var(--color-gray-50);
 }
 
 .links-nextprev {
 	margin: 1.6em 0 0 0;
 	list-style: none;
-	-top: 2px solid var(--color-offset);
+	border-top: 2px solid var(--color-offset);
 	padding-top: 0.8rem;
 }
 
@@ -573,16 +566,8 @@ header:after {
 .button:active {
 	text-decoration: underline;
 	color: red !important;
-}
-
-.button:active {
 	transform: translateY(0);
 	box-shadow: 0 4px 10px rgba(20, 56, 255, 0.2);
-}
-
-.button:active {
-	text-decoration: underline;
-	color: red !important;
 }
 
 .button-list {
@@ -819,149 +804,111 @@ svg {
 	padding: 0.1em 0.4rem;
 }
 
-        .fixed {
+        /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+@layer properties;
+.absolute {
+  position: absolute;
+}
+.fixed {
   position: fixed;
 }
-
 .relative {
   position: relative;
 }
-
-.inset-0 {
-  inset: 0px;
-}
-
 .-z-10 {
-  z-index: -10;
+  z-index: calc(10 * -1);
 }
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.flex {
-  display: flex;
-}
-
-.table {
-  display: table;
-}
-
 .contents {
   display: contents;
 }
-
+.flex {
+  display: flex;
+}
+.table {
+  display: table;
+}
 .h-full {
   height: 100%;
 }
-
 .h-screen {
   height: 100vh;
 }
-
 .w-full {
   width: 100%;
 }
-
 .w-screen {
   width: 100vw;
 }
-
+.transform {
+  transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+}
 .cursor-pointer {
   cursor: pointer;
 }
-
 .justify-between {
   justify-content: space-between;
 }
-
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .border {
+  border-style: var(--tw-border-style);
   border-width: 1px;
 }
-
 .border-solid {
+  --tw-border-style: solid;
   border-style: solid;
 }
-
-.bg-blue-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
-}
-
 .object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
 .text-right {
   text-align: right;
 }
-
-.\!text-cookbook-blue {
-  --tw-text-opacity: 1 !important;
-  color: rgb(68 108 175 / var(--tw-text-opacity)) !important;
-}
-
-.\!text-cookbook-red {
-  --tw-text-opacity: 1 !important;
-  color: rgb(208 46 43 / var(--tw-text-opacity)) !important;
-}
-
-.text-cookbook-blue {
-  --tw-text-opacity: 1;
-  color: rgb(68 108 175 / var(--tw-text-opacity));
-}
-
-.text-cookbook-brown {
-  --tw-text-opacity: 1;
-  color: rgb(89 36 54 / var(--tw-text-opacity));
-}
-
-.text-cookbook-red {
-  --tw-text-opacity: 1;
-  color: rgb(208 46 43 / var(--tw-text-opacity));
-}
-
 .\!no-underline {
   text-decoration-line: none !important;
 }
-
 .no-underline {
   text-decoration-line: none;
 }
-
 .opacity-0 {
-  opacity: 0;
+  opacity: 0%;
 }
-
 .filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
 }
-
 .transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+  transition-timing-function: var(--tw-ease, ease);
+  transition-duration: var(--tw-duration, 0s);
 }
-
 .transition-opacity {
   transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-timing-function: var(--tw-ease, ease);
+  transition-duration: var(--tw-duration, 0s);
 }
-
 .duration-200 {
+  --tw-duration: 200ms;
   transition-duration: 200ms;
 }
-
-/* Defaults */
-
+.group-hover\:opacity-100 {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      opacity: 100%;
+    }
+  }
+}
+.hover\:no-underline {
+  &:hover {
+    @media (hover: hover) {
+      text-decoration-line: none;
+    }
+  }
+}
+.hover\:underline {
+  &:hover {
+    @media (hover: hover) {
+      text-decoration-line: underline;
+    }
+  }
+}
 :root {
   --font-family: "Inter", -apple-system, BlinkMacSystemFont, system-ui,
 		sans-serif;
@@ -983,7 +930,6 @@ svg {
   --radius-tag: 1rem;
   --width: 700px;
 }
-
 @supports (font-variation-settings: normal) {
   :root {
     --font-family: "Inter var", -apple-system, BlinkMacSystemFont, system-ui,
@@ -992,9 +938,6 @@ svg {
     --font-weight-normal: 380;
   }
 }
-
-/* Theme colors */
-
 :root {
   --color-gray-20: #e0e0e0;
   --color-gray-50: #c0c0c0;
@@ -1013,7 +956,6 @@ svg {
   --text-color-link-visited: var(--color-blue);
   --syntax-tab-size: 2;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --color-gray-20: #e0e0e0;
@@ -1029,15 +971,10 @@ svg {
     --text-color-link-visited: var(--color-blue-light);
   }
 }
-
-/* Global stylesheet */
-
 * {
-  box-sizing: -box;
+  box-sizing: border-box;
 }
-
-html,
-body {
+html, body {
   margin: 0 auto;
   color: var(--text-color);
   background-color: var(--color-background);
@@ -1046,18 +983,15 @@ body {
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height);
 }
-
 .view {
   min-height: 100dvh;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-
 html {
   overflow-y: scroll;
 }
-
 body {
   padding: 0em 0.6rem;
   max-width: 40rem;
@@ -1065,116 +999,86 @@ body {
   flex-direction: column;
   min-height: 10dvh;
 }
-
-/* https://www.a11yproject.com/posts/how-to-hide-content/ */
-
 .visually-hidden {
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
   width: 1px;
 }
-
 p:last-child {
   margin-bottom: 0;
 }
-
 p {
   line-height: var(--line-height);
   margin-block-end: 0.8rem;
   margin-block-start: 0;
 }
-
 a[href] {
   color: var(--text-color-link);
   transition: color 0.2s ease, transform 0.2s ease;
 }
-
 a[href]:hover {
   color: red;
 }
-
 a[href]:active {
-  /* color: var(--text-color-link-active); */
   color: red;
 }
-
 main {
   padding: 0.8em 0.3em 0 0.3em;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-
 main :first-child {
   margin-top: 0;
 }
-
-/* Group the main content together */
-
 .main-content {
   display: flex;
   flex-direction: column;
   margin-bottom: auto;
 }
-
 footer {
-  /* margin-top: 1.6rem; */
-  /* -top: 1px solid var(--color-offset); */
-  color: var(--color-grey-50);
+  color: var(--color-gray-50);
   text-align: center;
   font-size: var(--font-size-small);
   margin-bottom: 0.8rem;
 }
-
-footer a[href]:visited,
-footer a[href]:hover,
-footer a[href]:active,
-footer a[href] {
-  color: var(--color-grey-50);
+footer a[href]:visited, footer a[href]:hover, footer a[href]:active, footer a[href] {
+  color: var(--color-gray-50);
 }
-
 .links-nextprev {
   margin: 1.6em 0 0 0;
   list-style: none;
-  -top: 2px solid var(--color-offset);
+  border-top: 2px solid var(--color-offset);
   padding-top: 0.8rem;
 }
-
 .nav-under-content {
   padding-top: 2.2rem;
   padding-bottom: 1.6rem;
   justify-content: center;
   display: flex;
 }
-
 table {
   margin: 0.8em 0;
 }
-
-table td,
-table th {
+table td, table th {
   padding-right: 0.8rem;
 }
-
-pre,
-code {
+pre, code {
   font-family: var(--font-family-monospace);
   background-color: var(--color-offset);
 }
-
 pre:not([class*="language-"]) {
   margin: 0.5em 0;
   line-height: 1.375;
-  /* 22px /16 */
   -moz-tab-size: var(--syntax-tab-size);
   -o-tab-size: var(--syntax-tab-size);
   tab-size: var(--syntax-tab-size);
   -webkit-hyphens: none;
+  -ms-hyphens: none;
   hyphens: none;
   direction: ltr;
   text-align: left;
@@ -1182,84 +1086,62 @@ pre:not([class*="language-"]) {
   word-spacing: normal;
   word-break: normal;
 }
-
 code {
   word-break: none;
 }
-
 blockquote {
   font-style: italic;
   line-height: var(--line-height);
   margin-block-end: 0.8rem;
   margin-block-start: 0;
 }
-
 hr {
   border: 0;
   margin: 0;
 }
-
-/* Typography */
-
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   margin-block-start: 0.8rem;
   margin-block-end: 0.2rem;
 }
-
 h1 {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-bold);
 }
-
 h2 {
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-bold);
 }
-
 h3 {
   font-size: var(--font-size-h3);
   font-weight: var(--font-weight-bold);
 }
-
 h4 {
   font-size: var(--font-size-h4);
   font-weight: var(--font-weight-bold);
 }
-
 b {
   font-weight: var(--font-weight-bold);
 }
-
 ul {
   margin-block-end: 0.8rem;
   margin-block-start: 0;
 }
-
 .now::marker {
   content: "ꨁ  ";
   color: red;
 }
-
 .always::marker {
   content: "ꨘ  ";
   color: red;
 }
-
-/* New classes for pure Markdown approach */
-
 .now-list ul li::marker {
   content: "ꨁ  ";
   color: red;
 }
-
 .always-list ul li::marker {
   content: "ꨘ  ";
   color: red;
 }
-
 .contact-list ul {
   display: flex;
   flex-wrap: wrap;
@@ -1268,57 +1150,42 @@ ul {
   list-style: none;
   padding: 0;
 }
-
-/* Header */
-
 header {
   padding: 0.8em 0 0.8em 0;
   transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: sticky;
   top: 0;
   background-color: var(--color-background);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
-
 .nav-hidden {
   top: -3rem;
 }
-
 header:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .home-link {
   font-size: 1rem;
-  /* 16px /16 */
   color: var(--text-color) !important;
 }
-
 .home-link[aria-current="page"] {
   color: red !important;
 }
-
 .home-link:link:not(:hover) {
   text-decoration: none;
 }
-
 @media (max-width: 424px) {
   .home-link::before {
     content: "Daniel";
   }
 }
-
 @media (min-width: 425px) {
   .home-link::before {
     content: "Daniel Gális";
   }
 }
-
-/* Nav */
-
 .nav {
   display: flex;
   padding: 0;
@@ -1326,54 +1193,30 @@ header:after {
   list-style: none;
   justify-content: space-between;
 }
-
 .nav-item {
   display: inline-block;
   transition: transform 0.2s ease, color 0.2s ease;
   margin-right: 0.3rem;
 }
-
 .nav-item:hover {
   transform: translateY(-0.5px);
 }
-
-/* .nav-item a[href] {
-	color: var(--text-color);
-}
-.nav-item a:visited{
-	color: var(--text-color);
-} 
-.nav-item a[href]:not(:hover) {
-	text-decoration: none;
-}
-*/
-
-.nav-item a[href]:hover,
-.nav-item a[href]:active {
+.nav-item a[href]:hover, .nav-item a[href]:active {
   color: red;
 }
-
 .nav a[href][aria-current="page"] {
   text-decoration: underline;
   color: red !important;
 }
-
-/* Posts list */
-
 .postlist {
   list-style: none;
   margin: 0.8em 0em 0.8em 0rem;
   padding: 0;
 }
-
 .postlist-item {
-  /* display: flex;
-	flex-wrap: wrap;
-	align-items: baseline; */
   counter-increment: start-from -1;
   margin: 1em 0em 1em 0rem;
 }
-
 .postlist-item:before {
   display: inline-block;
   pointer-events: none;
@@ -1381,7 +1224,6 @@ header:after {
   text-align: right;
   margin-left: -1.5rem;
 }
-
 .postlist-title {
   font-size: var(--font-size-h3);
   font-weight: var(--font-weight-normal);
@@ -1392,33 +1234,13 @@ header:after {
   text-decoration-thickness: 1px;
   margin-bottom: 0.4rem;
 }
-
 .postlist-item-active .postlist-link {
   font-weight: var(--font-weight-bold);
 }
-
 .postlist-item > .metadata {
   margin-block-end: 0;
   background-color: transparent;
 }
-
-/* .postlist-item > .metadata > .metadata-date {
-	font-size: var(--font-size-small);
-	line-height: 1.6;
-}
-.postlist-item > .metadata > .metadata-type {
-	font-size: var(--font-size-small);
-	line-height: 1.6;
-}
-.postlist-item > .metadata > .metadata-tags > li > .tag {
-	font-size: var(--font-size-small);
-}
-.postlist-item > .metadata > .metadata-tags {
-	font-size: var(--font-size-small);
-} */
-
-/* Project list */
-
 .projectlist {
   list-style: none;
   margin: 1.5rem 0;
@@ -1428,32 +1250,20 @@ header:after {
   grid-template-columns: 1fr;
   justify-items: stretch;
 }
-
-/* @media only screen and (min-width: 768px) {
-	.projectlist {
-	  grid-template-columns: 1fr 1fr;
-	  column-gap: 0.8rem;
-	}
-} */
-
 .project-card > .metadata {
   border-top: 1px solid var(--color-offset);
   padding: 0.4em 0.2em 0em 0.2rem;
 }
-
 .project-title {
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-normal);
 }
-
 .project-description {
   margin-block-end: 0rem;
 }
-
 .project-emoji {
   white-space: pre;
 }
-
 .project-card {
   display: flex;
   flex-wrap: wrap;
@@ -1463,9 +1273,6 @@ header:after {
   padding-bottom: 0.4rem;
   counter-increment: start-from -1;
 }
-
-/* Removed the top border hover effect */
-
 .button {
   display: inline-flex;
   align-items: center;
@@ -1476,14 +1283,12 @@ header:after {
   font-size: var(--font-size-body);
   text-decoration: none;
 }
-
 .button:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 10px rgba(20, 56, 255, 0.2);
   text-decoration: underline;
   color: red !important;
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(20, 56, 255, 0.2);
 }
-
 .button-list {
   display: inline-flex;
   text-align: right;
@@ -1494,31 +1299,17 @@ header:after {
   margin-top: 0.4rem;
   margin-bottom: 0.8rem;
 }
-
-/* Tags */
-
 .tag {
   display: inline-flex;
   align-items: center;
   justify-content: left;
-  /* background-color: var(--color-offset);
-	padding: 0em 0.4rem;
-	border-radius: var(--radius-tag);
-	
-	font-size: var(--font-size-body);
-	text-decoration: none; */
 }
-
 .tag:hover {
   text-decoration: underline;
 }
-
 .text-tag {
   text-decoration: underline;
 }
-
-/* Tags list */
-
 .tags-list {
   padding: 0;
   display: flex;
@@ -1527,18 +1318,13 @@ header:after {
   gap: 0.8rem;
   justify-content: left;
 }
-
 .tags-list > .tag {
   font-size: var(--font-size-h3);
 }
-
 .arrow {
   color: red;
   text-decoration: none !important;
 }
-
-/* Metadata */
-
 .metadata-tags {
   display: inline-flex;
   text-align: right;
@@ -1548,7 +1334,6 @@ header:after {
   padding-left: 0;
   margin-block-end: 0;
 }
-
 .metadata {
   display: inline-flex;
   flex-wrap: wrap;
@@ -1556,76 +1341,43 @@ header:after {
   gap: 0.2em 0.8rem;
   list-style: none;
   margin: 0.8rem 0 0.8rem 0;
-  /* padding: 0 0.2em 0em 0.2rem;
-	margin-block-end: 0.8rem;
-	background-color: var(--color-offset);
-	border-radius: var(--radius); */
 }
-
 .metadata-date {
   font-weight: 300;
   line-height: 1.7;
 }
-
 .metadata-type {
   font-weight: 300;
   line-height: 1.7;
 }
-
-/* Direct Links / Markdown Headers */
-
 .header-anchor {
   text-decoration: none;
   font-style: normal;
   font-size: 1rem;
   margin-left: 0.1rem;
 }
-
-a[href].header-anchor,
-a[href].header-anchor:visited {
+a[href].header-anchor, a[href].header-anchor:visited {
   color: transparent;
 }
-
-a[href].header-anchor:focus,
-a[href].header-anchor:hover {
+a[href].header-anchor:focus, a[href].header-anchor:hover {
   text-decoration: underline;
 }
-
-a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
+a[href].header-anchor:focus, :hover > a[href].header-anchor {
   color: #aaa;
 }
-
 h2 + .header-anchor {
   font-size: 1.5rem;
 }
-
-/* Post */
-
 .post-title {
   font-size: var(--font-size-h1);
 }
-
-img,
-picture,
-video,
-canvas,
-svg {
+img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
-
-/* img {
-	border-radius: var(--radius);
-}
- */
-
-/* iframe */
-
 .iframe-container {
   position: relative;
 }
-
 .loading {
   position: absolute;
   left: 0;
@@ -1636,20 +1388,16 @@ svg {
   justify-content: center;
   align-items: center;
 }
-
 .my-iframe {
   border: none;
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
-  /* opacity: 0; */
 }
-
 .homepage {
   display: flex;
   flex-direction: column;
   height: 100;
 }
-
 .contact {
   display: flex;
   flex-wrap: wrap;
@@ -1661,7 +1409,6 @@ svg {
   margin-left: -0.2rem;
   margin-right: -0.2rem;
 }
-
 .logo {
   flex: 1;
   height: 10%;
@@ -1671,35 +1418,26 @@ svg {
   justify-content: center;
   animation: fadeIn 60s infinite;
 }
-
 @keyframes fadeIn {
-  0%,
-	40% {
+  0%,	40% {
     opacity: 0;
   }
-
   90% {
     opacity: 0.2;
   }
-
   99.79% {
     opacity: 1;
   }
-
   99.8% {
     opacity: 0;
   }
-
   99.85% {
     opacity: 0;
   }
-
-  99.86%,
-	100% {
+  99.86%,	100% {
     opacity: 1;
   }
 }
-
 .red-filter {
   z-index: 50;
   position: fixed;
@@ -1711,47 +1449,115 @@ svg {
   top: 0;
   pointer-events: none;
 }
-
 .collaborator {
   padding: 0.1em 0.4rem;
 }
-
-.hover\:underline:hover {
-  text-decoration-line: underline;
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
 }
-
-.hover\:no-underline:hover {
-  text-decoration-line: none;
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
 }
-
-.group:hover .group-hover\:opacity-100 {
-  opacity: 1;
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
 }
-
-@media (prefers-color-scheme: dark) {
-  .dark\:\!text-cookbook-pink {
-    --tw-text-opacity: 1 !important;
-    color: rgb(233 204 224 / var(--tw-text-opacity)) !important;
-  }
-
-  .dark\:\!text-cookbook-sky {
-    --tw-text-opacity: 1 !important;
-    color: rgb(183 211 225 / var(--tw-text-opacity)) !important;
-  }
-
-  .dark\:text-cookbook-pink {
-    --tw-text-opacity: 1;
-    color: rgb(233 204 224 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-cookbook-sky {
-    --tw-text-opacity: 1;
-    color: rgb(183 211 225 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-cookbook-yellow {
-    --tw-text-opacity: 1;
-    color: rgb(254 237 160 / var(--tw-text-opacity));
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-border-style: solid;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-duration: initial;
+    }
   }
 }
 
@@ -1808,21 +1614,16 @@ svg {
                     <h2 class="visually-hidden">Top level navigation menu</h2>
                     <ul class="nav">
                         <li class="nav-item">
-                            <a href="/"
-                            class="home-link"
-                            ></a>
+                            <a href="/" class="home-link"></a>
                         </li>
                             <li class="nav-item">
-                                <a href="/projects/"
-                                >Projects</a>
+                                <a href="/projects/">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/posts/"
-                                >Posts</a>
+                                <a href="/posts/">Posts</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/tags/"
-                                >Tags</a>
+                                <a href="/tags/">Tags</a>
                             </li>
                      </ul>
                 </nav>
@@ -1832,7 +1633,7 @@ svg {
 <h1>#society</h1>
 
 
-<ol reversed class="postlist" style="counter-reset: start-from 2">
+<ol reversed="" class="postlist" style="counter-reset: start-from 2">
 
     
         <li class="cursor-pointer postlist-item">
@@ -1861,7 +1662,7 @@ svg {
 
 <div class="nav-under-content">
   <p>
-    <a id="randomButton" href="#" data-urls='[&quot;/tags/tools&quot;,&quot;/tags/self&quot;,&quot;/tags/code&quot;,&quot;/tags/interface&quot;,&quot;/tags/design&quot;,&quot;/tags/cooking&quot;,&quot;/tags/data&quot;,&quot;/tags/ai&quot;,&quot;/tags/web&quot;,&quot;/tags/writing&quot;,&quot;/tags/rituals&quot;,&quot;/tags/iot&quot;,&quot;/tags/3d&quot;,&quot;/tags/computers&quot;,&quot;/tags/second-brain&quot;,&quot;/tags/sound&quot;,&quot;/tags/community&quot;,&quot;/tags/walking&quot;,&quot;/tags/society&quot;]'>Random Tag</a>. 
+    <a id="randomButton" href="#" data-urls="[&quot;/tags/tools&quot;,&quot;/tags/self&quot;,&quot;/tags/code&quot;,&quot;/tags/interface&quot;,&quot;/tags/design&quot;,&quot;/tags/cooking&quot;,&quot;/tags/data&quot;,&quot;/tags/ai&quot;,&quot;/tags/web&quot;,&quot;/tags/writing&quot;,&quot;/tags/rituals&quot;,&quot;/tags/iot&quot;,&quot;/tags/3d&quot;,&quot;/tags/computers&quot;,&quot;/tags/second-brain&quot;,&quot;/tags/sound&quot;,&quot;/tags/community&quot;,&quot;/tags/walking&quot;,&quot;/tags/society&quot;]">Random Tag</a>. 
     See all <a href="/tags/">Tags</a>.
   </p>
   <script src="/js/randomPage.js"></script>
@@ -1878,6 +1679,6 @@ svg {
                 </div>
             </footer>
             <!-- Current page: /tags/society/ -->
-        </div>
+        
     </body>
 </html>

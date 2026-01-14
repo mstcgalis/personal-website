@@ -83,7 +83,7 @@
 
 /* Global stylesheet */
 * {
-	box-sizing: -box;
+	box-sizing: border-box;
 }
 
 html,
@@ -175,7 +175,7 @@ main :first-child {
 footer {
 	/* margin-top: 1.6rem; */
 	/* -top: 1px solid var(--color-offset); */
-	color: var(--color-grey-50);
+	color: var(--color-gray-50);
 	text-align: center;
 	font-size: var(--font-size-small);
 	margin-bottom: 0.8rem;
@@ -185,13 +185,13 @@ footer a[href]:visited,
 footer a[href]:hover,
 footer a[href]:active,
 footer a[href] {
-	color: var(--color-grey-50);
+	color: var(--color-gray-50);
 }
 
 .links-nextprev {
 	margin: 1.6em 0 0 0;
 	list-style: none;
-	-top: 2px solid var(--color-offset);
+	border-top: 2px solid var(--color-offset);
 	padding-top: 0.8rem;
 }
 
@@ -525,16 +525,8 @@ header:after {
 .button:active {
 	text-decoration: underline;
 	color: red !important;
-}
-
-.button:active {
 	transform: translateY(0);
 	box-shadow: 0 4px 10px rgba(20, 56, 255, 0.2);
-}
-
-.button:active {
-	text-decoration: underline;
-	color: red !important;
 }
 
 .button-list {
