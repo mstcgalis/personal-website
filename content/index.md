@@ -5,31 +5,6 @@ numberOfLatestPostsToShow: 3
 
 <div class="main-content">
 
-## TEMPORARY Ť0ÖXĘ_II\_\_!N FOR `klauzury.agdx` SOLDJAS (N€€€V€€€€R TeLL AN1!!!!!)
-
-```
-e394166a-b19e-4de8-8e86-1fe278ab5d07
-```
-
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-
 I design, research and develop tools that empower individuals and communities.
 
 Interested in [#rituals](tags/rituals), [#sound](tags/sound), and beautiful [#computers](tags/computers).
