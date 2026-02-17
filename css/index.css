@@ -288,22 +288,14 @@ ul {
 	margin-block-start: 0;
 }
 
-.now::marker {
-	content: "ꨁ  ";
-	color: red;
-}
-
-.always::marker {
-	content: "ꨘ  ";
-	color: red;
-}
-
-/* New classes for pure Markdown approach */
+/* Custom list markers */
+.now::marker,
 .now-list ul li::marker {
 	content: "ꨁ  ";
 	color: red;
 }
 
+.always::marker,
 .always-list ul li::marker {
 	content: "ꨘ  ";
 	color: red;
@@ -384,16 +376,6 @@ header:after {
 	transform: translateY(-0.5px);
 }
 
-/* .nav-item a[href] {
-	color: var(--text-color);
-}
-.nav-item a:visited{
-	color: var(--text-color);
-} 
-.nav-item a[href]:not(:hover) {
-	text-decoration: none;
-}
-*/
 .nav-item a[href]:hover,
 .nav-item a[href]:active {
 	color: red;
@@ -412,9 +394,6 @@ header:after {
 }
 
 .postlist-item {
-	/* display: flex;
-	flex-wrap: wrap;
-	align-items: baseline; */
 	counter-increment: start-from -1;
 	margin: 1em 0em 1em 0rem;
 }
@@ -447,21 +426,6 @@ header:after {
 	background-color: transparent;
 }
 
-/* .postlist-item > .metadata > .metadata-date {
-	font-size: var(--font-size-small);
-	line-height: 1.6;
-}
-.postlist-item > .metadata > .metadata-type {
-	font-size: var(--font-size-small);
-	line-height: 1.6;
-}
-.postlist-item > .metadata > .metadata-tags > li > .tag {
-	font-size: var(--font-size-small);
-}
-.postlist-item > .metadata > .metadata-tags {
-	font-size: var(--font-size-small);
-} */
-
 /* Project list */
 .projectlist {
 	list-style: none;
@@ -473,12 +437,6 @@ header:after {
 	justify-items: stretch;
 }
 
-/* @media only screen and (min-width: 768px) {
-	.projectlist {
-	  grid-template-columns: 1fr 1fr;
-	  column-gap: 0.8rem;
-	}
-} */
 .project-card > .metadata {
 	border-top: 1px solid var(--color-offset);
 	padding: 0.4em 0.2em 0em 0.2rem;
@@ -545,13 +503,6 @@ header:after {
 	display: inline-flex;
 	align-items: center;
 	justify-content: left;
-
-	/* background-color: var(--color-offset);
-	padding: 0em 0.4rem;
-	border-radius: var(--radius-tag);
-	
-	font-size: var(--font-size-body);
-	text-decoration: none; */
 }
 
 .tag:hover {
@@ -601,11 +552,6 @@ header:after {
 
 	list-style: none;
 	margin: 0.8rem 0 0.8rem 0;
-
-	/* padding: 0 0.2em 0em 0.2rem;
-	margin-block-end: 0.8rem;
-	background-color: var(--color-offset);
-	border-radius: var(--radius); */
 }
 
 .metadata-date {
@@ -659,10 +605,6 @@ svg {
 	max-width: 100%;
 }
 
-/* img {
-	border-radius: var(--radius);
-}
- */
 /* iframe */
 .iframe-container {
 	position: relative;

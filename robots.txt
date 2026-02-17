@@ -1,0 +1,9 @@
+# robots.txt for danielgalis.com
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://danielgalis.com/sitemap.xml
+
+# Disallow admin/draft areas if any exist
+Disallow: /drafts/

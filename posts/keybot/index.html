@@ -11,33 +11,93 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Keybot - Exploring Research Through Design</title>
         <meta name="description" content="RtD project exploring the tension of automation through humanist interaction design.">
+        <link rel="canonical" href="https://danielgalis.com/posts/keybot/">
+        <meta property="og:title" content="Keybot - Exploring Research Through Design">
+        <meta property="og:description" content="RtD project exploring the tension of automation through humanist interaction design.">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://danielgalis.com/posts/keybot/">
+        <meta property="og:site_name" content="Daniel Gális">
+        <meta property="og:locale" content="en">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Keybot - Exploring Research Through Design">
+        <meta name="twitter:description" content="RtD project exploring the tension of automation through humanist interaction design.">
         <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Daniel Gális">
         <link rel="alternate" href="/feed/feed.json" type="application/json" title="Daniel Gális">
         <meta name="generator" content="Eleventy v3.1.2">
         <link rel="preconnect" href="https://rsms.me/">
+        <link rel="preconnect" href="https://are.na">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        <script>
-			let lastScroll = 0;
-
-			window.addEventListener("scroll", () => {
-			const currentScroll = window.pageYOffset;
-			
-			if (currentScroll <= 0) {
-				document.querySelector("header").classList.remove("nav-hidden");
-				return;
-			}
-			
-			if (currentScroll > lastScroll && !document.querySelector("header").classList.contains("nav-hidden")) {
-				document.querySelector("header").classList.add("nav-hidden");
-			} else if (currentScroll < lastScroll) {
-				document.querySelector("header").classList.remove("nav-hidden");
-			}
-			
-			lastScroll = currentScroll;
-			});
-		
+        <style>
+            @font-face {
+                font-family: 'Inter';
+                font-display: swap;
+            }
+            @font-face {
+                font-family: 'Inter var';
+                font-display: swap;
+            }
+        </style>
+        
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "name": "Keybot - Exploring Research Through Design",
+            "description": "RtD project exploring the tension of automation through humanist interaction design.",
+            "url": "https://danielgalis.com/posts/keybot/",
+            
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Gális",
+                "url": "https://danielgalis.com"
+            },
+            "datePublished": "2023-06-03",
+            
+            "publisher": {
+                "@type": "Person",
+                "name": "Daniel Gális",
+                "url": "https://danielgalis.com"
+            }
+        }
         </script>
-    
+        
+        <script>
+            (function() {
+                let lastScroll = 0;
+                let ticking = false;
+                const header = document.querySelector ? null : null; // Will be set on DOMContentLoaded
+
+                function updateHeader(currentScroll) {
+                    const headerEl = document.querySelector("header");
+                    if (!headerEl) return;
+
+                    if (currentScroll <= 0) {
+                        headerEl.classList.remove("nav-hidden");
+                        return;
+                    }
+
+                    if (currentScroll > lastScroll && !headerEl.classList.contains("nav-hidden")) {
+                        headerEl.classList.add("nav-hidden");
+                    } else if (currentScroll < lastScroll) {
+                        headerEl.classList.remove("nav-hidden");
+                    }
+
+                    lastScroll = currentScroll;
+                }
+
+                window.addEventListener("scroll", function() {
+                    const currentScroll = window.pageYOffset;
+
+                    if (!ticking) {
+                        window.requestAnimationFrame(function() {
+                            updateHeader(currentScroll);
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                }, { passive: true });
+            })();
+        </script>
     <style>/**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -497,22 +557,14 @@ ul {
 	margin-block-start: 0;
 }
 
-.now::marker {
-	content: "ꨁ  ";
-	color: red;
-}
-
-.always::marker {
-	content: "ꨘ  ";
-	color: red;
-}
-
-/* New classes for pure Markdown approach */
+/* Custom list markers */
+.now::marker,
 .now-list ul li::marker {
 	content: "ꨁ  ";
 	color: red;
 }
 
+.always::marker,
 .always-list ul li::marker {
 	content: "ꨘ  ";
 	color: red;
@@ -593,16 +645,6 @@ header:after {
 	transform: translateY(-0.5px);
 }
 
-/* .nav-item a[href] {
-	color: var(--text-color);
-}
-.nav-item a:visited{
-	color: var(--text-color);
-} 
-.nav-item a[href]:not(:hover) {
-	text-decoration: none;
-}
-*/
 .nav-item a[href]:hover,
 .nav-item a[href]:active {
 	color: red;
@@ -621,9 +663,6 @@ header:after {
 }
 
 .postlist-item {
-	/* display: flex;
-	flex-wrap: wrap;
-	align-items: baseline; */
 	counter-increment: start-from -1;
 	margin: 1em 0em 1em 0rem;
 }
@@ -656,21 +695,6 @@ header:after {
 	background-color: transparent;
 }
 
-/* .postlist-item > .metadata > .metadata-date {
-	font-size: var(--font-size-small);
-	line-height: 1.6;
-}
-.postlist-item > .metadata > .metadata-type {
-	font-size: var(--font-size-small);
-	line-height: 1.6;
-}
-.postlist-item > .metadata > .metadata-tags > li > .tag {
-	font-size: var(--font-size-small);
-}
-.postlist-item > .metadata > .metadata-tags {
-	font-size: var(--font-size-small);
-} */
-
 /* Project list */
 .projectlist {
 	list-style: none;
@@ -682,12 +706,6 @@ header:after {
 	justify-items: stretch;
 }
 
-/* @media only screen and (min-width: 768px) {
-	.projectlist {
-	  grid-template-columns: 1fr 1fr;
-	  column-gap: 0.8rem;
-	}
-} */
 .project-card > .metadata {
 	border-top: 1px solid var(--color-offset);
 	padding: 0.4em 0.2em 0em 0.2rem;
@@ -754,13 +772,6 @@ header:after {
 	display: inline-flex;
 	align-items: center;
 	justify-content: left;
-
-	/* background-color: var(--color-offset);
-	padding: 0em 0.4rem;
-	border-radius: var(--radius-tag);
-	
-	font-size: var(--font-size-body);
-	text-decoration: none; */
 }
 
 .tag:hover {
@@ -810,11 +821,6 @@ header:after {
 
 	list-style: none;
 	margin: 0.8rem 0 0.8rem 0;
-
-	/* padding: 0 0.2em 0em 0.2rem;
-	margin-block-end: 0.8rem;
-	background-color: var(--color-offset);
-	border-radius: var(--radius); */
 }
 
 .metadata-date {
@@ -868,10 +874,6 @@ svg {
 	max-width: 100%;
 }
 
-/* img {
-	border-radius: var(--radius);
-}
- */
 /* iframe */
 .iframe-container {
 	position: relative;
@@ -1294,19 +1296,11 @@ ul {
   margin-block-end: 0.8rem;
   margin-block-start: 0;
 }
-.now::marker {
+.now::marker, .now-list ul li::marker {
   content: "ꨁ  ";
   color: red;
 }
-.always::marker {
-  content: "ꨘ  ";
-  color: red;
-}
-.now-list ul li::marker {
-  content: "ꨁ  ";
-  color: red;
-}
-.always-list ul li::marker {
+.always::marker, .always-list ul li::marker {
   content: "ꨘ  ";
   color: red;
 }
@@ -1729,18 +1723,7 @@ img, picture, video, canvas, svg {
   }
 }
 
-        /* Custom styles for .now and .always classes */
-.now::marker {
-	content: "ꨁ  ";
-	color: red;
-}
-
-.always::marker {
-	content: "ꨘ  ";
-	color: red;
-}
-
-/* Contact list spacing */
+        /* Contact list spacing */
 .contact-list {
 	margin-top: auto;
 	padding-top: 1rem;
@@ -1773,7 +1756,6 @@ img, picture, video, canvas, svg {
 
 /* Additional custom styles can go here */</style>
 </head>
-
     <body>
         <a href="#skip" class="visually-hidden">Skip to main content</a>
         <div class="view">
@@ -1782,7 +1764,7 @@ img, picture, video, canvas, svg {
                     <h2 class="visually-hidden">Top level navigation menu</h2>
                     <ul class="nav">
                         <li class="nav-item">
-                            <a href="/" class="home-link"></a>
+                            <a href="/" class="home-link" aria-label="Home - Daniel Gális"></a>
                         </li>
                             <li class="nav-item">
                                 <a href="/projects/">Projects</a>
