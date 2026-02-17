@@ -32,6 +32,6 @@ Designer, researcher, and developer based in Brno.
 <div class="contact-list">
 
 - [daniel@dgalis.sk](mailto:daniel@dgalis.sk)
-- [Are.na](https://are.na/daniel-galis)
+- [are.na](https://are.na/daniel-galis)
 
 </div>
