@@ -4,7 +4,7 @@ layout: layouts/home.njk
 
 <div class="main-content">
 
-Designer, researcher, and developer based in [Brno](https://www.are.na/daniel-galis/brno-ohi23f4rocs).
+Designer, researcher, and developer based in Brno.
 
 #### Now
 
@@ -18,10 +18,14 @@ Designer, researcher, and developer based in [Brno](https://www.are.na/daniel-ga
 
 #### Focus
 
+<div class="always-list">
+
 - Interaction design
 - Web development
 - Sound design and engineering
 - Research
+
+</div>
 
 </div>
 
