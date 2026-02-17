@@ -5,22 +5,13 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {%- for page in collections.all %}
-{%- if page.url %}
+{%- if page.url and "/posts/" not in page.url and "/projects/" not in page.url and "/tags/" not in page.url %}
 	{% set absoluteUrl %}{{ page.url | htmlBaseUrl(metadata.url) }}{% endset %}
 	<url>
 		<loc>{{ absoluteUrl }}</loc>
 		<lastmod>{{ page.date | htmlDateString }}</lastmod>
 		{%- if page.url == "/" %}
 		<priority>1.0</priority>
-		<changefreq>weekly</changefreq>
-		{%- elif "/posts/" in page.url %}
-		<priority>0.8</priority>
-		<changefreq>monthly</changefreq>
-		{%- elif "/projects/" in page.url %}
-		<priority>0.8</priority>
-		<changefreq>monthly</changefreq>
-		{%- elif "/tags/" in page.url %}
-		<priority>0.5</priority>
 		<changefreq>weekly</changefreq>
 		{%- else %}
 		<priority>0.6</priority>
