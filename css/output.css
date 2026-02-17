@@ -221,7 +221,7 @@ a[href]:active {
   color: red;
 }
 main {
-  padding: 0.8em 0.3em 0 0.3em;
+  padding: 0.8em 0 0 0;
   flex: 1;
   display: flex;
   flex-direction: column;
