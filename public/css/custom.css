@@ -1,14 +1,3 @@
-/* Custom styles for .now and .always classes */
-.now::marker {
-	content: "ꨁ  ";
-	color: red;
-}
-
-.always::marker {
-	content: "ꨘ  ";
-	color: red;
-}
-
 /* Contact list spacing */
 .contact-list {
 	margin-top: auto;

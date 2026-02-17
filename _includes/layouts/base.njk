@@ -7,6 +7,19 @@
         <title>{{ title or metadata.title }}</title>
         <meta name="description"
               content="{{ description or metadata.description }}">
+        {#- Canonical URL #}
+        {% if page.url %}<link rel="canonical" href="{{ page.url | htmlBaseUrl(metadata.url) }}">{% endif %}
+        {#- Open Graph / Social Media #}
+        <meta property="og:title" content="{{ title or metadata.title }}">
+        <meta property="og:description" content="{{ description or metadata.description }}">
+        <meta property="og:type" content="{% if layout == 'layouts/post.njk' %}article{% else %}website{% endif %}">
+        {% if page.url %}<meta property="og:url" content="{{ page.url | htmlBaseUrl(metadata.url) }}">{% endif %}
+        <meta property="og:site_name" content="{{ metadata.title }}">
+        <meta property="og:locale" content="{{ metadata.language }}">
+        {#- Twitter Card #}
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="{{ title or metadata.title }}">
+        <meta name="twitter:description" content="{{ description or metadata.description }}">
         {#- Atom and JSON feeds included by default #}
         <link rel="alternate"
               href="/feed/feed.xml"
@@ -17,30 +30,83 @@
               type="application/json"
               title="{{ metadata.title }}">
         <meta name="generator" content="{{ eleventy.generator }}">
-        {#- Inter font loading #}
+        {#- Preconnect hints for external resources #}
         <link rel="preconnect" href="https://rsms.me/">
+        <link rel="preconnect" href="https://are.na">
+        {#- Inter font loading with font-display swap #}
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        {#- JS #}
+        <style>
+            @font-face {
+                font-family: 'Inter';
+                font-display: swap;
+            }
+            @font-face {
+                font-family: 'Inter var';
+                font-display: swap;
+            }
+        </style>
+        {#- JSON-LD Structured Data #}
+        {% if page.url %}
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "{% if layout == 'layouts/post.njk' %}BlogPosting{% else %}WebPage{% endif %}",
+            "name": "{{ title or metadata.title }}",
+            "description": "{{ description or metadata.description }}",
+            "url": "{{ page.url | htmlBaseUrl(metadata.url) }}",
+            {% if layout == 'layouts/post.njk' %}
+            "author": {
+                "@type": "Person",
+                "name": "{{ metadata.author.name }}",
+                "url": "{{ metadata.author.url }}"
+            },
+            "datePublished": "{{ page.date | htmlDateString }}",
+            {% endif %}
+            "publisher": {
+                "@type": "Person",
+                "name": "{{ metadata.author.name }}",
+                "url": "{{ metadata.author.url }}"
+            }
+        }
+        </script>
+        {% endif %}
+        {#- Scroll handler with RAF throttling #}
         <script>
-			let lastScroll = 0;
+            (function() {
+                let lastScroll = 0;
+                let ticking = false;
+                const header = document.querySelector ? null : null; // Will be set on DOMContentLoaded
 
-			window.addEventListener("scroll", () => {
-			const currentScroll = window.pageYOffset;
-			
-			if (currentScroll <= 0) {
-				document.querySelector("header").classList.remove("nav-hidden");
-				return;
-			}
-			
-			if (currentScroll > lastScroll && !document.querySelector("header").classList.contains("nav-hidden")) {
-				document.querySelector("header").classList.add("nav-hidden");
-			} else if (currentScroll < lastScroll) {
-				document.querySelector("header").classList.remove("nav-hidden");
-			}
-			
-			lastScroll = currentScroll;
-			});
-		
+                function updateHeader(currentScroll) {
+                    const headerEl = document.querySelector("header");
+                    if (!headerEl) return;
+
+                    if (currentScroll <= 0) {
+                        headerEl.classList.remove("nav-hidden");
+                        return;
+                    }
+
+                    if (currentScroll > lastScroll && !headerEl.classList.contains("nav-hidden")) {
+                        headerEl.classList.add("nav-hidden");
+                    } else if (currentScroll < lastScroll) {
+                        headerEl.classList.remove("nav-hidden");
+                    }
+
+                    lastScroll = currentScroll;
+                }
+
+                window.addEventListener("scroll", function() {
+                    const currentScroll = window.pageYOffset;
+
+                    if (!ticking) {
+                        window.requestAnimationFrame(function() {
+                            updateHeader(currentScroll);
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                }, { passive: true });
+            })();
         </script>
         {#-
 		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
@@ -57,12 +123,9 @@
         {% include "public/css/output.css" %}
         {% include "public/css/custom.css" %}
     {% endcss %}
-    {#- Or add from node_modules #}
-    {# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
     {#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
     <style>{% getBundle "css" %}</style>
 </head>
-{# <div class="red-filter"></div> #}
     <body>
         <a href="#skip" class="visually-hidden">Skip to main content</a>
         <div class="view">
@@ -74,6 +137,7 @@
                         <li class="nav-item">
                             <a href="/"
                             class="home-link"
+                            aria-label="Home - Daniel Gális"
                             {% if page.url == "/" %}aria-current="page"{% endif %}></a>
                         </li>
                          {%- for entry in collections.all | eleventyNavigation %}

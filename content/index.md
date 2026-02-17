@@ -15,10 +15,11 @@ Rapujem pod menom [GOLEM](https://soundcloud.com/favu-label/sets/golemiada).
 
 <div class="now-list">
 
+- researching, designing and developing at [C-CC](https://c-cc.info)
+- mixing and mastering at [ZVUPRO](https://zvupro.cz)
 - [researching](https://www.are.na/daniel-galis/communicator-aka-chc-ch-agdx) handheld devices
 - and expressive systems
 - and neo-neo-luddites
-- in a design studio with my peers
 - in a band with my dad
 - [favu label](https://www.instagram.com/favulabel/) member
 - [AGDX](https://agdx.info) member

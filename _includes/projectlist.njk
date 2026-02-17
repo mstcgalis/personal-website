@@ -12,7 +12,7 @@
           {% endif %}
           {% if project.data.image %}
             {% for img in project.data.image %}
-            <img class="h-full object-cover" src="{{ img }}" alt="{{ project.data.title }} background image">
+            <img class="h-full object-cover" src="{{ img }}" alt="" role="presentation" aria-hidden="true">
             {% endfor %}
           {% endif %}
         </div>

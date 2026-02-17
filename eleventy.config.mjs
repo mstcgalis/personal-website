@@ -140,8 +140,19 @@ export default function (eleventyConfig) {
 		const lines = contents.split("\n");
 		const tagMapping = {};
 		for (const line of lines) {
-			const [tag, url] = line.split(" ");
-			if (tagMapping[tag]) {
+			const trimmedLine = line.trim();
+			if (!trimmedLine) continue; // Skip empty lines
+
+			const spaceIndex = trimmedLine.indexOf(" ");
+			if (spaceIndex === -1) continue; // Skip malformed lines
+
+			const tag = trimmedLine.substring(0, spaceIndex);
+			const url = trimmedLine.substring(spaceIndex + 1);
+
+			// Validate URL format
+			if (!url.startsWith("https://")) continue;
+
+			if (Object.prototype.hasOwnProperty.call(tagMapping, tag)) {
 				tagMapping[tag].push(url);
 			} else {
 				tagMapping[tag] = [url];
@@ -152,7 +163,21 @@ export default function (eleventyConfig) {
 
 	// Create shortcode for embedding URLs as iFrames
 	eleventyConfig.addShortcode("iframe", (url) => {
-		return `<iframe src="${url}" width="100%" height="500" loading="lazy"></iframe>`;
+		// Validate URL to prevent XSS
+		if (!url || typeof url !== "string") {
+			return "<!-- Invalid iframe URL -->";
+		}
+		// Only allow http/https protocols
+		if (!url.startsWith("https://") && !url.startsWith("http://")) {
+			return "<!-- Invalid iframe URL protocol -->";
+		}
+		// Escape HTML entities in URL
+		const escapedUrl = url
+			.replace(/&/g, "&amp;")
+			.replace(/"/g, "&quot;")
+			.replace(/</g, "&lt;")
+			.replace(/>/g, "&gt;");
+		return `<iframe src="${escapedUrl}" width="100%" height="500" loading="lazy"></iframe>`;
 	});
 
 	// Features to make your build faster (when you need them)
